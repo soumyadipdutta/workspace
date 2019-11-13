@@ -1,0 +1,276 @@
+// **************************************************************
+// KEYFRAME ANIMATION
+// **************************************************************
+
+
+//Aded keyframe
+@-webkit-keyframes rotation-arrow{
+    0%{ -webkit-transform: rotate(0deg); }
+    100%{ -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotation-arrow{
+    0%{ -moz-transform: rotate(0deg); }
+    100%{ -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes rotation-arrow{
+    0%{ -ms-transform: rotate(0deg); }
+    100%{ -ms-transform: rotate(360deg); }
+}
+@keyframes rotation-arrow{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+//Truck Wheel keyframe
+@-webkit-keyframes truck-wheel{
+    0%{ -webkit-transform: rotate(0deg); }
+    100%{ -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes truck-wheel{
+    0%{ -moz-transform: rotate(0deg); }
+    100%{ -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes truck-wheel{
+    0%{ -ms-transform: rotate(0deg); }
+    100%{ -ms-transform: rotate(360deg); }
+}
+@keyframes truck-wheel{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+/**************************/
+//Truck Direction keyframe//
+/**************************/
+
+//For Desktop
+@keyframes truck-direction{
+    0%{ right: 100%; }
+    100%{ right: 0%; }
+}
+
+//For Medium
+@keyframes truck-direction-medium{
+    0%{ left: -20px; }
+    100%{ left: 200px; }
+}
+
+//For Mobile
+@keyframes truck-direction-mobile{
+    0%{ left: -80px; }
+    100%{ left: 120px; }
+}
+
+
+
+//Dropdown Arrow
+@keyframes arrow-animate{
+    0%, 20%, 50%, 80%, 100% {
+        transform:translateY(0);
+    }
+    40% {
+        transform:translateY(-15px);
+    }
+    60% {
+        transform:translateY(-15px);
+    }
+}
+
+@keyframes arrow-animate-right{
+    0%, 20%, 50%, 80%, 100% {
+        transform:translateX(0);
+    }
+    40% {
+        transform:translateX(-10px);
+    }
+    60% {
+        transform:translateX(-10px);
+    }
+}
+
+/*******************************/
+/**Train Movement for slider 3**/
+/*******************************/
+@keyframes train-animate-left{
+    0%{ left: 40px; }
+    100%{ left: 100%; }
+}
+
+@keyframes train-animate-left-1{
+    0%{ right: 100%; }
+    100%{ right: 30px; }
+}
+
+
+//Train Movement Left Small
+@keyframes train-animate-left-small{
+    0%{ right: 100%; }
+    100%{ right: 30px; }
+}
+
+
+
+/*******************************/
+/********Train Rubbish**********/
+/*******************************/
+//Desktop
+@keyframes train-rubbish{
+    from { background-position:    0px; opacity: 1; }
+      to { background-position: -500px; opacity: 0; }
+}
+//Mobile
+@keyframes train-rubbish-mob{
+    from { background-position:    0px; opacity: 1;}
+      to { background-position: -300px; opacity: 0;}
+}
+
+//Tripper Movement Left Small
+@keyframes liver-animation{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(30deg); transform-origin: bottom left; }
+}
+
+@keyframes tripper-animation{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(16deg); }
+}
+
+
+
+//Fade In Arrow
+@keyframes fadein-arrow{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+//Shadow animation
+@keyframes shadow-disable{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+
+//FadeIn Text
+@keyframes fadein-text{
+    0%{ opacity: 0.25; transform: scale(1, 1); }
+    25%{ opacity: 0.50; transform: scale(1.1, 1.1); }
+    100%{ opacity: 1; transform: scale(1, 1);  }
+}
+
+
+    
+
+
+
+    
+
+//Tree animation
+@keyframes tree-animation{
+    0%{ transform: scale(0); }
+    100%{ transform: scale(1); }
+}
+
+
+//Hill Animation
+@keyframes hill-animation{
+    0%{ bottom: 0; transform: scale(0); }
+    100%{ transform: scale(1); }
+}
+
+
+//Garbage Dump Animation
+@keyframes garbage-dump-animation{
+    0%{ transform: scale(0); }
+    100%{ transform: scale(1); }
+}
+
+
+//Rotating Separator Animation
+
+@keyframes rotating-separator{
+   from { background-position:    0px; }
+     to { background-position: -1104px; }
+}
+@keyframes rotating-separator-medum{
+   from { background-position:    0px; }
+     to { background-position: -860px; }
+}
+
+@keyframes rotating-separator-mob{
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+
+
+//Ballistic Separator
+@keyframes ballistic-separator{
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}
+@keyframes ballistic-separator-mobile{
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+
+//Flame Animation Group
+
+//for desktop
+@keyframes flame-animation{
+   from { background-position:    0px; }
+     to { background-position: -126px; }
+}
+//for mobile
+@keyframes flame-animation-mob{
+   from { background-position:    0px; }
+     to { background-position: -80px; }
+}
+
+
+@keyframes Grabber-animation{
+   from { background-position:    0px; background-image: url(../images/grabber-animation.png); }
+     to { background-position: -2090px; background-image: url(../images/grabber-animation.png); }
+}
+@keyframes Grabber-animation-mob{
+   from { background-position:    0px; background-image: url(../images/grabber-animation-mob.png); }
+     to { background-position: -950px; background-image: url(../images/grabber-animation-mob.png); }
+}
+
+
+//Magnet Animation
+@keyframes magnet-animation{
+   from { background-position:    0px; }
+     to { background-position: -495px; }
+}
+@keyframes magnet-animation-mob{
+   from { background-position:    0px; }
+     to { background-position: -240px; }
+}
+
+//Conveyor Animation
+@keyframes conveyor-animation{
+   from { background-position:    0px; }
+     to { background-position: -848px; }
+}
+@keyframes conveyor-animation-medium{
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+@keyframes conveyor-animation-mobile{
+   from { background-position:    0px; }
+     to { background-position: -400px; }
+}
+
+/////////////////////
+//GARBAGE ANIMATION//
+/////////////////////
+
+//For Desktop
+@keyframes garbage-animation{
+   from { background-position:    0px;  right: -18px; top: 7px; opacity: 1; }
+     to { background-position: -500px; right: -18px; top: 7px; opacity: 1; }
+}
+//For Mobile
+@keyframes garbage-animation-mob{
+   from { background-position:    0px;  right: -18px; top: 7px; opacity: 1; }
+     to { background-position: -300px; right: -18px; top: 7px; opacity: 1; }
+}

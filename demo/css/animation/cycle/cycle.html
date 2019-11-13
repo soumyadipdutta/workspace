@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				console.log('scroll width'+scroll);
+				$('.box').css({'left': scroll+'px'})
+			});
+		</script>
+
+		<style>
+			*{padding: 0; margin: 0;}
+
+			.bicycle{
+			    width: 575px;
+			    height: 350px;
+			    position: relative;
+			    margin-left: 100px;
+			    margin-top: 240px;
+			}
+
+
+			.wheel{
+				width: 200px;
+			    height: 200px;
+			    border: 12px solid #3c3c3c;
+			    border-radius: 100%;
+			    position: absolute;
+			    animation: weel-animation 2s infinite linear;
+			}
+			.wheel.front-part{
+				bottom: 0;
+				left: 0;
+			}
+			.wheel.back-part{
+				bottom: 0;
+				right: 0;
+			}
+			.wheel_inner{
+				width: 100px;
+				height: 100px;
+				position: relative;
+			}
+
+			.metal-structure{
+				width: 200px;
+			    height: 7px;
+			    background-color: #000000; 
+			}
+
+			.metal-structure.front-wheel{
+				transform-origin: center right;
+			    transform: rotate(70deg);
+			    position: absolute;
+			    bottom: 110px;
+			    right: 111px;
+			}
+			.metal-structure.patel-area{
+				transform-origin: center right;
+			    transform: rotate(70deg);
+			    position: absolute;
+			    bottom: 105px;
+			    right: 306px;
+			}
+			.metal-structure.connector{
+				transform-origin: bottom left;
+			    transform: rotate(-43deg);
+			    position: absolute;
+			    bottom: 107px;
+			    right: 104px;
+			    width: 200px;
+			}
+
+			.metal-structure.connector__2{
+				transform-origin: center right;
+			    transform: rotate(180deg);
+			    position: absolute;
+			    bottom: 108px;
+			    left: -46px;
+			    width: 160px;
+			}
+
+			
+			
+			.metal-structure.back-wheel{
+				transform-origin: center left;
+			    transform: rotate(-42deg);
+			    position: absolute;
+			    bottom: 105px;
+			    left: 110px;
+			    width: 162px;
+			}
+
+			.metal-structure.paralal-area{
+			    position: absolute;
+			    bottom: 212px;
+			    left: 229px;
+			    transform-origin: bottom left;
+			    transform: rotate(-16deg);
+			    width: 190px;
+			}
+
+			.sit{
+				width: 0;
+				height: 0;
+				border-left: 8px solid transparent;
+				border-right: 56px solid transparent;
+				border-bottom: 23px solid #000000;
+				position: absolute;
+				top: 40px;
+				left: 172px;
+			}
+			.sit .line{
+			    height: 10px;
+			    width: 50px;
+			    display: block;
+			    background: #000000;
+			    transform-origin: bottom right;
+			    transform: rotate(13deg);
+			    top: 12px;
+			    position: absolute;
+			}
+			.sit:before{
+			    content: " ";
+			    width: 30px;
+			    height: 23px;
+			    background: #000000;
+			    border-radius: 70%;
+			    position: absolute;
+			    left: -20px;
+			    top: 0px;
+			}
+			.sit:after{
+				content: " ";
+			    width: 46px;
+			    height: 11px;
+			    background: #000000;
+			    border-radius: 70%;
+			    position: absolute;
+			    right: -67px;
+			    top: 12px;
+			}
+
+			.spoke{
+				min-width: 100%;
+				height:  1px;
+				position: absolute;
+				background-color: #000000;
+				bottom: 0;
+				transform-origin: bottom right;
+			}
+
+			.patel-section{
+				width: 50px;
+			    height: 50px;
+			    border: 13px solid #000000;
+			    border-radius: 100%;
+			    position: absolute;
+			    left: 235px;
+			    bottom: 73px;
+			}
+			.handle{
+				background: #000000;
+			    width: 80px;
+			    height: 10px;
+			    transform: rotate(-70deg);
+			    position: absolute;
+			    top: 0;
+			    left: -45px;
+
+			}
+
+			.spoke._2{
+				transform:  rotate(15deg);
+			}
+			.spoke._3{
+				transform:  rotate(30deg);
+			}
+			.spoke._4{
+				transform:  rotate(45deg);
+			}
+			.spoke._5{
+				transform:  rotate(60deg);
+			}
+			.spoke._6{
+				transform:  rotate(75deg);
+			}
+			.spoke._7{
+				transform:  rotate(90deg);
+			}
+
+			.spoke._8{
+				transform:  rotate(105deg);
+			}
+			.spoke._9{
+				transform:  rotate(120deg);
+			}
+			.spoke._10{
+				transform:  rotate(135deg);
+			}
+			.spoke._11{
+				transform:  rotate(150deg);
+			}
+			.spoke._12{
+				transform:  rotate(165deg);
+			}
+			.spoke._13{
+				transform:  rotate(180deg);
+			}
+			.spoke._14{
+				transform:  rotate(195deg);
+			}
+			.spoke._15{
+				transform:  rotate(210deg);
+			}
+			.spoke._16{
+				transform:  rotate(225deg);
+			}
+			.spoke._17{
+				transform:  rotate(240deg);
+			}
+			.spoke._18{
+				transform:  rotate(255deg);
+			}
+			.spoke._19{
+				transform:  rotate(270deg);
+			}
+			.spoke._20{
+				transform:  rotate(285deg);
+			}
+			.spoke._21{
+				transform:  rotate(300deg);
+			}
+			.spoke._22{
+				transform:  rotate(315deg);
+			}
+			.spoke._23{
+				transform:  rotate(330deg);
+			}
+			.spoke._24{
+				transform:  rotate(345deg);
+			}
+
+
+			.front-leg .top-leg{
+				width: 158px;
+			    height: 40px;
+			    background-color: #000000;
+			    transform-origin: bottom left;
+			    transform: rotate(40deg);
+			    animation: topleg-animation 2s infinite linear;
+			    border-top-right-radius: 24px;
+			}
+			.front-leg .top-leg .round-right{
+				width: 100%;
+			    height: 50px;
+			    background-color: #000000;
+			    border-radius: 40%;
+			    top: 6px;
+			    position: absolute;
+			    
+			}
+			.middle-leg{
+				width: 23px;
+			    height: 150px;
+			    transform-origin: top left;
+			    transform: rotate(5deg);
+			    background-color: #ddd;
+			    left: 113px;
+			    position: absolute;
+			    top: 93px;
+			    border-top-left-radius: 10px;
+			    border-top-right-radius: 10px;
+			    animation: middleleg-animation 2s infinite linear;
+			}
+			.middle-leg:after{
+				content: " ";
+			    position: absolute;
+			    height: 92px;
+			    width: 40px;
+			    background: #dddddd;
+			    border-radius: 100%;
+			    left: -10px;
+			    top: -3px;
+			}
+			.front-leg{
+				position: absolute;
+			    z-index: 9;
+			    left: 160px;
+			    top: -20px;
+			}
+			.head{
+				width: 65px;
+			    height: 65px;
+			    border-radius: 100%;
+			    background: #000000;
+			    position: absolute;
+			    right: 250px;
+			    top: -204px;
+			}
+
+			.back-side{
+				width: 80px;
+			    height: 64px;
+			    border-bottom-left-radius: 50px;
+			    border-bottom-right-radius: 50px;
+			    background: #000000;
+			    position: absolute;
+			    left: 146px;
+			    top: -11px;
+			    transform: rotate(30deg);
+			    border-top: 5px solid #5d5d5d;
+			}
+
+			.main-body{
+		        width: 80px;
+			    height: 135px;
+			    background: #000000;
+			    position: absolute;
+			    left: 158px;
+			    top: -121px;
+			    transform-origin: bottom right;
+			    transform: rotate(30deg);
+			    border-top-right-radius: 20px;
+			    border-top-left-radius: 35px;
+			}
+			.hand{
+				width: 30px;
+			    height: 188px;
+			    background: #dddddd;
+			    position: absolute;
+			    right: 293px;
+			    top: -116px;
+			    transform-origin: top right;
+			    transform: rotate(-37deg);
+			    border-top-right-radius: 20px;
+			    border-top-left-radius: 20px;
+			}
+			.shue{
+				width: 30px;
+			    height: 22px;
+			    background: #000000;
+			    position: absolute;
+			    bottom: 0;
+			    left: -2px;
+			}
+			
+			.shue:before{
+				content: " ";
+			    position: absolute;
+			    height: 22px;
+			    width: 30px;
+			    background: #000000;
+			    border-radius: 100%;
+			    left: 16px;
+			    top: 0px;
+			}
+
+		   
+		
+
+		   @keyframes hand-left{
+		   	 0% { transform: rotate(40deg); }
+		   	 50% { transform: rotate(-20deg); }
+		   	 100% { transform: rotate(40deg); }
+		   }
+		   @keyframes hand-right{
+		   	 0% { transform: rotate(-50deg); }
+		   	 50% { transform: rotate(20deg); }
+		   	 100% { transform: rotate(-50deg); }
+		   }
+
+		   @keyframes main-body{
+		   	 0% { top: 128px; }
+		   	 50% { top: 125px; }
+		   	 100% { top: 128px; }
+		   }
+
+		   @keyframes topleg-animation{
+		      0% { transform: rotate(40deg); }
+		      50% { transform: rotate(50deg); }
+		   	  100% { transform: rotate(40deg); }
+		   }
+		   @keyframes middleleg-animation{
+		      0% { transform: rotate(5deg); }
+		      25% { transform: rotate(2deg); }
+		      50% { transform: rotate(8deg); top: 130px;}
+		      75% { transform: rotate(10deg); }
+		   	  100% { transform: rotate(5deg); }
+		   }
+
+		   @keyframes weel-animation{
+		   	 0% {     transform: rotate( 0deg); }
+		   	 100% {     transform: rotate(360deg); }
+		   }
+
+
+
+		    @keyframes left-leg-top{
+		   	 0% {     transform: rotate(-50deg); left: 50px;  }
+		   	 50% { transform: rotate(80deg); left: 50px; }
+		   	 100% {     transform: rotate(-50deg);left: 50px;  }
+		   }
+		   @keyframes right-leg-top{
+		   	 0% {  transform: rotate(60deg); left: 50px;  }
+		   	 50% {  transform: rotate(-10deg); left: 150px; }
+		   	 100% {  transform: rotate(60deg); left: 50px;  }
+		   }
+
+		</style>
+	</head>
+
+	<body>
+		<div class="bicycle">
+			<div class="bicycle_inner">
+
+				<div class="passenger">
+					<div class="body">
+						<div class="head"></div>
+						<div class="back-side"></div>
+						<div class="main-body"></div>
+						<div class="hand"></div>
+					</div>
+					<div class="front-leg">
+						<div class="top-leg">
+							<div class="round-right"></div>
+						</div>
+						<div class="middle-leg">
+							<div class="shue"></div>
+						</div>
+						<div class="bottom-leg"></div>
+					</div>
+				</div>
+
+
+
+				<div class="wheel front-part">
+					<div class="wheel_inner">
+						<div class="spoke _1"></div>
+						<div class="spoke _2"></div>
+						<div class="spoke _3"></div>
+						<div class="spoke _4"></div>
+						<div class="spoke _5"></div>
+						<div class="spoke _6"></div>
+						<div class="spoke _7"></div>
+						<div class="spoke _8"></div>
+						<div class="spoke _9"></div>
+						<div class="spoke _10"></div>
+						<div class="spoke _11"></div>
+						<div class="spoke _12"></div>
+						<div class="spoke _13"></div>
+						<div class="spoke _14"></div>
+						<div class="spoke _15"></div>
+						<div class="spoke _16"></div>
+						<div class="spoke _17"></div>
+						<div class="spoke _18"></div>
+						<div class="spoke _19"></div>
+						<div class="spoke _20"></div>
+						<div class="spoke _21"></div>
+						<div class="spoke _22"></div>
+						<div class="spoke _23"></div>
+						<div class="spoke _24"></div>
+						<div class="spoke _25"></div>
+					</div>
+				</div>
+				<div class="wheel back-part">
+					<div class="wheel_inner">
+						<div class="spoke _1"></div>
+						<div class="spoke _2"></div>
+						<div class="spoke _3"></div>
+						<div class="spoke _4"></div>
+						<div class="spoke _5"></div>
+						<div class="spoke _6"></div>
+						<div class="spoke _7"></div>
+						<div class="spoke _8"></div>
+						<div class="spoke _9"></div>
+						<div class="spoke _10"></div>
+						<div class="spoke _11"></div>
+						<div class="spoke _12"></div>
+						<div class="spoke _13"></div>
+						<div class="spoke _14"></div>
+						<div class="spoke _15"></div>
+						<div class="spoke _16"></div>
+						<div class="spoke _17"></div>
+						<div class="spoke _18"></div>
+						<div class="spoke _19"></div>
+						<div class="spoke _20"></div>
+						<div class="spoke _21"></div>
+						<div class="spoke _22"></div>
+						<div class="spoke _23"></div>
+						<div class="spoke _24"></div>
+						<div class="spoke _25"></div>
+					</div>
+				</div>
+
+				<div class="metal-structure front-wheel">
+					<div class="handle"></div>
+				</div>
+				<div class="metal-structure connector"></div>
+				<div class="metal-structure patel-area"></div>
+				<div class="metal-structure paralal-area"></div>
+				<div class="metal-structure back-wheel"></div>
+				<div class="metal-structure connector__2"></div>
+
+				<div class="patel-section">
+				</div>
+
+				<div class="sit"><span class="line"></span></div>
+			</div>
+		</div>
+	</body>
+</html>

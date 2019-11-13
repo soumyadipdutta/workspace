@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+
+	function showpop(overLay, clickCls, openPop, closepop){
+		$(overLay).hide();
+		$(clickCls).click(function(e){
+			//console.log('hello');
+			e.preventDefault();
+			$(overLay).fadeIn('slow');
+			$(openPop).show().animate({'top' : '300px'});
+		});
+		$(closepop).click(function(e){
+			$(openPop).animate({'top' : '-300px'});
+			e.preventDefault();
+			$(overLay).fadeOut('slow');
+		});
+	}
+
+	$(document).ready(function(){
+		showpop('.overlay', '.clickOpen', '.popup', '.closePop');
+
+		//First place : Please write class name of you overlay div
+		//Second Place : Class name of the <a> when you click to open the popup
+		//Third Place : Class name of popup
+		//Forth Place : Class name of close button / icon
+	});
+</script>
+
+<style>
+*{
+	padding: 0;
+	margin: 0;
+}
+.clickOpen{
+	text-decoration: none;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.popup{
+	width: 500px;
+    height: auto;
+    background: #ffffff;
+    border: 4px double #dddddd;
+    position: absolute;
+    top: -300px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.popup h1{
+	text-align: center;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.closePop{
+	background: #bebebe;
+    color: #ffffff;
+    position: absolute;
+    right: -17px;
+    top: -15px;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 11px;
+    font-family: arial;
+}
+.overlay{
+	height: 100%;
+	width: 100%;
+	background: #000000;
+	position: fixed;
+	opacity: 0.8;
+}
+
+.pop-header{
+	background: blue;
+}
+</style>
+
+<body>
+	
+	<div class="overlay"></div>
+	<a href="#" class="clickOpen">Click Me</a>
+	<div class="popup">
+		
+		<div class="pop-container">
+			<div class="pop-header">
+				<h1>Header</h1>
+				<a href="#" class="closePop">X</a>
+			</div>
+
+			<div class="pop-body">
+				<h1>Welcome to the popUp</h1>
+			</div>
+
+			<div class="pop-footer">
+				<h1>footer</h1>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+
+</html>

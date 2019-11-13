@@ -1,0 +1,46 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 480px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 640px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 768px) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 992px)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (mix-width: 1200px)  { @content ; }
+
+  }
+}
+
+
+
+
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.header a.contacts
+{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNq01jFLAzEYxvH2UBCxiIiDUhzcdXCyIk5ufgUXLR37JdxcXBxcuwmOOtml0EKpo04iWIpIQREVEVFLjf9AhoC9e3O5uxd+lMLdPU1yedO8UiqXdQWO122ghi4+8IwGqiiId+uRCHbxqsLrFHNRz5ACSnhTch1EPScQpnIH0w7TWcGiz5rouS45rtkMVnxCJrAQ4yUq+oT8YhAjZOAT8oWHGCE9nxC9H64cA15w4xOiW0HbfErVNhvUa8c3cecQcoZv3xA9z+fCNbe4SNq7jvEUMaUnuE/au7SjkHbSR1G637ULh73Kn+gn7cIBttELGckQh9Jo8iMOrSksYx2b2MKk8FuvUUcHl/9GbiWuooYu3pVf/eARLZQxbp8na2YR0659e+HLmM/geN+z98lSRv8hZu2QQkYh+kzKjZkvHdPahymH6DNp5Cucev0JMAAkKj0NEoYBJwAAAABJRU5ErkJggg==);
+}
+.mm-panels>.mm-panel:not(.mm-hidden) {
+    background: #759833;
+    color: #f9fdfc;
+}

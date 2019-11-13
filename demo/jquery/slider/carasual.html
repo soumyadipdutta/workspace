@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carasual</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var liwidth = $('.slider ul li').outerWidth();
+		var sliderLength = $('.slider ul li').length;
+		multipleCount = 3;
+		sliderCount = 0;
+		$('.click_next').click(function(){
+			multipleCount++;
+			sliderCount++;
+			$('.click_prev.click-btn').removeClass('disable');
+			if(multipleCount > sliderLength){
+				$('.slider ul').animate({
+					'left' : 0
+				}, 1000);
+				multipleCount = 3;
+				sliderCount = 0;
+			}else{
+				$('.slider ul').animate({
+					'left' : '-'+liwidth*sliderCount
+				}, 1000);
+			}
+		});
+
+		$('.click_prev').click(function(){
+			multipleCount--;
+			sliderCount--;
+			$('.click_prev.click-btn').removeClass('disable');
+			if(sliderCount < 0){
+				multipleCount = 3;
+				sliderCount = 3;
+				$('.slider ul').animate({
+					'left' : '-'+liwidth*multipleCount
+				}, 1000);
+			}else{
+				$('.slider ul').animate({
+					'left' : '-'+liwidth*sliderCount
+				}, 1000);
+			}
+		});
+	});
+</script>
+
+<style>
+
+.slider{
+	width:  600px;
+	height:  250px;
+	overflow: hidden;
+	position: relative;
+	margin:  0 aut0;
+}
+.slider ul{
+	width:  1200px;
+	height:  250px;		
+	padding-left: 0px;	
+	position: absolute;
+	left: 0;
+	top:  0;
+}
+
+.slider ul li{
+	width:  200px;
+	height:  250px;
+	background: #ddd;
+	display: inline-block;	
+	text-align: center;
+	font-size: 28px;
+    padding: 94px 15px 15px 15px;
+	box-sizing: border-box;
+	border-right: 1px solid #000000;
+}
+
+.click_next.click-btn{
+	position: absolute;
+	top:  50%;
+	transform: translateY(-50%);
+	right: 0;
+	background: #000000;
+	color: #ffffff;
+	padding:  5px 10px;
+	text-decoration: none;
+}
+.click_next.click-btn.disable{
+	cursor: default;
+	background: rgba(0, 0, 0, 0.47);
+	pointer-events: none;
+}
+.click_prev.click-btn{
+	position: absolute;
+	top:  50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: #000000;
+	color: #ffffff;
+	padding:  5px 10px;
+	text-decoration: none;
+}
+.click_prev.click-btn.disable{
+	cursor: default;
+	background: rgba(0, 0, 0, 0.47);
+	pointer-events: none;
+}
+
+	
+</style>
+
+<body>
+	
+	<div class="slider">
+		<ul>
+			<li>Slider 1</li><li>Slider 2</li><li>Slider 3</li><li>Slider 4</li><li>Slider 5</li><li>Slider 6</li>
+		</ul>
+		<a href="javascript:void(0)" class="click_next click-btn">Next</a>
+		<a href="javascript:void(0)" class="click_prev click-btn">Prev</a>
+	</div>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,111 @@
+//Color Scss
+
+
+// **************************************************************
+// Responsive variable
+// **************************************************************
+
+/*********************
+BREAKPOINTS
+*********************/
+
+// min width value
+$res320: 320px;
+$res440: 440px;
+$res480: 480px;
+$res640: 640px;
+$res768: 768px;
+$res800: 800px;
+$res992: 992px;
+$res1024: 1024px;
+$res1140: 1140px;
+$res1200: 1200px;
+$res1600: 1600px;
+
+
+//Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//Transition 
+@mixin transition-duration($value) {
+  -webkit-transition-duration: $value;
+     -moz-transition-duration: $value;
+      -ms-transition-duration: $value;
+          transition-duration: $value;
+}
+
+//Transform Rotate
+@mixin transition-rotate($rvalue) {
+   -webkit-transform:rotate($rvalue);
+      -moz-transform:rotate($rvalue);
+       -ms-transform:rotate($rvalue);
+           transform:rotate($rvalue);
+}
+
+//Transform Skew
+@mixin transition-skew($Svalue1, $Svalue2) {
+   -webkit-transform: skew($Svalue1, $Svalue2);
+      -moz-transform: skew($Svalue1, $Svalue2);
+       -ms-transform: skew($Svalue1, $Svalue2);
+           transform: skew($Svalue1, $Svalue2);
+}
+
+//Aded keyframe
+@keyframes rotate-animation{
+    0%{ opacity: 0; transform: rotate(0deg); }
+    100%{ opacity: 1; transform: rotate(-90deg); }
+}
+@keyframes revarce-animation{
+    0%{ opacity: 1; transform: rotate(-90deg); }
+    100%{ opacity: 0; transform: rotate(0deg); }
+}
+
+@mixin rotate-animation($animevalue){
+    -webkit-animation: rotate-animation $animevalue;
+       -moz-animation: rotate-animation $animevalue;
+        -ms-animation: rotate-animation $animevalue;
+         -o-animation: rotate-animation $animevalue;
+            animation: rotate-animation $animevalue;
+}
+@mixin revarce-animation($animevalue){
+    -webkit-animation: revarce-animation $animevalue;
+       -moz-animation: revarce-animation $animevalue;
+        -ms-animation: revarce-animation $animevalue;
+         -o-animation: revarce-animation $animevalue;
+            animation: revarce-animation $animevalue;
+}
+
+//Transform rotate
+@mixin transform-translate($animation-y){
+    -webkit-transform: translateY($animation-y);
+       -moz-transform: translateY($animation-y);
+        -ms-transform: translateY($animation-y);
+         -o-transform: translateY($animation-y);
+            transform: translateY($animation-y);
+}
+
+
+//Transform Scale
+@mixin transform-scale($tscale){
+    -webkit-transform: scale($tscale);
+       -moz-transform: scale($tscale);
+        -ms-transform: scale($tscale);
+         -o-transform: scale($tscale);
+            transform: scale($tscale);
+}
+
+@mixin transform-origin($ovalue1, $ovalue2){
+    -webkit-transform-origin: $ovalue1 $ovalue2;
+       -moz-transform-origin: $ovalue1 $ovalue2;
+        -ms-transform-origin: $ovalue1 $ovalue2;
+         -o-transform-origin: $ovalue1 $ovalue2;
+            transform-origin: $ovalue1 $ovalue2;
+}
+
+              

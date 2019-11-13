@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="controller.js"></script>
+    <script src="service.js"></script>
+
+  </head>
+
+
+	<body ng-app="loginApp" ng-controller="loginController">
+        <form id="loginFrm" name="frmLg">
+            UserId <input type="text" ng-model="model.username" /><br/>
+            Password <input type="password" ng-model="model.password" />
+
+            <input type="submit" value="Log-in" ng-click="signin()"/>
+            <input type="submit" value="Add" ng-submit="addition()"/>
+        </form>
+	</body>
+</html>

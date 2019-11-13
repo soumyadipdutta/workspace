@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+	</head>
+
+	<script type="text/javascript">
+		/*$(function(){
+			index = 0;
+			var liLength = $('li').length;
+			var liwidth = $('li').width();
+			setInterval(function(){
+			    $('li').css('margin-left','0px');
+				$('li').eq(index++).css({'margin-left':'-'+liwidth * index+'px', 'transition-duration':'2s'});
+				console.log(index);
+				if(index == liLength){
+					index = 0;
+				}
+				console.log(index);
+			}, 3000);
+		});*/
+
+		
+		/*liLength = $('li').length;
+		liwidth = $('li').width();
+
+		function navPrev(){
+			$('.prevNav').on('click', function(e){
+				e.preventDefault();
+				$('li').css('margin-left','0px');
+				$('li').eq(index--).css({'margin-left':'-'+liwidth * index+'px', 'transition-duration':'500ms'});
+				console.log(index);
+				if(index == liLength){
+					index = 0;
+				}
+			});
+		}*/
+
+
+		function slideShow(mainLi, nextClass, prevClass){
+			index = 0;
+			var listItem = $(mainLi);
+			var liLength = listItem.length;
+			var liwidth = listItem.width();
+			$(nextClass).on('click', function(){
+				listItem.css('margin-left','0px');
+				listItem.eq(index++).next().css({'margin-left':'-'+liwidth * index+'px', 'transition-duration':'500ms'});
+				console.log(index);
+				//console.log(index);
+				if(index == liLength){
+					index = 0;
+				}
+			});
+
+			$(prevClass).on('click', function(){
+				listItem.css('margin-left','0px');
+				listItem.eq(index--).prev().css({'margin-left': liwidth * index+'px', 'transition-duration':'500ms'});
+				console.log(index);
+
+				if(index == 0){
+					return false;
+				}
+			});
+		}
+		
+		$(document).ready(function(){
+			slideShow('.slider ul li', '.nextNav', '.prevNav');
+		});
+	</script>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.banner{
+			width:  800px;
+			height:  300px;
+			position: relative;
+			margin:  0 auto;
+		}
+		.slider{
+			width:  800px;
+			height:  300px;
+			overflow: hidden;
+		}
+		.slider ul{
+			width:  2400px;
+		}
+		.slider ul li{
+			display: inline-block;
+		}
+
+		.arrow{
+			position: absolute;
+			top:  40%;
+			background: #000000;
+			opacity: 0.8;
+			padding:  10px;
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: capitalize;
+		}
+		.arrow.nextNav{
+			right: 0;
+		}
+
+		.ui-content{
+			background: #000000;
+			color: #ffffff;
+			padding:  20px;
+		}
+	</style>
+
+	<body>
+		
+
+		<h3>Custom popup</h3>
+		View Link: <a href="http://soumyadipdutta.co.in/demo/jquery/popup/popup.html" target="_blank">Click Here</a><br/>
+		Download File : <a href="http://soumyadipdutta.co.in/demo/jquery/popup/popup.html" download>Click Here</a>
+
+		<hr/>
+	</body>
+</html>

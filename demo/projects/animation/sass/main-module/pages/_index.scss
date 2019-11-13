@@ -1,0 +1,1160 @@
+// Index CSS
+.m-panel-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.c-panle-equal{
+    width: 100%;
+    float: none;
+}
+
+.c-desktop-only{
+	display: none;
+}
+.c-mobile-only{
+	display: block;
+	margin-top: 10px;
+    margin-left: -60px;
+}
+
+.o-animation-section{
+    min-height: auto;
+    position: relative;
+}
+
+.c-green-btn{
+	background: #74BD4F;
+    color: #ffffff;
+    padding: 4px 30px 6px 11px;
+    border-radius: 4px;
+    font-family: 'fs_rufuslight_italic';
+    text-decoration: none;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+	&:after{
+		content: " ";
+	    background-image: url(../images/arrow-right.png);
+	    width: 8px;
+    	height: 17px;
+	    display: inline-block;
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+	    position: absolute;
+        top: 10px;
+		right: 7px;
+	    animation: arrow-animate-right 2s infinite;
+	}
+	&:hover{
+		opacity: 0.8;
+		transition-duration: 500ms;
+	}
+}
+
+//Green rounded text
+.c-green-round{
+	height: 60px;
+    width: 60px;
+    opacity: 0;
+    border-radius: 100%;
+    background: #6BBA43;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    p{
+    	padding: 0 4px;
+	    text-align: center;
+	    font-size: 10px;
+	    line-height: 12px;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    position: absolute;
+	    margin: 0;
+	    font-family: 'fs_rufusitalic';
+	}
+}
+
+//Loading Section
+.loading-section{
+	background: #f8b530;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+
+
+.c-animate-arrow{
+	position: absolute;
+	font-family: 'fs_rufusbold_italic';
+	margin-top: 5px;
+	text-align: center;
+	bottom: 40px;
+    min-width: 100%;
+    z-index: 99;
+    opacity: 0;
+	a{
+		text-decoration: none;
+		color: #48474D;
+		p{
+			margin: 0 0;
+			font-size: 10px;
+		}
+		.o-arrow-image{
+			img{
+				position: absolute;
+			    top: 32px;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    animation: arrow-animate 2s infinite;
+			    width: 14px;
+			}
+		}
+	}
+}
+
+
+//Cretaed Truck Animation
+.o-truck-section{
+	width: 224px;
+	height: 70px;
+	position: absolute;
+	//right: 100%;
+	z-index: 2;
+	.o-truck-section__inner{
+		position: relative;
+		> img{
+			width: 100%;
+		}
+		.c-wheel{
+			position: absolute;
+			height: 24px;
+		    width: 24px;
+		    bottom: 15px;
+    		background-size: 100%;
+    		background-image: url(../images/wheel.png);
+    		background-repeat: no-repeat;
+			img{
+				width: 100%;
+			}
+			&.o-position__1{
+				right: 54px;
+			}
+			&.o-position__2{
+				right: 128px;
+			}
+			&.o-position__3{
+				right: 151px;
+			}
+		}
+	}
+}
+
+.c-train-wheel{
+	height: 15px;
+    width: 15px;
+    background-image: url(../images/train-wheel.png);
+    position: absolute;
+    bottom: -1px;
+    background-size: 100%;
+}
+
+
+//Train Animation
+.c-animated-train{
+	position: relative;
+    height: 188px;
+	.o-train{
+		background-image: url(../images/train-only.png);
+		background-repeat: repeat-x;
+		height: 89px;
+		animation-delay: 15s;
+		position: absolute;
+		width: 285px;
+		background-size: 100%;
+	}
+
+	.o-track{
+		background-image: url(../images/track-to-small.png);
+		background-repeat: repeat-x;
+		position: absolute;
+		height: 26px;
+		width: 100%;
+		bottom: 0px;
+		&:before{
+			content: " ";
+		    height: 66px;
+		    width: 55px;
+		    display: inline-block;
+		    position: absolute;
+			top: -12px;
+			background-size: 100%;
+    		background-repeat: no-repeat;
+		}
+	}
+}
+
+//Faded Text 
+.o-text-area{
+	&:after,
+	&:before{
+		content: " ";
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+	width: 286px;
+	opacity: 0;
+	font-family: 'fs_rufuslight_italic';
+	.o-text-area__inner{
+		width: 100%;
+		float: right;
+		.o-large-number{
+			display: inline-block;
+			vertical-align: top;
+			width: 15%;
+			margin-top: -12px;
+			img{
+				width: 100%
+			}
+		}
+		.o-support-description{
+			display: inline-block;
+			vertical-align: top;
+			width: 80%;
+			font-size: 15px;
+		    padding-left: 2px;
+		    box-sizing: border-box;
+		    line-height: 19px;
+		    color: #241C19;
+		}
+	}
+}
+
+#fullpage{
+	/****************************/
+	/****   INTRO SECTION *******/
+	/****************************/
+	#section-intro{
+		background-image: url(../images/screen-1.jpg);
+		background-size: cover;
+		.o-rotate-animation{
+			width: 216px;
+			height: 216px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    text-align: center;
+		    opacity: 0;
+		    @include transform-translate(-50%);
+		    .o-rotate-animation__inner{
+		    	position: relative;
+		    	.o-truck-image{
+		    		position: absolute;
+				    width: 170px;
+				    text-align: center;
+				    top: -18px;
+				    z-index: 1;
+				    left: 23px;
+				    img{
+				    	width: 50%;
+				    }
+		    	}
+		    	.o-round-shape__inner{
+		    		position: relative;
+		    		width: 216px;
+					height: 216px;
+					margin: 0 auto;
+					img{
+					    -webkit-animation: rotation-arrow 15s infinite linear;
+					    -moz-animation: rotation-arrow 15s infinite linear;
+					    -o-animation: rotation-arrow 15s infinite linear;
+					    animation: rotation-arrow 15s infinite linear;
+					    width: 100%;
+					}
+					h2{
+						font-family: 'fs_rufusitalic';
+					    position: absolute;
+					    top: 50%;
+					    text-align: center;
+					    min-width: 100%;
+					    font-size: 24px;
+					    padding: 0 45px;
+					    box-sizing: border-box;
+					    line-height: 27px;
+					    color: #2B2338;
+					    @include transform-translate(-50%);
+					    margin: 0;
+					}
+				}
+		    }
+		}
+
+		&.fp-completely{
+			.c-animate-arrow{
+				animation: fadein-arrow 2s forwards;
+			}
+		}
+	}
+
+	/****************************/
+	/****   SECTION ONE *******/
+	/****************************/
+	
+	#section1{
+		background-image: url(../images/screen-3.jpg);
+		background-size: cover;
+		h1{
+			text-align: center;
+		    color: #ffffff;
+		    font-size: 28px;
+		    margin-top: 0px;
+		    margin-bottom: 40px;
+		    font-family: 'fs_rufusitalic';
+		}
+		.o-animation-section{
+			&:after,
+			&:before{
+				content: " ";
+				width: 100%;
+				display: block;
+				clear: both;
+			}
+			.o-animation-left-panel{
+				width: 100%;
+				float: none;
+				position: relative;
+				
+				.o-truck-section{
+					left: -80px;
+				}
+				.o-bins-area{
+					position: absolute;
+				    right: auto;
+				    margin-top: 4px;
+				    width: 110px;
+				    left: 105px;
+    				img{
+    					width: 100%;
+    				}
+				}
+			}
+
+			.o-animation-right-panel{
+				width: 100%;
+				float: none;
+				padding-top: 120px;
+    			margin-left: 100px;
+				.c-animated-train{
+					position: relative;
+					height: 114px;
+					.o-train{
+						left: 40px;
+						background-position: left;
+
+						.o-position__1{
+							left: 2px;
+						}
+						.o-position__2{
+							left: 17px;
+						}
+						.o-position__3{
+							left: 99px;
+						}
+						.o-position__4{
+							left: 114px;
+						}
+						.o-position__5{
+							left: 309px;
+						}
+						.o-position__6{
+							left: 333px;
+						}
+						.o-position__7{
+							left: 417px;
+						}
+					}
+					.o-track{
+						right: 0px;
+						&:before{
+							content: " ";
+						    left: -36px;
+						    height: 34px;
+						    width: 36px;
+						    top: -7px;
+						    background-image: url(../images/track-1.png);
+						}
+					}
+
+					.train-rubbish{
+						background-image: url(../images/train-rubbish_mob_group.png);
+					    width: 60px;
+					    height: 60px;
+					    position: absolute;
+					    top: -56px;
+    					left: 8px;
+					    opacity: 0;
+					}
+				}
+				.o-text-area{
+					margin-bottom: 50px;
+					margin-left: -85px;
+					margin-top: 25px;
+					.o-text-area__inner{
+						width: 100%;
+					}
+
+					&.c-mobile-only{
+						margin-left: -80px;
+    					margin-top: 30px;
+					}
+				}
+			}
+		}
+		
+
+		//Repeat animation for third slide section
+		&.fp-completely{
+			.o-text-area{
+				animation: fadein-text 1s forwards;
+			}
+
+			.o-truck-section{
+				-webkit-animation: truck-direction-mobile 6s forwards;
+				animation: truck-direction-mobile 6s forwards;
+				.o-truck-section__inner{
+					.c-wheel{
+						-webkit-animation: truck-wheel 6s forwards;
+						animation: truck-wheel 6s forwards;
+					}
+				}
+			}
+			.c-animated-train{
+				.o-train{
+					animation: train-animate-left 8s forwards;
+					animation-delay: 3.5s;
+					.c-train-wheel{
+						animation: truck-wheel 2s infinite linear;
+					    animation-delay: 3.5s;
+					}
+					.train-rubbish{
+						animation: train-rubbish-mob 1.5s steps(5) forwards;
+						animation-delay: 2.5s;
+					}
+				}
+			}
+
+			.c-animate-arrow{
+				animation: fadein-arrow 2s forwards 6s;
+			}
+		}
+	}
+
+	/****************************/
+	/****   SECTION TWO *******/
+	/****************************/
+	#section2{
+		background-image: url(../images/screen-4.jpg);
+		background-size: cover;
+		.o-animation-section{
+			&:after,
+			&:before{
+				content: " ";
+				width: 100%;
+				display: block;
+				clear: both;
+			}
+			.o-animation-left-panel{
+				width: 100%;
+				float: none;
+				position: relative;
+				margin-top: 10px;
+				.c-animated-train{
+					position: relative;
+					height: 114px;
+					margin-right: 110px;
+					.o-train{
+						right: 100%;
+						background-position: right;
+						.o-position__1{
+							right: 5px;
+						}
+						.o-position__2{
+							right: 59px;
+						}
+						.o-position__3{
+							right: 74px;
+						}
+						.o-position__4{
+							right: 156px;
+						}
+						.o-position__5{
+							right: 172px;
+						}
+						.o-position__6{
+							right: 399px;
+						}
+						.o-position__7{
+							right: 417px;
+						}
+					}
+					.o-track{
+						right: 0px;
+						&:before{
+							content: " ";
+						    right: -34px;
+						    background-image: url(../images/track-2.png);
+						    width: 34px;
+    						top: -7px;
+						}
+					}
+				}
+				
+			}
+			.o-animation-right-panel{
+				width: 100%;
+				float: none;
+				padding-top: 30px;
+				
+				.o-pit-with-garbage__section{
+					.o-pit-with-garbage__section__inner{
+					    width: 233px;
+					    height: 120px;
+					    position: relative;
+				        margin: 0 0 25px 80px;
+						float: left;
+					    .o-tripper{
+						    position: absolute;
+						    left: -230px;
+    						bottom: 15px;
+		    				.o-tripper__inner{
+		    					position: relative;
+		    					width: 335px;
+		    					height: 118px;
+		    					.o-Tipper-single{
+		    						position: absolute;
+								    z-index: 4;
+								    width: 133px;
+								    right: 107px;
+    								bottom: 24px;
+								    transform-origin: bottom right;
+								    height: 55px;
+								    .o-tripper-desktop{
+								    	display: none;
+								    }
+								    .o-tripper-mobile{
+								    	img{
+			    							width: auto;
+			    						}
+								    }
+		    					}
+
+		    					.o-liver-section{
+			    					left: 19px;
+			    					position: absolute;
+			    					bottom: -12px;
+			    				}
+			    				.o-animated-garbage{
+			    					z-index: 4;
+			    					opacity: 0;
+								    position: absolute;
+							        width: 60px;
+								    height: 60px;
+								    right: 30px;
+    								top: 47px;
+			    					.o-animated-garbage_inner{
+									    background-image: url(../images/garbage-group-mob.png);
+									    width: 60px;
+								    	height: 60px;
+			    					}
+			    				}
+			    				.o-tripper-shadow{
+			    					background-image: url(../images/tipper-Shadow.png);
+								    width: 75px;
+								    height: 33px;
+								    position: absolute;
+								    bottom: -13px;
+								    right: 68px;
+								    background-repeat: no-repeat;
+								    background-size: 100%;
+								    opacity: 1;
+			    				}
+		    				}
+						}
+					    .o-rotator-stand{
+					    	position: absolute;
+						    right: -6px;
+						    top: 0px;
+						    width: 130px;
+						    img{
+						    	width: 100%;
+						    }
+					    }
+					    .o-grabber-only{
+					    	position: absolute;
+					        top: 24px;
+    						right: 91px;
+						    width: 50px;
+						    height: 60px;
+						    background-image: url(../images/grabber-animation-mob.png);
+					    }
+					    .o-garbage-container{
+					    	position: absolute;
+						    left: 0px;
+						    bottom: 0px;
+						    width: 191px;
+						    img{
+						    	width: 100%;
+						    }
+					    }
+					    .o-garbage-only{
+					    	position: absolute;
+						    left: 18px;
+						    width: 213px;
+						    bottom: 15px;
+						    box-sizing: border-box;
+						    padding-right: 57px;
+					        transform-origin: center bottom;
+					        transform: scale(0);
+						    img{
+						    	width: 100%;
+						    	display: block;
+						    }
+					    }
+						&:after{
+							content: " ";
+						    left: 0px;
+						    bottom: -8px;
+						    background-image: url(../images/container-tray-front.png);
+						    z-index: 999;
+						    position: absolute;
+						    height: 24px;
+						    width: 191px;
+						    background-repeat: no-repeat;
+						    background-size: 100%;
+						}
+					}
+				}
+				.o-text-area{
+					margin-left: 20px;
+				}
+			}
+		}
+
+
+		//Repeat animation 
+		&.fp-completely{
+			.o-text-area{
+				animation: fadein-text 1s forwards;
+			}
+
+			.c-animated-train{
+				.o-train{
+					animation: train-animate-left-small 5s forwards;
+					.train-rubbish{
+						animation: train-rubbish 1.5s steps(5) forwards;
+		   				animation-delay: 2s;
+					}
+					.c-train-wheel{
+						animation: truck-wheel 5s forwards;
+					}
+				}
+			}
+
+			.o-grabber-only{
+			    animation: Grabber-animation-mob 1.8s steps(19) infinite;
+			    animation-delay: 6.5s;
+		    }
+
+			.o-tripper{
+			    .o-Tipper-single{
+			    	animation: tripper-animation 1.5s forwards;
+			    	animation-delay: 3.5s;
+			    }
+				.o-tripper-shadow{
+				    //animation: shadow-disable 3s forwards;
+				    //animation-delay: 4.5s;
+				}
+			}
+
+			.o-animation-section{
+				.o-animation-right-panel {
+					.o-tripper{
+						.o-tripper__inner{
+							.o-animated-garbage{
+								animation: shadow-disable 3s forwards 4.5s;
+								.o-animated-garbage_inner{
+									animation: garbage-animation-mob 0.8s steps(5) infinite 4.5s;
+								}
+							}
+						}
+					}
+				}
+			}   
+
+			.o-garbage-only{
+		    	animation: garbage-dump-animation 2s forwards 5s;
+		    }
+
+		    .c-animate-arrow{
+				animation: fadein-arrow 2s forwards 7s;
+			}
+		}
+	}
+
+	/****************************/
+	/****   SECTION THREE *******/
+	/****************************/
+
+	#section3{
+		background-image: url(../images/screen-5.jpg);
+		background-size: cover;
+		.m-panel-container{
+			.o-animation-section{
+				.o-animation-left-panel{
+					position: relative;
+					margin-bottom: 20px;
+					.o-rotating-drum{
+						position: relative;
+						margin-top: 20px;
+						.o-rotating-drum__inner{
+							position: relative;
+							width: 250px;
+    						height: 106px;
+						    float: none;
+						    margin: 0 auto 10px;
+							.o-drum-animation{
+								position: absolute;
+							    left: 0;
+							    top: 0;
+							    width: 162px;
+							    float: left;
+								img{
+									width: 100%;
+								}
+							}
+							.o-conveyor-animation{
+								position: relative;
+								float: left;
+							    top: 45px;
+    							left: 152px;
+							    width: 100px;
+							    height: 36px;
+							    background-image: url("../images/conveyor-mob-group.png");
+							    animation: conveyor-animation-mobile .8s steps(4) infinite;
+							}
+
+						}
+					}
+					.o-text-area{
+						margin-bottom: 20px;
+						position: relative;
+						top: 0;
+						margin: 0 auto;
+					}
+				}
+				.o-animation-right-panel{
+					.o-rotating-drum-2{
+						position: relative;
+						height: 210px;
+						.o-rotating-drum-2__inner{
+							position: absolute;
+						    width: 250px;
+						    height: 200px;
+						    float: none;
+						    margin: 0 auto;
+						    left: 0;
+						    right: 0;
+						    .o-rotating-separator{
+						    	position: absolute;
+							    top: 30px;
+							    left: 0px;
+							    width: 151px;
+							    height: 116px;
+							    background-image: url("../images/Rotating-separator-mob-group.png");
+							    animation: rotating-separator-mob .8s steps(4) infinite;
+						    }
+						    .o-magnet-only{
+						    	position: absolute;
+    							right: 13px;
+							    top: -5px;
+							    width: 80px;
+							    height: 79px;
+							    background-image: url("../images/magnet-group-mob.png");
+							    animation: magnet-animation-mob .8s steps(3) infinite;
+						    }
+						    .o-conveyor-animation-2{
+						    	position: absolute;
+							    top: 71px;
+							    right: 8px;
+							    width: 99px;
+							    height: 38px;
+							    background-image: url("../images/conveyor-mob-group.png");
+							    animation: conveyor-animation-mobile .8s steps(4) infinite;
+						    }
+
+						    .c-green-round{
+					    	    right: 0px;
+								bottom: 45px;
+    							top: auto;
+    							display: none;
+						    }
+						}
+					}
+					.o-text-area{
+						position: absolute;
+						right: 0px;
+						bottom: -12px;
+						left: 0;
+    					margin: 0 auto;
+					}
+				}
+				.o-text-area{
+					opacity: 0;
+				}
+			}
+		}
+
+		//Repeat animation
+		&.fp-completely{
+			.o-text-area{
+				animation: fadein-text 1s forwards;
+				&.o-delay-animation{
+					animation-delay: 500ms;
+				}
+			}
+			.c-green-round{
+				animation: fadein-text 1s forwards;
+				animation-delay: 1s;
+			}
+			.c-animate-arrow{
+				animation: fadein-arrow 2s forwards 1.5s;
+			}
+		}
+	}
+
+	/****************************/
+	/****   SECTION FOUR ********/
+	/****************************/
+	#section4{
+		background-image: url(../images/screen-6.jpg);
+		background-size: cover;
+		.o-animation-top-panel{
+			.o-animation-top-panel__inner{
+				.o-left-image__separator{
+					float: none;
+					height: 155px;
+					.o-ballistic-separator{
+						.o-ballistic-separator__inner{
+							position: absolute;
+							top: -22px;
+						    left: 0px;
+						    right: 0px;
+						    margin: 0 auto;
+						    width: 148px;
+						    height: 182px;
+						    background-image: url(../images/ballistic-separator-mobile.png);
+						    animation: ballistic-separator-mobile 0.8s steps(4) infinite;
+						}
+					}
+				}
+
+				.o-right-image__separator{
+					float: none;
+					.o-text-area{
+						&.align--left{
+						    margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+
+		.o-animation-bottom-panel{
+			position: relative;
+			.o-mine-with-trees{
+			    position: relative;
+			    right: 0;
+			    top: 0;
+			    width: 288px;
+			    margin: 0 auto;
+			    height: 140px;
+			    img{
+			    	width: 100%;
+			    }
+			}
+		}
+		.o-text-area{
+			opacity: 0;
+			margin: 0 auto;
+		}
+
+
+		.o-mine-with-trees{
+			.o-mine-with-trees__inner{
+				position: relative;
+    			height: 157px;
+    			.o-house-graphics{
+    				position: absolute;
+    				left: 0;
+				    width: 135px;
+				    bottom: 64px;
+    				> img{
+    					width: 100%;
+    				}
+    			}
+    			.o-hill-animation-group{
+    				position: relative;
+				    height: 143px;
+				    width: 240px;
+				    float: right;
+				    overflow: hidden;
+				    margin-bottom: 10px;
+    				.o-single-hill{
+					    position: absolute;
+					    z-index: 9;
+					    width: 90%;
+					    bottom: 4px;
+					    left: 13px;
+					    height: 87px;
+					    @include transform-scale(0);
+					    @include transform-origin(center, bottom);
+    				}
+    				.o-tree-group{
+						position: absolute;
+					    top: 25px;
+    					right: 26px;
+					    z-index: 99;
+						.o-tree-group__inner{
+							position: relative;
+						    width: 184px;
+						    height: 135px;
+							.o-tree{
+								background-image: url(../images/tree-1.png);
+								background-repeat: no-repeat;
+							    width: 50px;
+							    background-size: 100%;
+							    display: block;
+							    position: absolute;
+							    top: 0;
+							    height: 86px;
+							    transform: scale(0);
+							    transform-origin: center bottom;
+							    transition: all 3s;
+							    &.__1{
+							    	left: 68px;
+								    top: 4px;
+								    width: 20px;
+							    }
+							    &.__2{
+							    	left: 84px;
+								    top: -12px;
+								    width: 27px;
+							    }
+							    &.__3{
+							    	left: 105px;
+								    top: 3px;
+								    width: 30px;
+							    }
+							    &.__4{
+							    	left: 140px;
+								    width: 15px;
+								    top: 23px;
+							    }
+							}
+						}
+					}
+					.o-hole-image{
+						position: absolute;
+					    bottom: 2px;
+    					right: 0;
+					}
+    			}
+    			.c-green-round {
+				    right: 15px;
+    				top: 8px;
+				}
+			}
+		}
+
+	
+		//Repeat animation
+		&.fp-completely{
+			.o-text-area{
+				animation: fadein-text 500ms forwards;
+				&.o-text-second{
+					animation-delay: 500ms;
+				}
+			}
+
+			.o-single-hill{
+			    animation: hill-animation 2s forwards;
+			    animation-delay: 1s;
+			}
+
+			.o-tree-group{
+				.o-tree{
+					animation: tree-animation 2s forwards;
+					&.__1{
+				    	animation-delay: 3s;
+				    }
+				    &.__2{
+				    	animation-delay: 3.25s;
+				    }
+				    &.__3{
+				    	animation-delay: 3.50s;
+				    }
+				    &.__4{
+				    	animation-delay: 3.75s;
+				    }
+				}
+			}
+			.c-green-round{
+				animation: fadein-text 1s forwards;
+				animation-delay: 4.75s;
+			}
+			.c-animate-arrow{
+				animation: fadein-arrow 2s forwards 5s;
+			}
+		}
+	}
+
+
+	/****************************/
+	/****   SECTION FIVE *********/
+	/****************************/
+	#section5{
+		background-image: url(../images/screen-7.jpg);
+		background-size: cover;
+		.m-panel-container{
+			.o-animation-section{
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 100%;
+					float: none;
+					position: relative;
+					margin-bottom: 10px;
+					.o-flame-area{
+						text-align: center;
+						position: relative;
+						.o-flame-area_inner{
+						    position: relative;
+						    width: 230px;
+						    height: 138px;
+						    float: none;
+						    box-sizing: border-box;
+						    margin: 0 auto;
+						    text-align: center;
+							.c-flame-animation{
+								position: absolute;
+								top: 4px;
+							    left: 58px;
+							    width: 20px;
+							    height: 38px;
+							    background-image: url(../images/flame-mobile-group.png);
+							    animation: flame-animation-mob 0.8s steps(4) infinite;
+							}
+							.c-landfill-graphics{
+								position: absolute;
+								top: 42px;
+								left: 0;
+								width: 100%;
+							    img{
+							    	width: 100%;
+							    }
+							}
+						}
+					}
+					.o-text-area{
+						position: relative;
+						width: 100%;
+						margin: 0 auto;
+					}
+				}
+				.o-animation-right-panel{
+					width: 100%;
+					float: none;
+					padding-top: 10px;
+					.o-home-area{
+						width: 174px;
+						text-align: center;
+						margin: 0 auto;
+						position: relative;
+						height: 120px;
+						.c-green-round {
+						    right: -21px;
+    						top: -14px;
+    						z-index: 9;
+						}
+						>img{
+							width: 100%;
+						    z-index: 9;
+						    position: absolute;
+						    left: 0;
+						    right: 0;
+						    margin: 0 auto;
+						}
+					}
+				}
+				.o-text-area{
+					opacity: 0;
+					margin-top: 10px;
+					width: 100%;
+					.o-text-area__inner{
+						width: 286px;
+    					float: none;
+    					margin: 0 auto;
+					}
+				}
+			}
+			.o-bottom-instruction{
+				text-align: center;
+				opacity: 0;
+				width: 80%;
+				margin: 0 auto;
+				padding-top: 10px;
+				p{
+					font-size: 12px;
+					color: #ffffff;
+					font-family: 'fs_rufusitalic';
+					letter-spacing: 1.2px;
+				}
+				a{
+					&.c-green-btn{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+        //Repeat animation
+		&.fp-completely{
+			.o-text-area{
+				animation: fadein-text 1s forwards;
+			}
+			.c-green-round{
+				animation: fadein-text 1s forwards;
+			}
+			.o-bottom-instruction{
+				animation: fadein-text 1s forwards 1s;
+			}
+		}
+	}
+} 
+

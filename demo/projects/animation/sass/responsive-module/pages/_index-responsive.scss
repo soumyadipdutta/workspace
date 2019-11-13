@@ -1,0 +1,2155 @@
+// Login Select Responsive
+
+// 320px
+@include breakpoint($res320) {
+	// make 320px style
+
+}
+
+// 480px
+@include breakpoint($res440) {
+	// make 480px style
+
+	//Faded Text 
+	.o-text-area{
+		.o-text-area__inner{
+			.o-large-number{
+				width: 50px;
+			}
+		}
+	}
+
+	.c-train-wheel{
+		height: 17px;
+	    width: 17px;
+	    background-size: 100%;
+	    bottom: 1px;
+	}
+
+
+
+	//Train Animation
+	.c-animated-train{
+		position: relative;
+	    height: 146px;
+		.o-train{
+			background-image: url(../images/train-only-small.png);
+			background-repeat: repeat-x;
+			height: 100px;
+			position: absolute;
+			margin-left: 45px;
+			width: 100%;
+			background-size: auto;
+		}
+
+		.o-track{
+			background-image: url(../images/track-to-small.png);
+			background-repeat: repeat-x;
+			position: absolute;
+			height: 50px;
+			width: 100%;
+			bottom: 0px;
+			&:before{
+				content: " ";
+			    height: 66px;
+			    width: 55px;
+			    display: inline-block;
+			    position: absolute;
+				top: -12px;
+				background-size: 100%;
+	    		background-repeat: no-repeat;
+			}
+		}
+	}
+
+	#fullpage{
+		#section-intro{
+			
+		}
+		#section1{
+			h1{
+				text-align: center;
+				color: #ffffff;
+				font-size: 24px;
+				margin-top: 0px;
+				margin-bottom: 40px;
+			}
+			.o-animation-section{
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 100%;
+					float: none;
+					position: relative;
+					.o-text-area{
+						margin-bottom: 50px;
+						margin-left: -150px;
+						.o-text-area__inner{
+							width: 100%;
+						}
+
+						&.c-mobile-only{
+							margin-left: -120px;
+	    					margin-top: 30px;
+						}
+					}
+				
+				}
+
+				.o-animation-right-panel{
+					width: 100%;
+					float: none;
+					padding-top: 120px;
+	    			margin-left: 200px;
+					.c-animated-train{
+						position: relative;
+						height: 146px;
+						.o-train{
+							.o-position__1{
+								left: 2px;
+							}
+							.o-position__2{
+								left: 19px;
+							}
+							.o-position__3{
+								left: 107px;
+							}
+							.o-position__4{
+								left: 124px;
+							}
+							.o-position__5{
+								left: 309px;
+							}
+							.o-position__6{
+								left: 333px;
+							}
+							.o-position__7{
+								left: 417px;
+							}
+						}
+						.o-track{
+							right: 0px;
+							&:before{
+								content: " ";
+							    left: -36px;
+							    height: 34px;
+							    width: 36px;
+							    top: -7px;
+							    background-image: url(../images/track-1.png);
+							}
+						}
+					}
+					.o-text-area{
+						margin-left: -150px;
+						width: 400px;
+					}    
+				}
+			}
+
+			
+		}
+		#section2{
+			.o-animation-section{
+				.o-animation-left-panel{
+					.c-animated-train{
+						margin-right: 50%;
+						height: 146px;
+						.o-train{
+							right: 100%;
+							background-position: right;
+							background-repeat: no-repeat;
+							.o-position__1{
+								right: 8px;
+							}
+							.o-position__2{
+								right: 65px;
+							}
+							.o-position__3{
+								right: 82px;
+							}
+							.o-position__4{
+								right: 170px;
+							}
+							.o-position__5{
+								right: 187px;
+							}
+							.o-position__6{
+								right: 399px;
+							}
+							.o-position__7{
+								right: 422px;
+							}
+						}
+					}
+					
+				}
+
+				.o-animation-right-panel{				
+					.o-pit-with-garbage__section{
+						.o-pit-with-garbage__section__inner{
+						    margin: 0 auto 15px;
+						    float: none;
+						}
+					}
+
+					.o-text-area{
+						width: 400px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 640px
+@include breakpoint($res640) {
+	// make 640px style
+	#fullpage{
+		#section-intro{
+			.o-rotate-animation{
+				width: 400px;
+				height: 400px;
+			    .o-rotate-animation__inner{
+			    	.o-truck-image{
+					    width: 160px;
+					    top: -35px;
+					    left: 0;
+					    right: 0;
+					    margin: 0 auto;
+					    img{
+					    	width: 100%;
+					    }
+			    	}
+			    	.o-round-shape__inner{
+			    		width: 400px;
+						height: 400px;
+						h2{
+						    font-size: 52px;
+						    line-height: 55px;
+						    padding: 0 75px;
+						}
+					}
+					 .c-animate-arrow{
+				    	a{
+				    		p{
+				    			font-size: 18px;
+				    		}
+				    		.o-arrow-image{
+								img{
+								    top: 45px;
+								    width: 24px;
+								}
+							}
+				    	}
+				    }
+			    }
+			}
+		}
+		#section1{
+
+		}
+		#section2{
+			.o-animation-section{
+				.o-animation-left-panel{
+					.c-animated-train {
+					    margin-right: 60%;
+					}
+				}
+			} 
+		}
+
+		#section3{
+			.m-panel-container{
+				.o-animation-section{
+					.o-animation-left-panel{
+						.o-rotating-drum{
+							.o-rotating-drum__inner{
+								width: 355px;
+								height: 160px;
+								.o-drum-animation{
+									width: 215px;
+									height: 160px;
+								}
+								.o-conveyor-animation{
+								    width: 150px;
+								    height: 56px;
+								    background-image: url("../images/conveyor-medium-group.png");
+								    animation: conveyor-animation-medium .8s steps(4) infinite;
+								    left: 203px;
+    								top: 58px;
+								}
+							}
+						}
+					}
+
+					.o-animation-right-panel{
+						.o-rotating-drum-2{
+							height: 270px;
+							.o-rotating-drum-2__inner{
+								width: 355px;
+							    .o-rotating-separator{
+								    width: 216px;
+								    height: 164px;
+								    background-image: url("../images/Rotating-separator-medium-group.png");
+								    animation: rotating-separator-medum .8s steps(4) infinite;
+							    }
+							    .o-magnet-only{
+								    width: 80px;
+								    height: 80px;
+								    background-image: url("../images/magnet-group-mob.png");
+								    animation: magnet-animation-mob .8s steps(3) infinite;
+							    }
+							    .o-conveyor-animation-2{
+								    width: 150px;
+								    height: 56px;
+								    background-image: url("../images/conveyor-medium-group.png");
+									animation: conveyor-animation-medium .8s steps(4) infinite;
+									left: 205px;
+    								top: 88px;
+							    }
+							}
+						}
+					}
+				}
+			}
+		}
+		#section5{
+			.m-panel-container{
+				.o-bottom-instruction{
+					text-align: center;
+					opacity: 0;
+
+					p{
+						font-size: 20px;
+						color: #ffffff;
+						font-family: 'fs_rufusitalic';
+						letter-spacing: 1.2px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 800px
+@include breakpoint($res800) {
+	// make 800px style
+
+	.c-desktop-only{
+		display: block;
+	}
+	.c-mobile-only{
+		display: none;
+	}
+
+	.m-panel-container{
+	    max-width: 100%;
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	.c-panle-equal{
+	    width: 50%;
+	    float: left;
+	}
+
+	//Faded Text 
+	.o-text-area{
+		width: 100%;
+		.o-text-area__inner{
+			width: 500px;
+			.o-large-number{
+				width: 55px;
+			}
+		}
+	}
+
+	.c-animate-arrow{
+		bottom: 65px;
+		a{
+			p{
+    			font-family: 'fs_rufuslight_italic';
+    			font-size: 16px;
+    		}
+			.o-arrow-image{
+				img{
+				    top: 45px;
+				    width: 24px;
+				}
+			}
+		}
+	}
+	
+	.o-animation-section{
+	    min-height: 450px;
+	}
+
+	//Green rounded text
+	.c-green-round{
+		height: 100px;
+	    width: 100px;
+	    right: 10px;
+	    top: -30px;
+	    p{
+	    	padding: 0 8px;
+		    line-height: 20px;
+		    margin: 0;
+		    font-size: 16px;
+		}
+	}
+
+	//Cretaed Truck Animation
+	.o-truck-section{
+		width: 330px;
+		height: 120px;
+		position: absolute;
+		right: 100%;
+		z-index: 2;
+		.o-truck-section__inner{
+			position: relative;
+			>img{
+				width: auto;
+			}
+			.c-wheel{
+				position: absolute;
+				height: 35px;
+	    		width: 35px;
+	    		bottom: 17px;
+	    		background-size: 100%;
+	    		background-image: url(../images/wheel.png);
+	    		background-repeat: no-repeat;
+				img{
+					width: 100%;
+				}
+				&.o-position__1{
+					right: 81px;
+				}
+				&.o-position__2{
+					right: 190px;
+				}
+				&.o-position__3{
+					right: 223px;
+				}
+			}
+		}
+	}
+
+	.c-train-wheel{
+		height: 25px;
+	    width: 24px;
+	    background-size: 100%;
+	    bottom: -2px;
+	}
+
+
+	//Train Animation
+	.c-animated-train{
+		position: relative;
+	    height: 188px;
+		.o-train{
+			background-image: url(../images/train-only.png);
+			background-repeat: no-repeat;
+			height: 141px;
+		    width: 100%;
+		    background-size: auto;
+			animation-delay: 15s;
+			position: absolute;
+			margin-left: 0px;
+		}
+		
+		.o-track{
+			background-image: url(../images/track-to.png);
+			background-repeat: repeat-x;
+			position: absolute;
+			height: 50px;
+			width: 100%;
+			bottom: 0px;
+			&:before{
+				content: " ";
+			    height: 66px;
+			    width: 55px;
+			    display: inline-block;
+			    position: absolute;
+				top: -11px;
+			}
+		}
+	}
+
+
+
+	#fullpage{
+		#section-intro{
+			.o-rotate-animation{
+				width: 400px;
+				height: 400px;
+			    .o-rotate-animation__inner{
+			    	.o-truck-image{
+					    width: 160px;
+					    top: -35px;
+					    left: 0;
+					    right: 0;
+					    margin: 0 auto;
+					    img{
+					    	width: 100%;
+					    }
+			    	}
+			    	.o-round-shape__inner{
+			    		width: 400px;
+						height: 400px;
+						h2{
+						    font-size: 52px;
+						    line-height: 55px;
+						    padding: 0 75px;
+						}
+					}
+			    }
+			}
+		}
+
+		#section1{
+			h1{
+				margin-top: 0px;
+				font-size: 60px;
+			}
+			.o-animation-section{
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 60%;
+					float: left;
+					.o-text-area{
+						margin-bottom: 30px;
+						margin-left: 0px;
+						.o-text-area__inner{
+							width: 450px;
+						}
+					}
+					.o-truck-section{
+						right: 100%;
+						left: auto;
+						top: 130px;
+					}
+					.o-bins-area{
+						position: absolute;
+						right: 175px;
+	    				margin-top: 10px;
+	    				width: 172px;
+	    				left: auto;
+	    				top: 125px;
+	    				img{
+	    					width: auto;
+	    				}
+					}
+				}
+				.o-animation-right-panel{
+					width: 40%;
+					float: right;
+					padding-top: 70px;
+					margin-left: 0px;
+					.c-animated-train{
+						position: relative;
+						height: 188px;
+						.o-train{
+							margin-left: 32px;
+							.o-position__1{
+								left: 2px;
+							}
+							.o-position__2{
+								left: 27px;
+							}
+							.o-position__3{
+								left: 156px;
+							}
+							.o-position__4{
+								left: 180px;
+							}
+							.o-position__5{
+								left: 309px;
+							}
+							.o-position__6{
+								left: 333px;
+							}
+							.o-position__7{
+								left: 417px;
+							}
+						}
+						.o-track{
+							right: 0px;
+							&:before{
+								left: -47px;
+							    height: 58px;
+							    width: 56px;
+							    background-image: url(../images/track-1.png);
+							    top: -11px;
+							}
+						}
+
+						.train-rubbish{
+							background-image: url(../images/Train-rubbish_group.png);
+						   	width: 90px;
+						    height: 100px;
+						    position: absolute;
+						    top: -93px;
+						    left: 11px;
+						}
+					}
+				}
+			}
+
+			//Repeat animation for third slide section
+			&.fp-completely{
+				.o-truck-section{
+					animation: truck-direction 5s forwards;
+				}
+				.c-animated-train{
+					.o-train{
+						animation-delay: 3.5s;
+						.c-train-wheel{
+						    animation-delay: 3.5s;
+						}
+						.train-rubbish{
+							animation: train-rubbish 1.5s steps(5) forwards;
+							animation-delay: 2.5s;
+						}
+					}
+				}
+				.c-animate-arrow{
+					animation: fadein-arrow 2s forwards 9s;
+				}
+			}
+		}
+
+		#section2{
+			background-image: url(../images/screen-4.jpg);
+			background-size: cover;
+			.o-animation-section{
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 44%;
+					float: left;
+					position: relative;
+					margin-top: 140px;
+					.c-animated-train{
+						position: relative;
+						height: 188px;
+						margin-right: 235px;
+						.o-train{
+							right: 100%;
+							background-position: right;
+							.o-position__1{
+								right: 9px;
+							}
+							.o-position__2{
+								right: 92px;
+							}
+							.o-position__3{
+								right: 118px;
+							}
+							.o-position__4{
+								right: 246px;
+							}
+							.o-position__5{
+								right: 270px;
+							}
+							.o-position__6{
+								right: 399px;
+							}
+							.o-position__7{
+								right: 422px;
+							}
+						}
+						.o-track{
+							right: 0px;
+							&:before{
+								right: -48px;
+							    background-image: url(../images/track-2.png);
+							    height: 90px;
+							    width: 57px;
+							    top: -11px;
+							}
+						}
+					}
+					
+				}
+				.o-animation-right-panel{
+					width: 52%;
+					float: right;
+					padding-top: 30px;
+					position: relative;
+					.o-text-area{
+						.o-text-area__inner{
+							float: left;
+							width: 100%;
+						}
+					}
+					
+					.o-pit-with-garbage__section{
+						margin-top : 60px;
+						.o-pit-with-garbage__section__inner{
+							width: 450px;
+						    height: 250px;
+						    position: relative;
+						    margin: 0 0;
+						    .o-tripper{
+							    position: absolute;
+							    left: -230px;
+							    width: 380px;
+							    height: 200px;
+							    top: 120px;
+			    				.o-tripper__inner{
+			    					position: relative;
+			    					width: 335px;
+			    					height: 118px;
+			    					.o-Tipper-single{
+									    width: 217px;
+									    bottom: 44px;
+									    right: 105px;
+									    height: 90px;
+									    .o-tripper-desktop{
+									    	display: block;
+									    	img{
+				    							width: auto;
+				    						}
+									    }
+									    .o-tripper-mobile{
+									    	display: none;
+									    }
+			    					}
+			    					.o-liver-section{
+				    					left: 19px;
+				    					position: absolute;
+				    					bottom: -12px;
+				    				}
+				    				.o-animated-garbage{
+				    					z-index: 4;
+				    					opacity: 0;
+									    position: absolute;
+									    width: 100px;
+									    height: 101px;
+									    right: -25px;
+    									top: -3px;
+				    					.o-animated-garbage_inner{
+										    background-image: url(../images/garbage-group.png);
+										    width: 99px;
+									    	height: 100px;
+				    					}
+				    				}
+				    				.o-tripper-shadow{
+			    					    bottom: 3px;
+									    width: 100px;
+									    right: 55px;
+				    				}
+			    				}
+							}
+						    .o-rotator-stand{
+						    	position: absolute;
+							    right: 25px;
+	    						top: 4px;
+	    						width: auto;
+	    						img{
+							    	width: auto;
+							    }
+						    }
+						    .o-grabber-only{
+							    right: 213px;
+	    						top: 53px;
+	    						width: 111px;
+						    	height: 131px;
+	    						background-image: url(../images/grabber-animation.png);
+						    }
+						    .o-garbage-container{
+						    	position: absolute;
+							    left: 0px;
+							    bottom: 0px;
+							    width: auto;
+							    img{
+							    	width: auto;
+							    }
+						    }
+						    .o-garbage-only{
+						    	position: absolute;
+							    left: 35px;
+	    						width: auto;
+	    						padding-right: 0px;
+	    						img{
+							    	width: auto;
+							    }
+						    }
+							&:after{
+								content: " ";
+							    left: 0;
+							    bottom: 6px;
+							    background-image: url(../images/container-tray-front.png);
+							    z-index: 999;
+							    position: absolute;
+							    height: 24px;
+							    width: 406px;
+							    background-repeat: no-repeat;
+							}
+						}
+					}
+					.o-text-area{
+						position: absolute;
+    					top: 0;
+    					left: -90px;
+					}
+				}
+			}
+
+
+			//Repeat animation 
+			&.fp-completely{
+				.c-animated-train{
+					.o-train{
+						animation: train-animate-left-1 4s forwards;
+						.c-train-wheel{
+							animation: truck-wheel 4s forwards;
+						}
+					}
+				}
+				.o-grabber-only{
+				    animation: Grabber-animation 1.8s steps(19) infinite;
+				    animation-delay: 6.5s;
+			    }
+			    .o-animation-section{
+					.o-animation-right-panel {
+						.o-tripper{
+							.o-tripper__inner{
+								.o-animated-garbage{
+									animation: shadow-disable 3s forwards 4.5s;
+									.o-animated-garbage_inner{
+										animation: garbage-animation 0.8s steps(5) infinite 4.5s;
+									}
+								}
+							}
+						}
+					}
+				}  
+			}
+		}
+
+		#section3{
+			.m-panel-container{
+				.o-animation-section{
+					min-height: auto;
+					.o-animation-left-panel{
+						margin-bottom: 0px;
+						.o-text-area{
+							position: absolute;
+							left: 130px;
+						}
+						.o-rotating-drum{
+							position: relative;
+							margin-top: 91px;
+							.o-rotating-drum__inner{
+								position: relative;
+								width: 100%;
+							    height: 250px;
+							    float: right;
+							    margin: 0 0;
+								.o-drum-animation{
+									position: absolute;
+								    width: 240px;
+								    float: left;
+								    right: 124px;
+								    left: auto;
+								    top: -5px;
+								}
+								.o-conveyor-animation{
+									position: absolute;
+									float: left;
+								    top: 58px;
+								    left: auto;
+								    right: -11px;
+								    width: 150px;
+								    height: 56px;
+								    background-image: url("../images/conveyor-medium-group.png");
+								    animation: conveyor-animation-medium .8s steps(4) infinite;
+								}
+							}
+						}
+
+					}
+					.o-animation-right-panel{
+						.o-rotating-drum-2{
+							position: relative;
+							.o-rotating-drum-2__inner{
+								position: absolute;
+								width: 360px;
+							    height: 250px;
+							    float: right;
+							    margin: 0 0;
+							    .o-rotating-separator{
+							    	position: absolute;
+								    top: 93px;
+								    left: 0px;
+								    width: 216px;
+								    height: 164px;
+								    background-image: url("../images/Rotating-separator-medium-group.png");
+								    animation: rotating-separator-medum .8s steps(4) infinite;
+							    }
+							    .o-magnet-only{
+							    	position: absolute;
+	    							right: 44px;
+	    							top: 76px;
+								    width: 80px;
+								    height: 77px;
+								    background-image: url("../images/magnet-group-mob.png");
+								    animation: magnet-animation-mob .8s steps(3) infinite;
+							    }
+							    .o-conveyor-animation-2{
+							    	position: absolute;
+								    right: auto;
+	    							top: 150px;
+	    							left: 204px;
+								    width: 150px;
+								    height: 56px;
+								    background-image: url("../images/conveyor-medium-group.png");
+									animation: conveyor-animation-medium .8s steps(4) infinite;
+							    }
+							    .c-green-round{
+							    	right: 0;
+	    							top: -6px;
+	    							display: block;
+							    }
+							}
+						}
+						.o-text-area{
+							position: absolute;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+				}
+			}
+
+			//Repeat animation
+			&.fp-completely{
+				.o-text-area{
+					animation: fadein-text 1s forwards;
+				}
+			}
+		}
+
+		/****************************/
+		/****   SECTION FIVE *********/
+		/****************************/
+		#section4{
+			background-image: url(../images/screen-6.jpg);
+			background-size: cover;
+			.o-animation-top-panel{
+				.o-animation-top-panel__inner{
+					.o-left-image__separator{
+						float: left;
+						height: auto;
+						.o-ballistic-separator{
+							.o-ballistic-separator__inner{
+								position: absolute;
+							    left: 14px;
+							    right: auto;
+							    margin: 0 0;
+							    top: -80px;
+							    width: 312px;
+    							height: 355px;
+							    background-image: url(../images/Ballistic-separator-group.png);
+							    animation: ballistic-separator 0.8s steps(4) infinite;
+							}
+						}
+					}
+
+					.o-right-image__separator{
+						float: right;
+						.o-text-area{
+							&.align--left{
+								margin-left: 0px;
+    							margin-bottom: 35px;
+							    margin-top: 0px;
+							}
+						}
+					}
+				}
+			}
+
+			.o-animation-bottom-panel{
+				position: relative;
+				.o-mine-with-trees{
+				    position: absolute;
+				    right: 0;
+				    top: 50px;
+				    width: 640px;
+				    margin: 0 0;
+			    	height: auto;
+				    margin-top: 80px;
+				    margin-right: 40px;
+				    .o-mine-with-trees__inner{
+				    	.o-house-graphics{
+		    				width: auto;
+		    				> img{
+		    					width: auto;
+		    				}
+		    			}
+				    }
+				    img{
+				    	width: 100%;
+				    }
+				}
+				.o-text-area{
+					&.o-text-second{
+						margin-left: 60px;
+					}
+				}
+			}
+			.o-text-area{
+				opacity: 0;
+			}
+
+
+			.o-mine-with-trees{
+				.o-mine-with-trees__inner{
+					position: relative;
+	    			height: 245px;
+	    			.o-house-graphics{
+	    				position: absolute;
+	    				left:0;
+	    			}
+	    			.o-hill-animation-group{
+	    				position: relative;
+					    height: 243px;
+    					width: 550px;
+					    float: right;
+					    overflow: hidden;
+	    				.o-single-hill{
+						    width: 90%;
+						    bottom: -12px;
+						    left: 18px;
+						    height: 206px;
+	    				}
+	    				.o-tree-group{
+							position: absolute;
+						    top: 30px;
+						    right: 205px;
+						    z-index: 99;
+							.o-tree-group__inner{
+								position: relative;
+							    width: 184px;
+							    height: 135px;
+								.o-tree{
+									background-image: url(../images/tree-1.png);
+									background-repeat: no-repeat;
+								    width: 50px;
+								    background-size: 100%;
+								    display: block;
+								    position: absolute;
+								    top: 0;
+								    height: 86px;
+								    &.__1{
+								    	left: 10px;
+								    	width: 40px;
+								    }
+								    &.__2{
+								    	left: 45px;
+									    top: -30px;
+									    width: 50px;
+								    }
+								    &.__3{
+								    	left: 95px;
+									    top: 13px;
+									    width: 40px;
+								    }
+								    &.__4{
+								    	left: 142px;
+									    width: 30px;
+									    top: 10px;
+									    height: 53px;
+								    }
+								}
+							}
+						}
+						.o-hole-image{
+							position: absolute;
+						    bottom: -6px;
+						    right: 18px;
+						}
+	    			}
+	    			.c-green-round {
+					    right: 178px;
+	    				top: -38px;
+					}
+				}
+			}
+
+		
+			//Repeat animation
+			&.fp-completely{
+				
+			}
+		}
+
+		/****************************/
+		/****   SECTION SIX *********/
+		/****************************/
+		#section5{
+			background-image: url(../images/screen-7.jpg);
+			background-size: cover;
+			.m-panel-container{
+				.o-animation-section{
+					&:after,
+					&:before{
+						content: " ";
+						width: 100%;
+						display: block;
+						clear: both;
+					}
+					.o-animation-left-panel{
+						width: 50%;
+						float: left;
+						position: relative;
+						margin-bottom: 0px;
+						.o-flame-area{
+							text-align: center;
+							position: relative;
+							margin-top: 80px;
+							.o-flame-area_inner{
+								position: relative;
+								width: 384px;
+								height: 196px;
+								float: right;
+							    margin-top: 60px;
+							    margin-right: 0px;
+								.c-flame-animation{
+									top: 0;
+									left: 103px;
+								    width: 26px;
+								    height: 58px;
+								    background-image: url(../images/flame-group.png);
+								    animation: flame-animation 0.8s steps(4) infinite;
+								}
+								.c-landfill-graphics{
+									position: absolute;
+									top: 57px;
+									left: 0;
+									width: 100%;
+									img{
+								    	width: auto;
+								    }
+								}
+							}
+						}
+						.o-text-area{
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					.o-animation-right-panel{
+						width: 50%;
+						float: left;
+						padding-top: 125px;
+						.o-home-area{
+							text-align: center;
+							height: 210px;
+							width: 287px;
+							img{
+								width: auto;
+							}
+							.c-green-round{
+								right: -31px;
+    							top: -62px;
+							}
+						}
+					}
+					.o-text-area{
+						opacity: 0;
+						margin-top: 20px;
+						.o-text-area__inner{
+							width: 100%;
+						}
+					}
+				}
+				.o-bottom-instruction{
+					width: 100%;
+					padding-top: 15px;
+					p{
+						font-size: 20px;
+					}
+					a{
+						&.c-green-btn{
+							font-size: 16px;
+							padding: 8px 40px 10px 16px;
+							&:after{
+							    width: 12px;
+						    	height: 17px;
+							    top: 13px;
+							    right: 12px;
+							}
+						}
+					}
+				}
+			}
+
+	        //Repeat animation
+			&.fp-completely{
+				.o-text-area{
+					animation: fadein-text 1s forwards;
+				}
+			}
+		}
+	}
+
+
+	//Faded Text 
+	.o-text-area{
+		.o-text-area__inner{
+			.o-large-number{
+				img{
+					width: 100%;
+				}
+			}
+			.o-support-description{
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+// 960px
+@include breakpoint($res992) {
+	// make 960px style
+	#fullpage{
+		#section4{
+			.o-animation-top-panel{
+				.o-animation-top-panel__inner{
+					.o-left-image__separator{
+						.o-ballistic-separator{
+							.o-ballistic-separator__inner{
+							    left: 100px;
+							    top: -20px;
+							}
+						}
+					}
+					.o-right-image__separator{
+						.o-text-area{
+							&.align--left{
+								margin-left: -90px;
+							}
+						}
+					}
+				}
+			}
+			.o-animation-bottom-panel{
+				.o-text-area{
+					&.o-text-second{
+						margin-left: 0;
+					}
+				} 
+			}
+		}
+		#section5{
+			background-image: url(../images/screen-7.jpg);
+			background-size: cover;
+			.m-panel-container{
+				.o-animation-section{
+					.o-text-area{
+						.o-text-area__inner{
+							width: 500px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+// 1024px
+@include breakpoint($res1024) {
+	// make 1024px style
+	//Get started form
+	#fullpage{
+		#section1{
+			.o-animation-section{
+				.o-animation-right-panel{
+					.c-animated-train{
+						.o-train{
+							background-repeat: repeat-x;
+						}
+					}
+				}
+			}
+		}
+		#section4{
+			.o-animation-top-panel{
+				.o-animation-top-panel__inner{
+					.o-right-image__separator{
+						.o-text-area{
+							&.align--left{
+								margin-left: -160px;
+							}
+						}
+					}
+				}
+			}
+
+			.o-animation-bottom-panel{
+				.o-text-area{
+					&.o-text-second{
+						margin-left: -70px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 1140px
+@include breakpoint($res1140) {
+	// make 1140px style
+	// make 800px style
+
+	.c-desktop-only{
+		display: block;
+	}
+	.c-mobile-only{
+		display: none;
+	}
+
+	.m-panel-container{
+	    max-width: 1100px;
+	    margin: 0 auto;
+	    padding: 0 0;
+	}
+	.c-panle-equal{
+	    width: 50%;
+	    float: left;
+	}
+
+	//Faded Text 
+	.o-text-area{
+		width: 100%;
+		.o-text-area__inner{
+			width: 500px;
+			.o-large-number{
+				width: 70px;
+			}
+		}
+	}
+
+	
+	.o-animation-section{
+	    min-height: 450px;
+	}
+
+	//Green rounded text
+	.c-green-round{
+		height: 100px;
+	    width: 100px;
+	    right: 10px;
+	    top: -30px;
+	    p{
+	    	padding: 0 8px;
+		    line-height: 20px;
+		    margin: 0;
+		    font-size: 16px;
+		}
+	}
+
+	//Cretaed Truck Animation
+	.o-truck-section{
+		width: 330px;
+		height: 120px;
+		position: absolute;
+		right: 100%;
+		z-index: 2;
+		.o-truck-section__inner{
+			position: relative;
+			>img{
+				width: auto;
+			}
+			.c-wheel{
+				position: absolute;
+				height: 35px;
+	    		width: 35px;
+	    		bottom: 17px;
+	    		background-size: 100%;
+	    		background-image: url(../images/wheel.png);
+	    		background-repeat: no-repeat;
+				img{
+					width: 100%;
+				}
+				&.o-position__1{
+					right: 81px;
+				}
+				&.o-position__2{
+					right: 190px;
+				}
+				&.o-position__3{
+					right: 223px;
+				}
+			}
+		}
+	}
+
+	.c-train-wheel{
+		height: 25px;
+	    width: 24px;
+	    background-size: 100%;
+	    bottom: -2px;
+	}
+
+
+	//Train Animation
+	.c-animated-train{
+		position: relative;
+	    height: 188px;
+		.o-train{
+			background-image: url(../images/train-only.png);
+			background-repeat: no-repeat;
+			height: 141px;
+		    width: 100%;
+		    background-size: auto;
+			animation-delay: 15s;
+			position: absolute;
+			margin-left: 45px;
+		}
+		
+		.o-track{
+			background-image: url(../images/track-to.png);
+			background-repeat: repeat-x;
+			position: absolute;
+			height: 50px;
+			width: 100%;
+			bottom: 0px;
+			&:before{
+				content: " ";
+			    height: 66px;
+			    width: 55px;
+			    display: inline-block;
+			    position: absolute;
+				top: -11px;
+			}
+		}
+	}
+
+
+
+	#fullpage{
+		#section-intro{
+			.o-rotate-animation{
+				width: 400px;
+				height: 400px;
+			    .o-rotate-animation__inner{
+			    	.o-round-shape__inner{
+			    		width: 400px;
+						height: 400px;
+						h2{
+						    font-size: 52px;
+						    line-height: 55px;
+						    padding: 0 75px;
+						}
+					}
+
+					.c-animate-arrow{
+						a{
+							p{
+								font-size: 16px;
+							}
+						}
+					}
+					
+			    }
+			}
+		}
+
+		#section1{
+			h1{
+				margin-top: 0px;
+				font-size: 60px;
+			}
+			.o-animation-section{
+				min-height: auto;
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 60%;
+					float: left;
+					.o-text-area{
+						margin-left: 0px;
+						.o-text-area__inner{
+							width: 450px;
+						}
+					}
+					.o-bins-area{
+						position: absolute;
+						right: 175px;
+	    				margin-top: 10px;
+	    				width: 172px;
+	    				img{
+	    					width: auto;
+	    				}
+					}
+				}
+				.o-animation-right-panel{
+					width: 40%;
+					float: right;
+					padding-top: 70px;
+					margin-left: 0px;
+					.c-animated-train{
+						position: relative;
+						height: 188px;
+						.o-train{
+							.o-position__1{
+								left: 2px;
+							}
+							.o-position__2{
+								left: 27px;
+							}
+							.o-position__3{
+								left: 156px;
+							}
+							.o-position__4{
+								left: 180px;
+							}
+							.o-position__5{
+								left: 309px;
+							}
+							.o-position__6{
+								left: 333px;
+							}
+							.o-position__7{
+								left: 417px;
+							}
+						}
+						.o-track{
+							right: 0px;
+							&:before{
+								left: -47px;
+							    height: 58px;
+							    width: 56px;
+							    background-image: url(../images/track-1.png);
+							    top: -11px;
+							}
+						}
+					}
+				}
+			}
+
+			//Repeat animation for third slide section
+			&.fp-completely{
+				.o-truck-section{
+					animation: truck-direction 5s forwards;
+				}
+				.c-animated-train{
+					.o-train{
+						animation-delay: 3.5s;
+						.c-train-wheel{
+						    animation-delay: 3.5s;
+						}
+					}
+				}
+			}
+		}
+
+		#section2{
+			background-image: url(../images/screen-4.jpg);
+			background-size: cover;
+			.o-animation-section{
+				&:after,
+				&:before{
+					content: " ";
+					width: 100%;
+					display: block;
+					clear: both;
+				}
+				.o-animation-left-panel{
+					width: 44%;
+					float: left;
+					position: relative;
+					margin-top: 140px;
+					.c-animated-train{
+						position: relative;
+						height: 188px;
+						margin-right: 235px;
+						.o-train{
+							right: 100%;
+							background-position: right;
+							.o-position__1{
+								right: 9px;
+							}
+							.o-position__2{
+								right: 92px;
+							}
+							.o-position__3{
+								right: 118px;
+							}
+							.o-position__4{
+								right: 246px;
+							}
+							.o-position__5{
+								right: 270px;
+							}
+							.o-position__6{
+								right: 399px;
+							}
+							.o-position__7{
+								right: 422px;
+							}
+						}
+						.o-track{
+							right: 0px;
+							&:before{
+								right: -48px;
+							    background-image: url(../images/track-2.png);
+							    height: 90px;
+							    width: 57px;
+							    top: -11px;
+							}
+						}
+					}
+					
+				}
+				.o-animation-right-panel{
+					width: 50%;
+					float: right;
+					padding-top: 30px;
+					position: relative;
+					.o-text-area{
+						.o-text-area__inner{
+							float: left;
+						}
+					}
+					
+					.o-pit-with-garbage__section{
+						margin-top : 60px;
+						.o-pit-with-garbage__section__inner{
+							width: 500px;
+						    height: 250px;
+						    position: relative;
+						    margin: 0 0;
+						    float: none;
+						    .o-tripper{
+							    position: absolute;
+							    left: -230px;
+							    width: 380px;
+							    height: 200px;
+							    top: 120px;
+			    				.o-tripper__inner{
+			    					position: relative;
+			    					width: 335px;
+			    					height: 118px;
+			    					.o-Tipper-single{
+								        width: 218px;
+								        height: 91px;
+								        bottom: 42px;
+    									right: 105px;
+			    						img{
+			    							width: auto;
+			    						}
+			    					}
+			    					.o-liver-section{
+				    					left: 19px;
+				    					position: absolute;
+				    					bottom: -12px;
+				    				}
+				    				.o-animated-garbage{
+				    					z-index: 4;
+				    					opacity: 0;
+									    position: absolute;
+									    width: 100px;
+									    height: 101px;
+									    right: -24px;
+    									top: -3px;
+				    					.o-animated-garbage_inner{
+										    background-image: url(../images/garbage-group.png);
+										    width: 99px;
+									    	height: 99px;
+				    					}
+				    				}
+			    				}
+							}
+
+						    .o-rotator-stand{
+						    	position: absolute;
+							    right: 25px;
+	    						top: 4px;
+	    						width: auto;
+	    						img{
+							    	width: auto;
+							    }
+						    }
+						    .o-grabber-only{
+							    right: 213px;
+	    						top: 53px;
+							    width: 111px;
+    							height: 131px;
+	    						background-image: url(../images/grabber-animation.png);
+	    						background-position: 0 -9px;
+						    }
+						    .o-garbage-container{
+						    	position: absolute;
+							    left: 0px;
+							    bottom: 0px;
+							    width: auto;
+							    img{
+							    	width: auto;
+							    }
+						    }
+						    .o-garbage-only{
+						    	position: absolute;
+							    left: 35px;
+	    						width: auto;
+	    						padding-right: 0px;
+	    						img{
+							    	width: auto;
+							    }
+						    }
+							&:after{
+								content: " ";
+							    left: 0;
+							    bottom: 6px;
+							    background-image: url(../images/container-tray-front.png);
+							    z-index: 999;
+							    position: absolute;
+							    height: 24px;
+							    width: 406px;
+							    background-repeat: no-repeat;
+							}
+						}
+					}
+					.o-text-area{
+						position: absolute;
+    					top: 0;
+    					left: 0px;
+					}
+				}
+			}
+
+
+			//Repeat animation 
+			&.fp-completely{
+				.c-animated-train{
+					.o-train{
+						animation: train-animate-left-1 4s forwards;
+						.c-train-wheel{
+							animation: truck-wheel 4s forwards;
+						}
+					}
+				}
+				.o-grabber-only{
+				    animation: Grabber-animation 1.8s steps(19) infinite;
+				    animation-delay: 6.5s;
+			    }
+			    
+			}
+		}
+
+		#section3{
+			.m-panel-container{
+				.o-animation-section{
+					min-height: 450px;
+					.o-animation-left-panel{
+						margin-bottom: 0px;
+						.o-text-area{
+							position: absolute;
+							left: 0px;
+						}
+						.o-rotating-drum{
+							position: relative;
+							margin-top: 91px;
+							.o-rotating-drum__inner{
+								position: relative;
+								width: 530px;
+							    height: 250px;
+							    float: right;
+							    margin: 0 0;
+								.o-drum-animation{
+									position: absolute;
+									left: 0;
+									top: 0;
+									width: auto;
+									float: none;
+									img{
+										width: auto;
+									}
+								}
+								.o-conveyor-animation{
+									position: absolute;
+									float: none;
+									top: 74px;
+	    							left: 315px;
+	    							width: 208px;
+								    height: 98px;
+								    background-image: url("../images/conveyor-group.png");
+								    animation: conveyor-animation .8s steps(4) infinite;
+								}
+
+							}
+						}
+
+					}
+					.o-animation-right-panel{
+					.o-rotating-drum-2{
+						position: relative;
+						.o-rotating-drum-2__inner{
+							position: absolute;
+							width: 466px;
+						    height: 250px;
+						    float: right;
+						    margin: 0 0;
+						    .o-rotating-separator{
+						    	position: absolute;
+							    top: 117px;
+							    left: -20px;
+							    width: 276px;
+							    height: 212px;
+							    background-image: url("../images/Rotating-separator-group.png");
+							    animation: rotating-separator .8s steps(4) infinite;
+						    }
+						    .o-magnet-only{
+						    	position: absolute;
+    							right: 32px;
+							    top: 24px;
+							    width: 164px;
+							    height: 162px;
+							    background-image: url("../images/magnet-group.png");
+							    animation: magnet-animation .8s steps(3) infinite;
+						    }
+						    .o-conveyor-animation-2{
+						    	position: absolute;
+							    right: 16px;
+							    left: auto;
+    							top: 166px;
+    							width: 208px;
+							    height: 98px;
+							    background-image: url("../images/conveyor-group.png");
+							    animation: conveyor-animation .8s steps(4) infinite;
+						    }
+						    .c-green-round{
+						    	right: -10px;
+    							top: -30px;
+						    }
+						}
+					}
+					.o-text-area{
+						position: absolute;
+						right: 0px;
+						bottom: 0px;
+					}
+				}
+				}
+			}
+
+			//Repeat animation
+			&.fp-completely{
+				.o-text-area{
+					animation: fadein-text 1s forwards;
+				}
+			}
+		}
+
+		/****************************/
+		/****   SECTION FIVE *********/
+		/****************************/
+		#section4{
+			background-image: url(../images/screen-6.jpg);
+			background-size: cover;
+			.o-animation-top-panel{
+				.o-animation-top-panel__inner{
+					.o-left-image__separator{
+						float: left;
+						height: auto;
+						.o-ballistic-separator{
+							.o-ballistic-separator__inner{
+								position: absolute;
+							    left: 130px;
+							    right: auto;
+							    margin: 0 0;
+							    top: -50px;
+							    width: 312px;
+    							height: 360px;
+							    background-image: url(../images/Ballistic-separator-group.png);
+							    animation: ballistic-separator 0.8s steps(4) infinite;
+							}
+						}
+					}
+
+					.o-right-image__separator{
+						float: right;
+						.o-text-area{
+							&.align--left{
+								margin-left: -160px;
+							    margin-bottom: 25px;
+							    margin-top: 0px;
+							}
+						}
+					}
+				}
+			}
+
+			.o-animation-bottom-panel{
+				position: relative;
+				.o-mine-with-trees{
+				    position: absolute;
+				    right: 0;
+				    top: 50px;
+				    width: 640px;
+				    margin: 0 0;
+			    	height: auto;
+				    margin-top: 80px;
+				    margin-right: 40px;
+				    .o-mine-with-trees__inner{
+				    	.o-house-graphics{
+		    				width: auto;
+		    				> img{
+		    					width: auto;
+		    				}
+		    			}
+				    }
+				    img{
+				    	width: 100%;
+				    }
+				}
+				.o-text-area{
+					&.o-text-second{
+						margin-left: -70px;
+					}
+				}
+			}
+			.o-text-area{
+				opacity: 0;
+			}
+
+
+			.o-mine-with-trees{
+				.o-mine-with-trees__inner{
+					position: relative;
+	    			height: 245px;
+	    			.o-house-graphics{
+	    				position: absolute;
+	    				left:0;
+	    			}
+	    			.o-hill-animation-group{
+	    				position: relative;
+					    height: 243px;
+    					width: 550px;
+					    float: right;
+					    overflow: hidden;
+	    				.o-single-hill{
+						    width: 90%;
+						    bottom: -12px;
+						    left: 18px;
+						    height: 207px;
+	    				}
+	    				.o-tree-group{
+							position: absolute;
+						    top: 30px;
+						    right: 205px;
+						    z-index: 99;
+							.o-tree-group__inner{
+								position: relative;
+							    width: 184px;
+							    height: 135px;
+								.o-tree{
+									background-image: url(../images/tree-1.png);
+									background-repeat: no-repeat;
+								    width: 50px;
+								    background-size: 100%;
+								    display: block;
+								    position: absolute;
+								    top: 0;
+								    height: 86px;
+								    &.__1{
+								    	left: 10px;
+								    	width: 40px;
+								    }
+								    &.__2{
+								    	left: 45px;
+									    top: -30px;
+									    width: 50px;
+								    }
+								    &.__3{
+								    	left: 95px;
+									    top: 13px;
+									    width: 40px;
+								    }
+								    &.__4{
+								    	left: 142px;
+									    width: 30px;
+									    top: 10px;
+									    height: 53px;
+								    }
+								}
+							}
+						}
+						.o-hole-image{
+							position: absolute;
+						    bottom: -5px;
+						    right: 18px;
+						}
+	    			}
+	    			.c-green-round {
+					    right: 178px;
+	    				top: -38px;
+					}
+				}
+			}
+
+		
+			//Repeat animation
+			&.fp-completely{
+				
+			}
+		}
+
+		/****************************/
+		/****   SECTION SIX *********/
+		/****************************/
+		#section5{
+			background-image: url(../images/screen-7.jpg);
+			background-size: cover;
+			.m-panel-container{
+				.o-animation-section{
+					min-height: auto;
+					&:after,
+					&:before{
+						content: " ";
+						width: 100%;
+						display: block;
+						clear: both;
+					}
+					.o-animation-left-panel{
+						width: 50%;
+						float: left;
+						position: relative;
+						margin-bottom: 0px;
+						.o-flame-area{
+							text-align: center;
+							position: relative;
+							margin-top: 80px;
+							.o-flame-area_inner{
+								position: relative;
+								width: 384px;
+								height: 196px;
+								float: right;
+							    margin-top: 25px;
+							    margin-right: 35px;
+								.c-flame-animation{
+									top: 0;
+									left: 103px;
+								    width: 26px;
+								    height: 58px;
+								    background-image: url(../images/flame-group.png);
+								    animation: flame-animation 0.8s steps(4) infinite;
+								}
+								.c-landfill-graphics{
+									position: absolute;
+									top: 57px;
+									left: 0;
+									width: 100%;
+									img{
+								    	width: auto;
+								    }
+								}
+							}
+						}
+						.o-text-area{
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					.o-animation-right-panel{
+						width: 50%;
+						float: left;
+						padding-top: 90px;
+						.o-home-area{
+							text-align: center;
+							height: 210px;
+							width: 287px;
+							img{
+								width: auto;
+							}
+							.c-green-round{
+								right: -25px;
+							    top: -59px;
+							    z-index: 1;
+							}
+						}
+					}
+					.o-text-area{
+						opacity: 0;
+						margin-top: 0px;
+					}
+				}
+				.o-bottom-instruction{
+					padding-top: 15px;
+					p{
+						font-size: 23px;
+					}
+				}
+			}
+
+	        //Repeat animation
+			&.fp-completely{
+				.o-text-area{
+					animation: fadein-text 1s forwards;
+				}
+			}
+		}
+	}
+
+
+	//Faded Text 
+	.o-text-area{
+		.o-text-area__inner{
+			.o-large-number{
+				img{
+					width: auto;
+				}
+			}
+			.o-support-description{
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+// 1600px
+@include breakpoint($res1600) {
+	// make 1140px style
+	//Train Animation
+	#fullpage{
+		#section2{
+			.o-animation-section{
+				.o-animation-left-panel{
+					.c-animated-train{
+						.o-train{
+							background-repeat: repeat-x;
+						}
+					}
+				}
+			}
+		}
+	}
+}

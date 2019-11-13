@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Slider</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var sliderLengthOri = $('.slider ul li').length;
+		var sliderLength = sliderLengthOri - 1;
+		var liwidth = $('.slider ul li').innerWidth();
+		var sliderWidth = $('.slider ul li img').outerWidth();
+		var sliderHeight = $('.slider ul li img').outerHeight();
+
+		$('.slider, .slider ul li').css({'width': sliderWidth, 'height': sliderHeight});
+		$('.slider ul').css('width', sliderWidth * sliderLengthOri);
+
+		count = 0;
+		$('.click_next').click(function(){
+			count++;
+			$('.click_prev.click-btn').removeClass('disable');
+			if(count == sliderLength){
+			  $('.click_next.click-btn').addClass('disable');
+			}
+			$('.slider ul').animate({
+				'left' : '-'+liwidth*count
+			}, 1000, function(){
+				console.log($('.slider ul').index());
+			});
+		});
+
+		$('.click_prev').click(function(){
+			$('.click_next.click-btn').removeClass('disable');
+			count--;
+			$('.slider ul').animate({
+				'left' : '-'+liwidth*count
+			}, 1000);
+			if(count == '0'){
+			  //count = sliderLength;
+			  $('.click_prev.click-btn').addClass('disable');
+			}
+		});
+	});
+</script>
+
+<style>
+h1{
+	font-family: arial;
+}
+body{
+	text-align: center;
+}
+
+.slider{
+	overflow: hidden;
+	position: relative;
+	margin:  0 auto;
+}
+.slider ul{	
+	padding-left: 0px;	
+	position: absolute;
+	left: 0;
+	top:  0;
+}
+
+.slider ul li{
+	background: #ddd;
+	display: inline-block;	
+	text-align: center;
+	font-size:  40px;		
+}
+
+.click_next,
+.click_prev{
+	position: absolute;
+	top:  50%;
+	transform: translateY(-50%);
+	background: #000000;
+	color: #ffffff;
+	padding: 20px;
+    text-decoration: none;
+    font-family: arial;
+}
+.click_next.click-btn{
+	right: 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.click_next.click-btn.disable{
+	cursor: default;
+	background: rgba(0, 0, 0, 0.47);
+	pointer-events: none;
+}
+.click_prev.click-btn{	
+	left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.click_prev.click-btn.disable{
+	cursor: default;
+	background: rgba(0, 0, 0, 0.47);
+	pointer-events: none;
+}
+
+	
+</style>
+
+<body>
+	<h1>CUSTOM SLIDER</h1>
+	
+	<div class="slider">
+		<ul>
+			<li><img src="images/image-1.jpg" /></li><li><img src="images/image-2.jpg" /></li><li><img src="images/image-3.jpg" /></li>
+		</ul>
+		<a href="javascript:void(0)" class="click_next click-btn">Next</a>
+		<a href="javascript:void(0)" class="click_prev click-btn">Prev</a>
+	</div>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,36 @@
+//Color Scss
+
+@font-face {
+    font-family: 'fs_rufusbold_italic';
+    src: url('../fonts/fs-rufus-bold-italic-webfont.woff2') format('woff2'),
+         url('../fonts/fs-rufus-bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fs_rufusitalic';
+    src: url('../fonts/fs-rufus-italic-webfont.woff2') format('woff2'),
+         url('../fonts/fs-rufus-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fs_rufuslight';
+    src: url('../fonts/fs-rufus-light-webfont.woff2') format('woff2'),
+         url('../fonts/fs-rufus-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fs_rufuslight_italic';
+    src: url('../fonts/fs-rufus-light-italic_1-webfont.woff2') format('woff2'),
+         url('../fonts/fs-rufus-light-italic_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Font Familly
+$base-font-family : 'fs_rufusbold_italic';

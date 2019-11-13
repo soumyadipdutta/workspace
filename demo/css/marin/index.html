@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="http://www.jqueryscript.net/demo/Smooth-Mouse-Wheel-Scrolling-Plugin-With-jQuery-easeScroll/jquery.easeScroll.js" type="text/javascript"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				$("html").easeScroll();
+			});
+		</script>
+
+		<style>
+			*{padding: 0; margin: 0;}
+		   .box{
+		   	  width:  100px;
+		   	  height:  100px;
+		   	  position: fixed;
+		   	  top: 50%;
+		   	  left: 0;
+		   }
+
+		   .over{
+		   	  width:  100px;
+		   	  height:  2px;
+		   	  background: #000000;
+		   	 
+		   	  position: absolute;
+		   	  top:  200px;
+		   }
+
+		   .point{
+			   	position: absolute;
+			   	top: 0;
+			   	left: 10px;
+		   }
+
+		   .progress-bar{
+		   	    position: fixed;
+			    top: 0px;
+			    min-width: 100%;
+			    display: block;
+			    background: #009cff;
+			    height: 10px;
+		   }
+		   .indicator{
+				height: 10px;
+			    background: #ff0000;
+			    width: 0%;
+		   }
+
+		    
+
+		   .section1, .section2, .section3{
+		   		height:  100vh;
+		   		width: 100%;
+		   		display: block;
+		   }
+		   .section1{
+		   	   background: green;
+		   }
+		   .section2{
+		   	   background: yellow;
+		   }
+		   .section3{
+		   	   background: red;
+		   }
+		   .boom{
+		   		position: fixed;
+		   		top: 240px;
+    			left: 550px;
+    			display: none;
+		   }
+
+		   .character{
+		   		position: fixed;
+		   		top: 260px;
+    			left: 550px;
+		   }
+		</style>
+	</head>
+
+
+
+	<body>
+
+		<div class="section1">
+			<div class="home-content">
+				<h1>Michelle</h1>
+				<h2>Marin</h2>
+				<p>LOGO DESIGNER</p>
+			</div>
+		</div>
+		<!--<div class="section2">
+		</div>
+		<div class="section3">
+		</div>-->
+	</body>
+
+</html>

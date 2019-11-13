@@ -1,0 +1,341 @@
+﻿html, body{
+  height:100%;
+  margin:0;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button{
+  width:2em;
+  height:2em;
+  border:3px groove #ddd;
+  background:#ddd;
+  text-transform:uppercase;
+  position:absolute;
+  z-index:10;
+}
+button:focus{
+  background:#ccc;
+}
+embed{
+  display:none;
+}
+button:focus ~ embed{
+  display:block;
+}
+button:nth-child(1){
+  top:35px;
+  left:calc(50% - 30px);  
+  transform: translateX(-50%);
+}
+button:nth-child(2){
+  top:35px;
+  left:50%;  
+  transform: translateX(-50%);
+}
+button:nth-child(3){
+  top:35px;
+  left:calc(50% + 30px);  
+  transform: translateX(-50%);
+}
+button:nth-child(4){
+  top:5px;
+  left:calc(50% - 15px);  
+  transform: translateX(-50%);
+}
+button:nth-child(5){
+  top:5px;
+  left:calc(50% + 15px);  
+  transform: translateX(-50%);
+}
+
+.background{
+ background:url(../images/wall-conti.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color:#5E91FE;
+  height:100%;
+  position:relative;
+  animation:background 5s;
+  -webkit-animation:background 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+.background:before, .background:after{
+  width:100%;
+  content:'';
+  display:block;
+  position:absolute;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+.background:after{
+  background-image:url(https://s10.postimg.org/r5fs4o1nd/cloud_lg.png);
+  height:196px;
+  bottom:240px;
+  animation-duration:47.1s;
+  -webkit-animation-duration:47.1s;
+   animation-name:clouds-lg;
+  -webkit-animation-name:clouds-lg;
+}
+.background:before{
+  background-image:url(https://s10.postimg.org/679m6l1sp/cloud_sm.png);
+  height:181px;
+  bottom:300px;
+  animation-duration:58.5s;
+  -webkit-animation-duration:58.5s;
+  animation-name:clouds-sm;
+  -webkit-animation-name:clouds-sm;
+}
+.mario{
+  position:absolute;
+  bottom:55px;
+  left:50%;
+  transform: translateX(-50%);
+  background-image:url(../images/mario.png);
+  background-position-x:0px;
+  height:88px;
+  width:44px;
+  animation:walk .5s steps(1, end) infinite;
+  -webkit-animation:walk .5s steps(1, end) infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  z-index: 99;
+}
+
+.right:focus ~ .background, 
+.right:focus ~ .background .mario{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+.left:focus ~ .background{
+  animation-name:background2;
+  -webkit-animation-name:background2;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+.left:focus ~ .background .mario{
+  -ms-transform: rotateY(180deg) translateX(50%);
+  -webkit-transform: rotateY(180deg) translateX(50%);
+  transform: rotateY(180deg) translateX(50%);
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.left:focus ~ .background:before, .left:focus ~ .background:after,
+.right:focus ~ .background:before, .right:focus ~ .background:after,
+.jump-left:focus ~ .background:before, .jump-left:focus ~ .background:after,
+.jump-right:focus ~ .background:before, .jump-right:focus ~ .background:after{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.jump-right:focus ~ .background{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+.jump-right:focus ~ .background .mario,
+.mario.bounce{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  animation:walk .5s steps(1, end) infinite, jump 1s ease;
+  -webkit-animation:walk .5s steps(1, end) infinite, jump 1s ease;
+}
+
+.jump-left:focus ~ .background{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  animation-name:background2;
+  -webkit-animation-name:background2;
+}
+
+.jump-left:focus ~ .background .mario{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -ms-transform: rotateY(180deg) translateX(50%);
+  -webkit-transform: rotateY(180deg) translateX(50%);
+  transform: rotateY(180deg) translateX(50%);
+  animation:walk .5s steps(1, end) infinite, jump 1s ease;
+  -webkit-animation:walk .5s steps(1, end) infinite, jump 1s ease;
+}
+
+.building{
+    background-image: url(../images/building.png);
+    position: absolute;
+    height: 165px;
+    width: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 0%;
+    margin-top: 320px;
+    animation-play-state: running;
+    bottom: 37px;
+}
+
+.score-count{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 99;
+  font-size: 16px;
+  background: #ffffff;
+  padding: 8px 20px;
+  border-radius: 40px;
+  border: 4px double #5e91fe;
+  text-transform: uppercase;
+  color: #0d4ed8;
+  animation: box-shadow 1s infinite linear;
+}
+.game-overlay{
+  background: rgba(0, 0, 0, 0.70);
+  position: fixed;
+  height: 100%;
+  width:  100%;
+  top:  0;
+  z-index: 999;
+  text-align: center;
+}
+.click-play{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    transition-duration: 500ms;
+    display: inline-block;  
+    text-decoration: none;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+}
+
+.moon{
+  position: absolute;
+  right: -50px;
+  top:  25%;
+}
+
+.bird{
+  position: absolute;
+  right: -150px;
+  top:  25%;
+}
+
+.bonus{
+    height: 23px;
+    width: auto;
+    border-radius: 100%;
+    background: #ff0000;
+    border: 4px double #ffffff;
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+
+
+.click-play i{
+  font-size: 90px;
+}
+.click-play p{
+  font-size: 20px;
+}
+.click-play:hover{
+  color: #ddd;
+  transition-duration: 500ms;
+}
+
+body.moving .background{
+  animation-name:background;
+  -webkit-animation-name:background;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+body.moving .building{
+  animation: building 8s infinite linear;
+}
+
+body.moving .mario{
+  animation-play-state: running;
+}
+
+
+@keyframes box-shadow{
+  0%{
+    box-shadow: 0px 0px 20px 0px #ffffff;
+  }
+  100%{
+    box-shadow: 0px 0px 40px 0px #ffffff;
+  }
+}
+
+@keyframes building{
+   0%{  right: 0%; }
+   100%{ right: 100%; }
+}
+
+@keyframes walk{
+  50%{
+    background-position:-45px 0px;
+  }
+}
+@-webkit-keyframes walk{
+  50%{background-position-x:-45px;}
+}
+@keyframes jump{
+  0%, 100%{
+  background-position:-145px 0px;
+  width:50px;
+  }
+  50%{bottom:250px;}
+}
+@-webkit-keyframes jump{
+  0%, 100%{
+  background-position-x:-145px;
+  width:50px;
+  }
+  50%{bottom:250px;}
+}
+@keyframes background{
+  100%{background-position:-600px 100%;}
+}
+@-webkit-keyframes background{
+  100%{background-position-x:-600px;}
+}
+@keyframes background2{
+  100%{background-position:600px 100%;}
+}
+@-webkit-keyframes background2{
+  100%{background-position-x:600px;}
+}
+@keyframes clouds-lg{
+  100%{background-position:-634px 0px;}
+}
+@-webkit-keyframes clouds-lg{
+  100%{background-position-x:-634px;}
+}
+@keyframes clouds-sm{
+  100%{background-position:-485px 0px;}
+}
+@-webkit-keyframes clouds-sm{
+  100%{background-position-x:-485px;}
+}
+
+.controls{
+  font-family: Courier New, Courier, monospace;
+  text-align:justify;
+}
+.controls div{
+  min-width:250px;
+  padding:0 1em 1em 1em;
+  display:inline-block;
+}

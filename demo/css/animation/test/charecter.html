@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				console.log('scroll width'+scroll);
+				$('.box').css({'left': scroll+'px'})
+			});
+		</script>
+
+		<style>
+			*{padding: 0; margin: 0;}
+		   .box{
+		   	  width:  100px;
+		   	  height:  100px;
+		   	  position: fixed;
+		   	  top: 50%;
+		   	  left: 0;
+		   }
+
+		   .over{
+		   	  width:  100px;
+		   	  height:  2px;
+		   	  background: #000000;
+		   	 
+		   	  position: absolute;
+		   	  top:  200px;
+		   }
+
+		   .point{
+			   	position: absolute;
+			   	top: 0;
+			   	left: 10px;
+		   }
+
+		   .section1, .section2, .section3{
+		   		height:  100vh;
+		   		width: 100%;
+		   		display: block;
+		   }
+		   .section1{
+		   	   background: #ddd;
+		   }
+		   .section3{
+		   	   background: #ff0000;
+		   }
+
+		   .character{
+		   	width: 500px;
+		   	height: 500px;
+		   	position: relative;
+		   	margin:  0 auto;
+		   }
+
+		   .head{
+			   	width: 100px;
+			    height: 130px;
+			    background: #ff0000;
+			    border-top-left-radius: 45px;
+			    border-top-right-radius: 45px;
+			    position: absolute;
+			    left: 45px;
+		   }
+		   .eye-boll {
+			    width: 20px;
+			    height: 20px;
+			    border-radius: 100%;
+			    background: #000000;
+			    left: 69px;
+			    position: absolute;
+			    top: 40px;
+			}
+		   .eye-boll{
+			   	width:  20px;
+			   	height:  20px;
+			   	border-radius: 100%;
+			   	background: #000000;
+		   }
+		   .man-body{
+		   		width: 190px;
+			    height: 190px;
+			    background: #ddd;
+			    position: absolute;
+			    top: 128px;
+			    border-bottom: 10px solid green;
+			    z-index: 2;
+			    animation: main-body 1s infinite;
+		   }
+		   .lower-body{
+		   		width: 190px;
+			    height: 140px;
+			    background: #000000;
+			    border-bottom-left-radius: 135px;
+			    border-bottom-right-radius: 135px;
+			    position: absolute;
+			    top: 322px;
+		   }
+		   .left-hand{
+		   	    height: 200px;
+			    width: 20px;
+			    transform: rotate(40deg);
+			    transform-origin: left top;
+			    background: #000000;
+			    top: 140px;
+			    position: absolute;
+			    animation:  hand-left 1s infinite;
+		   }
+		   .right-hand{
+		   	    height: 200px;
+			    width: 20px;
+			    transform: rotate(-50deg);
+			    transform-origin: left top;
+			    background: #000;
+			    top: 145px;
+			    left: 170px;
+			    position: absolute;
+			    animation:  hand-right 1s infinite;
+			    z-index: 3;
+		   }
+
+		   .left-leg-upper{
+		   	    height: 200px;
+			    width: 32px;
+			    transform-origin: left top;
+			    background: #000;
+			    top: 388px;
+			    position: absolute;
+			    animation:  left-leg-top 1s infinite;
+		   }
+		   .left-leg-upper:after{
+			   	content: " ";
+			    width: 60px;
+			    height: 20px;
+			    display: block;
+			    background: #000000;
+			    position: absolute;
+			    bottom: 0;
+		   }
+		   
+
+
+		   .right-leg-upper{
+		   	    height: 200px;
+			    width: 32px;
+			    transform-origin: left top;
+			    background: #000;
+			    top: 388px;
+			    position: absolute;
+			    animation:  right-leg-top 1s infinite;
+		   }
+		   .right-leg-upper:after{
+			   	content: " ";
+			    width: 60px;
+			    height: 20px;
+			    display: block;
+			    background: #000000;
+			    position: absolute;
+			    bottom: 0;
+		   }
+		
+
+		   @keyframes hand-left{
+		   	 0% { transform: rotate(40deg); }
+		   	 50% { transform: rotate(-20deg); }
+		   	 100% { transform: rotate(40deg); }
+		   }
+		   @keyframes hand-right{
+		   	 0% { transform: rotate(-50deg); }
+		   	 50% { transform: rotate(20deg); }
+		   	 100% { transform: rotate(-50deg); }
+		   }
+
+		   @keyframes main-body{
+		   	 0% { top: 128px; }
+		   	 50% { top: 125px; }
+		   	 100% { top: 128px; }
+		   }
+
+
+
+		    @keyframes left-leg-top{
+		   	 0% {     transform: rotate(-50deg); left: 50px;  }
+		   	 50% { transform: rotate(80deg); left: 50px; }
+		   	 100% {     transform: rotate(-50deg);left: 50px;  }
+		   }
+		   @keyframes right-leg-top{
+		   	 0% {  transform: rotate(60deg); left: 50px;  }
+		   	 50% {  transform: rotate(-10deg); left: 150px; }
+		   	 100% {  transform: rotate(60deg); left: 50px;  }
+		   }
+
+		</style>
+	</head>
+
+
+
+	<body>
+
+		<div class="character">
+			<div class="head">
+				<div class="eye-boll"></div>
+			</div>
+			<div class="man-body"></div>
+			<div class="lower-body"></div>
+			<div class="left-hand"></div>
+			<div class="right-hand"></div>
+			<div class="left-leg-upper"></div>
+			<div class="right-leg-upper"></div>
+		</div>
+	</body>
+
+</html>
