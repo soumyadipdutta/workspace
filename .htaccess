@@ -1,3 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^http://soumyadipdutta.co.in/$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^http://soumyadipdutta.co.in/$
+RewriteCond %{REQUEST_URI} !workspace/
+RewriteRule (.*) /workspace/$1 [L]
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 	ExpiresActive On
