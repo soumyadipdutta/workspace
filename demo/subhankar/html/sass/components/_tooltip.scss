@@ -1,0 +1,113 @@
+/****************/
+/*Custom Tooltip*/
+/****************/
+
+.custom-tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  h3 {
+    margin: 12px 0;
+    color: #fff;
+  }
+  .tooltop-pop {
+    min-width: 200px;
+    max-width: 350px;
+    text-align: center;
+    top: -20px;
+    left: 30%;
+    transform: translate(-50%, -100%);
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s;
+    p{
+      font-size: 12px !important;
+      line-height: 18px !important;
+      margin-bottom: 6px !important;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+
+
+    &.active{
+      h4{
+        color: #5CC865;
+      }
+    }
+    &.not-categorize{
+       h4{
+        color: #F5867F;
+      }
+    }
+  }
+  &:hover .tooltop-pop {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s;
+  }
+  .tooltop-pop i {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 15px;
+    overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: #fff;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+
+.tooltip_wap{
+  .tootip_cont{
+    opacity: 0;
+    transition: all 500ms;
+    width: 260px;
+    padding: 15px 10px;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #d2d1d1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150.6%;
+    top: 28px;
+    margin-left: -25px;
+
+  }
+  i{
+    color: #2879D9;
+    font-size: 18px;
+    margin-left: 2px;
+    margin-right: 6px;
+    cursor: pointer;
+    &:hover{
+      + span.tootip_cont{
+        opacity: 1;
+        transition: all 500ms;
+        z-index: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+/*Patient Notes*/
+.notes-section {
+  min-height: 400px;
+  @include media-breakpoint(tab-mini) {
+    min-height: 100%;
+  }
+  .card-header {
+    padding-top: 15px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0)!important;
+    .btn {
+      position: absolute;
+      right: 15px;
+      border-radius: 50%;
+      padding: 0px !important;
+      font-size: 20px;
+      font-weight: 500;
+      height: 30px;
+      width: 30px;
+      margin: 0;
+      line-height: 16px;
+    }
+  }
+  .card-body {
+    padding: 20px 25px;
+    max-height: 300px;
+    overflow: auto;
+    border-bottom: none;
+    position: relative;
+    ul li {
+      padding-top: 15px;
+      margin-bottom: 0px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06)!important;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    h6 {
+      font-style: normal;
+      line-height: normal;
+      font-size: 10px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #A5B3C1;
+      font-weight: 600;
+    }
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 18px;
+      font-size: 14px;
+      color: #606060;
+      font-weight: 400;
+    }
+    .notes-date-section p {
+      line-height: normal;
+      font-size: 12px;
+      text-align: right;
+      color: #2E3333;
+      font-weight: 700;
+    }
+    .btn-light i {
+      color: #A1ABBE;
+    }
+  }
+}
+
+#add-notes-modal {
+  .modal-header {
+    padding: 15px 25px !important;
+    border-bottom: 1px solid #00000010;
+  }
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    font-size: 14px;
+  }
+  .modal-footer {
+    padding: 15px 25px !important;
+    border-top: 1px solid #00000010;
+    .btn-modal-blue.border-blue, .btn-save-notes {
+      font-family: TT Norms;
+      line-height: normal;
+      font-size: 12px;
+      text-align: center;
+      padding: 6px 15px;
+      min-width: 100px;
+      margin-left: 5px;
+    }
+  }
+}

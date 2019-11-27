@@ -1,0 +1,48 @@
+@media only screen and (max-width: 992px) {
+	.main-navbar{
+		form{
+			&.form-inline{
+				display: inline-block;
+    			flex-flow: inherit;
+			}
+		}
+	}
+
+	.social-share-sec{
+		text-align: center;
+		justify-content: center;
+		.social-single{
+			max-width: 48%;
+    		display: inline-block;
+		}
+	}
+}
+
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a > i{ width: auto; }
+body.sidebar-mini .main-sidebar .sidebar-menu .divider li a{ justify-content: center; }
+body.sidebar-mini .main-sidebar .sidebar-menu .divider li a i{ width: auto; }
+
+
+.sidebar-menu .divider{
+    @include media-breakpoint(view-1380) {
+    	padding-top: 0 !important;
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+    }
+}
+
+.navbar .nav-link.nav-link-user img {
+    width: 30px;
+    height: 30px;
+}
+
+.user-profile-image{
+	height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}

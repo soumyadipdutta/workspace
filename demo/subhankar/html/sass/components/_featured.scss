@@ -1,0 +1,74 @@
+//Call to Action Section
+.c-featured__single{
+	position: relative;
+	margin-bottom: 20px;
+	@include media-breakpoint(tab-mini){
+		margin-bottom: 0px;
+	}
+	@include media-breakpoint(desktop){
+		max-height: 300px;
+    	overflow: hidden;
+	}
+	.c-featured__single-image{
+		overflow: hidden;
+		min-height: 260px;
+		@include media-breakpoint(tab-mini){
+			min-height: auto;
+		}
+		img{
+			max-width: 100%;
+			transition-duration: 500ms;
+			@include media-breakpoint(small){
+				max-height: 100%;
+			}
+			@include media-breakpoint(tab-mini){
+				max-width: 100%;
+				max-height: auto;
+			}
+		}
+	}
+	.c-featured__single-desc{
+		position: absolute;
+	    background: rgba(20, 45, 99, 0.9);
+	    bottom: 0;
+	    left: 0;
+	    min-width: 100%;
+	    box-sizing: border-box;
+	    padding: 14px 20px;
+	    @include media-breakpoint(tab-mini){
+	    	padding: 14px 25px;
+	    }
+	    h3{
+	    	color: $white;
+	    	font-size: $base-font-size + 4;
+	    	line-height: $base-line-height;
+	    	margin-bottom: 2px;
+	    	font-weight: $font-bold;
+	    	@include media-breakpoint(tab-mini){
+	    		font-size: $base-font-size + 8;
+	    		line-height: $base-line-height + 2;
+	    	}
+	    }
+	    p{
+	    	color: $white;
+	    	font-size: $base-font-size;
+	    	line-height: $base-line-height;
+	    	font-weight: 300;
+	    	margin-bottom: 0px;
+	    	font-weight: $font-regular;
+	    	@include media-breakpoint(tab-mini){
+	    		font-size: $base-font-size + 2;
+	    		line-height: $base-line-height + 3;
+	    	}
+	    }
+	}
+	&:hover{
+		.c-featured__single-image{
+			img{
+				transform: scale(1.1, 1.1);
+				transition-duration: 500ms;
+			}
+		}
+
+	}
+}

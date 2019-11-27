@@ -1,0 +1,162 @@
+//NO FOOTER AVAILABLE
+
+footer{
+	.c-footer__top{
+		padding: 60px 0;
+		h4{
+			font-size: $base-font-size + 2;
+			color: $brand-alt;
+			font-weight: $font-bold;
+			margin-bottom: 16px;
+		}
+		p{
+			font-weight: $font-regular;
+		}
+		.u-graphic{
+			border-bottom: 1px solid #EEEEEE;
+			padding-bottom: 25px;
+    		margin-bottom: 25px;
+    		@include media-breakpoint(mobile-big){
+    			border-bottom: none;	
+			}
+			@include media-breakpoint(small){
+				padding-bottom: 0px;
+				margin-bottom: 0px;
+			}
+			li{
+				width: 48%;
+				display: inline-block;
+				a{
+					color: $brand;
+					font-size: $base-font-size - 4;
+					font-weight: $font-regular;
+					@include media-breakpoint(mobile-big) {
+						font-size: $base-font-size - 2;
+					}
+					@include media-breakpoint(tab-mini) {
+						font-size: $base-font-size - 4;
+					}
+					@include media-breakpoint(desktop) {
+						font-size: $base-font-size - 2;
+					}
+					&:hover{
+						color: $brand-alt;
+					}
+				}
+			}
+		}
+
+		//Logo Section
+		.c-footer__logo{
+			text-align: center;
+			border-bottom: 1px solid #EEEEEE;
+			padding-bottom: 20px;
+			margin-bottom: 30px;
+			p{
+				font-size: $base-font-size - 2;
+				margin-top: 10px;
+				font-weight: $font-bold;
+			}
+			@include media-breakpoint(small){
+				border-top: none;
+				padding-top: 0px;
+			}
+			@include media-breakpoint(tab-mini){
+				border-bottom: none;
+				margin-top: 50px;
+			}
+		}
+		.c-footer__address-panel{
+			
+			>div{
+				position: relative;
+
+				i{
+					position: absolute;
+					top: 6px;
+					left: 0;
+					font-size: $base-font-size - 2;
+				}
+				p{
+					padding-left: 22px;
+					font-size: $base-font-size - 2;
+					font-weight: $font-bold;
+				}
+				a{
+					padding-left: 22px;
+					font-size: $base-font-size - 2;
+					color: $brand;
+					font-weight: $font-regular;
+					&:hover{
+						color: $brand-alt;
+					}
+				}
+				&.c-footer__address{
+					max-width: 200px;
+				}
+			}
+
+			// .c-footer__mail{
+			// 	i{
+			// 		position: absolute;
+			// 		top: 0;
+			// 		left: 0;
+			// 	}
+			// 	a{
+			// 		padding-left: 20px;
+			// 	}
+			// }
+
+			
+		}
+		
+	}
+	.c-footer__bottom{
+		background: $brand-alt;
+		padding: 16px 0;
+		@include media-breakpoint(tab-mini){
+			padding: 40px 0;
+		}
+
+
+		.c-footer__copyright{
+			text-align: center;
+			@include media-breakpoint(tab-mini){
+				text-align: left;
+			}
+			p{
+				color: $white;
+				margin-bottom: 0px;
+				font-size: $base-font-size - 2; 
+				font-weight: $font-bold;
+				@include media-breakpoint(tab-mini){
+					font-size: $base-font-size; 
+				}
+			}
+		}
+		.c-footer__navigation{
+			text-align: center;
+			@include media-breakpoint(tab-mini){
+				text-align: right;
+			}
+			ul{
+				margin-bottom: 0px;
+				li{
+					margin-right: 20px;
+					a{
+						color: $white;
+						font-weight: $font-bold;
+						font-size: $base-font-size - 4; 
+						@include media-breakpoint(tab-mini){
+							font-size: $base-font-size; 
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-footer{
+	margin-top: 0px;
+}

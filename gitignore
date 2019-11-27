@@ -1,0 +1,14 @@
+*.log
+wp-config.php
+.htaccess
+license.txt
+readme.html
+wp-content_bk
+wp-content/cache/
+wp-content/wflogs/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/uploads/
+**/.DS_Store
+*.DS_Store
+wp-content/themes/skelmet/node_modules/
