@@ -1,0 +1,33 @@
+/*Welcome*/
+
+.c-welcome{
+    max-width: 580px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 50px 0;
+    h1{
+        color: #1E2541;
+        font-size: 50px;
+        line-height: 80px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        span{
+            font-weight: 600;
+        }
+    }
+    h4{
+        color: #2C7BF2;
+        font-size: 36px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            color: #1c6ae0;
+        }
+    }
+    p{
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

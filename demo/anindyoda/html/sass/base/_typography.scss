@@ -1,0 +1,169 @@
+// Typography
+// -------------------------
+
+body {
+  font-family:  $font-familly-regular;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $base-color;
+  overflow-x:hidden;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{
+	text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	color: $base-color;
+	display: inline-block;
+	line-height: $base-line-height;
+	transition-duration: 500ms;
+	outline: none;
+	cursor: pointer;
+	&:hover,
+	&:focus{
+		color: #000000;
+		transition-duration: 500ms;
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3, h4, h5, .h2, .h3, .h4, .h5, .h6 {
+	font-family:  $font-familly-regular;
+	font-weight: $base-font-weight + 200;
+	color: $dark-gray;
+	margin-bottom: 10px;
+	text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.h1, .h2 { line-height: 1.1; }
+.h3, .h4 { line-height: 1.3; }
+
+//Heading 1 Style
+h1, .h1 {
+	font-size: $base-font-size + 16;
+	line-height: $base-line-height + 10;
+	color: $brand-alt;
+	@include media-breakpoint(small) {
+        font-size: $base-font-size + 29;
+	    line-height: $base-line-height + 23;
+    }
+
+    //For UI Guide
+    &.u-mobile{
+    	font-size: $base-font-size + 16;
+		line-height: $base-line-height + 10;
+    }
+}
+
+//Heading 2 Style
+h2, .h2 {
+    font-size: $base-font-size + 12;
+	line-height: $base-line-height + 6;
+	@include media-breakpoint(small) {
+        font-size: $base-font-size + 18;
+	    line-height: $base-line-height + 12;
+    }
+    //For UI Guide
+    &.u-mobile{
+    	font-size: $base-font-size + 12;
+		line-height: $base-line-height + 6;
+    }
+}
+
+//Heading 3 Style
+h3, .h3 {
+	font-size: $base-font-size + 6;
+	line-height: $base-line-height;
+	@include media-breakpoint(small) {
+        font-size: $base-font-size + 10;
+	    line-height: $base-line-height + 6;
+    }
+    //For UI Guide
+    &.u-mobile{
+		font-size: $base-font-size + 6;
+		line-height: $base-line-height;
+    }
+}
+
+//Heading 4 Style
+h4, .h4 { 
+	font-size: $base-font-size + 2;
+	line-height: $base-line-height - 4;
+	color: $brand-alt;
+	@include media-breakpoint(small) {
+        font-size: $base-font-size + 4;
+	    line-height: $base-line-height - 2;
+    }
+    //For UI Guide
+    &.u-mobile{
+		font-size: $base-font-size + 2;
+		line-height: $base-line-height - 4;
+    }
+}
+
+//Heading 5 Style
+h5, .h5 {
+	font-size: $base-font-size;
+	line-height: $base-line-height - 6;
+	@include media-breakpoint(small) {
+        font-size: $base-font-size;
+	    line-height: $base-line-height - 6;
+    }
+     //For UI Guide
+    &.u-mobile{
+		font-size: $base-font-size - 2;
+		line-height: $base-line-height - 8;
+    }
+}
+
+
+
+//Types of Paragraph
+p{
+	font-family: $font-familly-regular;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $dark-gray;
+	font-weight: $font-regular;
+	&.mobile{
+		font-size: $base-font-size - 2;
+		line-height: $base-line-height - 3;
+	}
+	//For Large Paragraph
+	&.u-large{
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		font-weight: $font-regular;
+		@include media-breakpoint(small){
+			font-size: $base-font-size + 4;
+			line-height: $base-line-height + 6;
+		}
+		&.mobile{
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+	//For Intro Paragraph
+	&.u-intro{
+		font-size: $base-font-size + 4;
+		line-height: $base-line-height + 6;
+		@include media-breakpoint(small){
+			font-size: $base-font-size + 10;
+			line-height: $base-line-height + 12;
+		}
+		&.mobile{
+			font-size: $base-font-size + 4;
+			line-height: $base-line-height + 6;
+		}
+	}
+}
