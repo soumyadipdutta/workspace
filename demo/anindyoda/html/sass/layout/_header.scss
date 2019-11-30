@@ -1,52 +1,15 @@
 //HEARER SECTION
 
-.c-hambarger{
-	padding:0 5px;
-	i{
-		color: #fff;
-		font-size: 30px;
-	}
+header{
+	background-color: #022664;
+	padding: 15px 0;
 }
 
-.c-usermain{
-	.nav-link-user{
-		background-color: rgba(23, 96, 182, 0.55) !important;
-		border: none;
-		font-size: 14px;
-		padding: 6px 12px !important;
-		border-radius: 3px;
+.site-logo{
+	position: absolute;
+	width: 100px;
+	z-index: 2;
+	img{
+		width: 100%;
 	}
-}
-
-
-.c-header{
-	background-color: $blue-dark;
-	min-height: 50px;
-	padding: 12px 15px;
-	margin-left: 20%;
-	transition: all 500ms;
-	&_item{
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 5px;
-	}
-}
-
-
-.c-usermain{
-	.nav-link{
-		img.rounded-circle{
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.d-lg-inline-block{
-			display: inline-block;
-			vertical-align: middle;
-			margin-top: 0px !important;
-		}
-	}
-}
-
-.profile-wrap{
-	display: inline-block;
 }
