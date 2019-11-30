@@ -1,5 +1,6 @@
 .c-navigation{
 	text-align: right;
+	display: none;
 	ul{
 		margin-bottom: 0px;
 		li{
@@ -10,4 +11,22 @@
 			}
 		}
 	}
+	@include media-breakpoint(medium) {
+		display: block;
+	}
 }
+
+.mobile-menu{
+	a{
+		color: #fff;
+		font-size: 20px;
+		i{
+			color: #fff;
+		}
+	}
+	@include media-breakpoint(medium) {
+		display: none;
+	}
+}
+
+
