@@ -10010,6 +10010,11 @@ input:checked + .slider:before {
   display: none;
 }
 
+/* line 622, ../sass/base/_base.scss */
+.vertical-center {
+  align-items: center;
+}
+
 /* line 4, ../sass/base/_typography.scss */
 body {
   font-family: 'Roboto', sans-serif;
@@ -10209,7 +10214,7 @@ p.u-intro.mobile {
 
 /* line 1, ../sass/components/_navigation.scss */
 .c-navigation {
-  text-align: right;
+  text-align: center;
   display: none;
 }
 /* line 4, ../sass/components/_navigation.scss */
@@ -10219,11 +10224,14 @@ p.u-intro.mobile {
 /* line 6, ../sass/components/_navigation.scss */
 .c-navigation ul li {
   display: inline-block;
-  padding: 0 25px;
+  margin: 0 15px;
 }
 /* line 9, ../sass/components/_navigation.scss */
 .c-navigation ul li a {
-  color: #fff;
+  color: #000;
+  padding: 10px 15px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 @media (min-width: 1025px) {
   /* line 1, ../sass/components/_navigation.scss */
@@ -10232,17 +10240,34 @@ p.u-intro.mobile {
   }
 }
 
-/* line 20, ../sass/components/_navigation.scss */
+/* line 23, ../sass/components/_navigation.scss */
+.c-topnav ul {
+  margin-bottom: 0px;
+}
+/* line 25, ../sass/components/_navigation.scss */
+.c-topnav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 28, ../sass/components/_navigation.scss */
+.c-topnav ul li a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* line 39, ../sass/components/_navigation.scss */
 .mobile-menu a {
   color: #fff;
   font-size: 20px;
 }
-/* line 23, ../sass/components/_navigation.scss */
+/* line 42, ../sass/components/_navigation.scss */
 .mobile-menu a i {
   color: #fff;
 }
 @media (min-width: 1025px) {
-  /* line 19, ../sass/components/_navigation.scss */
+  /* line 38, ../sass/components/_navigation.scss */
   .mobile-menu {
     display: none;
   }
@@ -10373,12 +10398,55 @@ p.u-intro.mobile {
 
 /* line 14, ../sass/layout/_header.scss */
 .c-header__top {
-  background-color: #ddd;
+  background-color: #000;
+  padding: 5px 0;
 }
-/* line 17, ../sass/layout/_header.scss */
+/* line 18, ../sass/layout/_header.scss */
+.c-header__middle {
+  background-color: #3d3d3d;
+  padding: 20px 0;
+}
+/* line 22, ../sass/layout/_header.scss */
 .c-header__bottom {
-  background-color: #1d1d1d;
-  padding: 15px 0;
+  background-color: #f2f2f2;
+}
+
+/* line 28, ../sass/layout/_header.scss */
+.top-contact ul {
+  margin-bottom: 0px;
+}
+/* line 30, ../sass/layout/_header.scss */
+.top-contact ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 33, ../sass/layout/_header.scss */
+.top-contact ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 42, ../sass/layout/_header.scss */
+.search-section {
+  position: relative;
+}
+/* line 44, ../sass/layout/_header.scss */
+.search-section input[type="text"] {
+  border: none;
+  border-radius: 0px;
+}
+/* line 48, ../sass/layout/_header.scss */
+.search-section .btn {
+  background-color: #000;
+  padding: 5px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px;
+  height: 40px;
 }
 
 /* line 3, ../sass/layout/_footer.scss */
@@ -10403,41 +10471,51 @@ p.u-intro.mobile {
 .c-footer__content h3 {
   color: #fff;
   margin-bottom: 15px;
+  border-bottom: 1px dotted #626262;
+  padding-bottom: 8px;
+  font-weight: 400;
 }
-/* line 24, ../sass/layout/_footer.scss */
+/* line 27, ../sass/layout/_footer.scss */
 .c-footer__content ul li {
   vertical-align: top;
   text-align: left;
   line-height: 12px;
 }
-/* line 28, ../sass/layout/_footer.scss */
+/* line 31, ../sass/layout/_footer.scss */
 .c-footer__content ul li a {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
 }
-/* line 37, ../sass/layout/_footer.scss */
+/* line 40, ../sass/layout/_footer.scss */
 .c-footer__content .contact-address p {
   color: #fff;
   margin-bottom: 0px;
 }
-/* line 41, ../sass/layout/_footer.scss */
+/* line 44, ../sass/layout/_footer.scss */
 .c-footer__content .contact-address .phone-block {
   margin-top: 15px;
 }
 
-/* line 50, ../sass/layout/_footer.scss */
+/* line 54, ../sass/layout/_footer.scss */
+#newsletter-validate-detail .form-subscribe-header label {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 61, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body {
   position: relative;
 }
-/* line 52, ../sass/layout/_footer.scss */
+/* line 63, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body input[type="email"] {
   width: 100%;
   line-height: 35px;
   padding: 4px 10px;
   border: none;
 }
-/* line 58, ../sass/layout/_footer.scss */
+/* line 69, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body button {
   position: absolute;
   top: 0;
@@ -10447,14 +10525,60 @@ p.u-intro.mobile {
   background-color: #565656;
   color: #fff;
 }
-/* line 66, ../sass/layout/_footer.scss */
+/* line 77, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body button i {
   font-size: 20px;
 }
 
-/* line 73, ../sass/layout/_footer.scss */
+/* line 84, ../sass/layout/_footer.scss */
 .c-copyright {
   margin-bottom: 0px;
+}
+/* line 86, ../sass/layout/_footer.scss */
+.c-copyright p {
+  margin-bottom: 0px;
+  padding: 0 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+}
+/* line 93, ../sass/layout/_footer.scss */
+.c-copyright p a {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
+/* line 97, ../sass/layout/_footer.scss */
+.c-copyright p a:hover {
+  color: #868C8D;
+}
+
+/* line 104, ../sass/layout/_footer.scss */
+.bottom-inst {
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+/* line 110, ../sass/layout/_footer.scss */
+.social-icons {
+  margin-top: 20px;
+}
+/* line 112, ../sass/layout/_footer.scss */
+.social-icons ul {
+  margin-bottom: 0px;
+}
+/* line 114, ../sass/layout/_footer.scss */
+.social-icons ul li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+/* line 118, ../sass/layout/_footer.scss */
+.social-icons ul li a {
+  font-size: 28px;
+  color: #fff;
 }
 
 /* line 3, ../sass/layout/_sidebar.scss */
