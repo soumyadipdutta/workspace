@@ -1,12 +1,12 @@
 //NO FOOTER AVAILABLE
 
 .c-footer{
-	background: #393939;
+  background-color: #272823;
   &__top{
     padding: 50px 0;
   }
   &__bottom{
-    background-color: #000;
+    background-color: #161614;
     p{
       color: #fff;
       text-align: left;
@@ -108,13 +108,14 @@
 }
 
 .social-icons{
-  margin-top: 20px;
   ul{
     margin-bottom: 0px;
+    line-height: 20px;
     li{
       display: inline-block;
       margin-right: 5px;
       margin-left: 2px;
+      line-height: 20px;
       a{
         font-size: 28px;
         color: #fff;

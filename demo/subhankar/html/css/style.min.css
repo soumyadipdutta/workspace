@@ -10336,6 +10336,15 @@ p.u-intro.mobile {
   }
 }
 
+/* line 50, ../sass/components/_home.scss */
+.add-block {
+  margin-bottom: 25px;
+}
+/* line 52, ../sass/components/_home.scss */
+.add-block img {
+  width: 100%;
+}
+
 /*
 	components
 	--> buttons
@@ -10451,7 +10460,7 @@ p.u-intro.mobile {
 
 /* line 3, ../sass/layout/_footer.scss */
 .c-footer {
-  background: #393939;
+  background-color: #272823;
 }
 /* line 5, ../sass/layout/_footer.scss */
 .c-footer__top {
@@ -10459,7 +10468,7 @@ p.u-intro.mobile {
 }
 /* line 8, ../sass/layout/_footer.scss */
 .c-footer__bottom {
-  background-color: #000;
+  background-color: #161614;
 }
 /* line 10, ../sass/layout/_footer.scss */
 .c-footer__bottom p {
@@ -10561,21 +10570,19 @@ p.u-intro.mobile {
   font-weight: 500;
 }
 
-/* line 110, ../sass/layout/_footer.scss */
-.social-icons {
-  margin-top: 20px;
-}
-/* line 112, ../sass/layout/_footer.scss */
+/* line 111, ../sass/layout/_footer.scss */
 .social-icons ul {
   margin-bottom: 0px;
+  line-height: 20px;
 }
 /* line 114, ../sass/layout/_footer.scss */
 .social-icons ul li {
   display: inline-block;
   margin-right: 5px;
   margin-left: 2px;
+  line-height: 20px;
 }
-/* line 118, ../sass/layout/_footer.scss */
+/* line 119, ../sass/layout/_footer.scss */
 .social-icons ul li a {
   font-size: 28px;
   color: #fff;
