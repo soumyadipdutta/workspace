@@ -17,11 +17,15 @@
 
   &__content{
     h3{
+      font-size: 20px;
       color: #fff;
       margin-bottom: 15px;
       border-bottom: 1px dotted #626262;
       padding-bottom: 8px;
-      font-weight: 400;
+      font-weight: 500;
+    }
+    p{
+      font-size:  14px;
     }
     ul{
       li{

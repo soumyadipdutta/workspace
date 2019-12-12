@@ -10224,12 +10224,12 @@ p.u-intro.mobile {
 /* line 6, ../sass/components/_navigation.scss */
 .c-navigation ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 /* line 9, ../sass/components/_navigation.scss */
 .c-navigation ul li a {
   color: #000;
-  padding: 10px 15px;
+  padding: 15px 15px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -10345,6 +10345,21 @@ p.u-intro.mobile {
   width: 100%;
 }
 
+/* line 59, ../sass/components/_home.scss */
+.main-banner-slider img {
+  width: 100%;
+}
+
+/* line 65, ../sass/components/_home.scss */
+.featured-single img {
+  width: 100%;
+}
+
+/* line 72, ../sass/components/_home.scss */
+h2.section-title {
+  border-bottom: 1px solid #ddd;
+}
+
 /*
 	components
 	--> buttons
@@ -10407,44 +10422,45 @@ p.u-intro.mobile {
 
 /* line 14, ../sass/layout/_header.scss */
 .c-header__top {
-  background-color: #000;
+  background-color: #5a5a5a;
   padding: 5px 0;
 }
 /* line 18, ../sass/layout/_header.scss */
 .c-header__middle {
-  background-color: #3d3d3d;
+  background-color: #f9f9f9;
   padding: 20px 0;
 }
 /* line 22, ../sass/layout/_header.scss */
 .c-header__bottom {
-  background-color: #f2f2f2;
+  border-top: 1px solid #dedede;
+  background-color: #fff;
 }
 
-/* line 28, ../sass/layout/_header.scss */
+/* line 29, ../sass/layout/_header.scss */
 .top-contact ul {
   margin-bottom: 0px;
 }
-/* line 30, ../sass/layout/_header.scss */
+/* line 31, ../sass/layout/_header.scss */
 .top-contact ul li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 33, ../sass/layout/_header.scss */
+/* line 34, ../sass/layout/_header.scss */
 .top-contact ul li a {
   font-size: 14px;
   color: #fff;
 }
 
-/* line 42, ../sass/layout/_header.scss */
+/* line 43, ../sass/layout/_header.scss */
 .search-section {
   position: relative;
 }
-/* line 44, ../sass/layout/_header.scss */
+/* line 45, ../sass/layout/_header.scss */
 .search-section input[type="text"] {
   border: none;
   border-radius: 0px;
 }
-/* line 48, ../sass/layout/_header.scss */
+/* line 49, ../sass/layout/_header.scss */
 .search-section .btn {
   background-color: #000;
   padding: 5px 15px;
@@ -10456,6 +10472,17 @@ p.u-intro.mobile {
   right: 0;
   border-radius: 0px;
   height: 40px;
+}
+
+/* line 64, ../sass/layout/_header.scss */
+.cart-nav {
+  text-align: right;
+  margin-bottom: 0px;
+}
+/* line 67, ../sass/layout/_header.scss */
+.cart-nav li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /* line 3, ../sass/layout/_footer.scss */
@@ -10478,53 +10505,58 @@ p.u-intro.mobile {
 }
 /* line 19, ../sass/layout/_footer.scss */
 .c-footer__content h3 {
+  font-size: 20px;
   color: #fff;
   margin-bottom: 15px;
   border-bottom: 1px dotted #626262;
   padding-bottom: 8px;
-  font-weight: 400;
+  font-weight: 500;
 }
 /* line 27, ../sass/layout/_footer.scss */
+.c-footer__content p {
+  font-size: 14px;
+}
+/* line 31, ../sass/layout/_footer.scss */
 .c-footer__content ul li {
   vertical-align: top;
   text-align: left;
   line-height: 12px;
 }
-/* line 31, ../sass/layout/_footer.scss */
+/* line 35, ../sass/layout/_footer.scss */
 .c-footer__content ul li a {
   font-size: 15px;
   font-weight: 400;
   color: #fff;
 }
-/* line 40, ../sass/layout/_footer.scss */
+/* line 44, ../sass/layout/_footer.scss */
 .c-footer__content .contact-address p {
   color: #fff;
   margin-bottom: 0px;
 }
-/* line 44, ../sass/layout/_footer.scss */
+/* line 48, ../sass/layout/_footer.scss */
 .c-footer__content .contact-address .phone-block {
   margin-top: 15px;
 }
 
-/* line 54, ../sass/layout/_footer.scss */
+/* line 58, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-header label {
   font-size: 16px;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 61, ../sass/layout/_footer.scss */
+/* line 65, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body {
   position: relative;
 }
-/* line 63, ../sass/layout/_footer.scss */
+/* line 67, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body input[type="email"] {
   width: 100%;
   line-height: 35px;
   padding: 4px 10px;
   border: none;
 }
-/* line 69, ../sass/layout/_footer.scss */
+/* line 73, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body button {
   position: absolute;
   top: 0;
@@ -10534,16 +10566,16 @@ p.u-intro.mobile {
   background-color: #565656;
   color: #fff;
 }
-/* line 77, ../sass/layout/_footer.scss */
+/* line 81, ../sass/layout/_footer.scss */
 #newsletter-validate-detail .form-subscribe-body button i {
   font-size: 20px;
 }
 
-/* line 84, ../sass/layout/_footer.scss */
+/* line 88, ../sass/layout/_footer.scss */
 .c-copyright {
   margin-bottom: 0px;
 }
-/* line 86, ../sass/layout/_footer.scss */
+/* line 90, ../sass/layout/_footer.scss */
 .c-copyright p {
   margin-bottom: 0px;
   padding: 0 0;
@@ -10552,37 +10584,37 @@ p.u-intro.mobile {
   line-height: 15px;
   font-weight: 500;
 }
-/* line 93, ../sass/layout/_footer.scss */
+/* line 97, ../sass/layout/_footer.scss */
 .c-copyright p a {
   font-size: 12px;
   line-height: 15px;
   font-weight: 600;
 }
-/* line 97, ../sass/layout/_footer.scss */
+/* line 101, ../sass/layout/_footer.scss */
 .c-copyright p a:hover {
   color: #868C8D;
 }
 
-/* line 104, ../sass/layout/_footer.scss */
+/* line 108, ../sass/layout/_footer.scss */
 .bottom-inst {
   font-size: 12px;
   margin-bottom: 0px;
   font-weight: 500;
 }
 
-/* line 111, ../sass/layout/_footer.scss */
+/* line 115, ../sass/layout/_footer.scss */
 .social-icons ul {
   margin-bottom: 0px;
   line-height: 20px;
 }
-/* line 114, ../sass/layout/_footer.scss */
+/* line 118, ../sass/layout/_footer.scss */
 .social-icons ul li {
   display: inline-block;
   margin-right: 5px;
   margin-left: 2px;
   line-height: 20px;
 }
-/* line 119, ../sass/layout/_footer.scss */
+/* line 123, ../sass/layout/_footer.scss */
 .social-icons ul li a {
   font-size: 28px;
   color: #fff;

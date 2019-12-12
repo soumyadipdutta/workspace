@@ -53,3 +53,23 @@
         width: 100%;
     }
 }
+
+
+.main-banner-slider{
+    img{
+        width: 100%;
+    }
+}
+
+.featured-single{
+    img{
+        width: 100%;
+    }
+
+}
+
+h2{
+    &.section-title{
+        border-bottom: 1px solid #ddd;
+    }
+}
