@@ -62,8 +62,23 @@
 }
 
 .featured-single{
+    text-align: center;
     img{
         width: 100%;
+    }
+    .book-desc{
+        p{
+            margin-bottom: 0px;
+        }
+
+
+
+    }
+     button{
+        background: #ef3b3c;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 14px;
     }
 
 }

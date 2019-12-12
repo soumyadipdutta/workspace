@@ -10350,12 +10350,27 @@ p.u-intro.mobile {
   width: 100%;
 }
 
-/* line 65, ../sass/components/_home.scss */
+/* line 64, ../sass/components/_home.scss */
+.featured-single {
+  text-align: center;
+}
+/* line 66, ../sass/components/_home.scss */
 .featured-single img {
   width: 100%;
 }
+/* line 70, ../sass/components/_home.scss */
+.featured-single .book-desc p {
+  margin-bottom: 0px;
+}
+/* line 77, ../sass/components/_home.scss */
+.featured-single button {
+  background: #ef3b3c;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+}
 
-/* line 72, ../sass/components/_home.scss */
+/* line 87, ../sass/components/_home.scss */
 h2.section-title {
   border-bottom: 1px solid #ddd;
 }
