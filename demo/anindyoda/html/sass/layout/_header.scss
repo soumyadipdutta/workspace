@@ -1,23 +1,50 @@
 //HEARER SECTION
 
 header{
-	background-color: #022664;
-	padding: 15px 0;
+	
 }
 
 .site-logo{
-	position: absolute;
-	width: 100px;
-	z-index: 2;
-	left: 0;
-    right: 0;
-    margin: 0 auto;
-    @include media-breakpoint(medium) {
-    	left: auto;
-	    right: auto;
-	    margin: 0 auto;
-    }
+	width: 95px;
+	margin: 0 auto;
 	img{
 		width: 100%;
+	}
+}
+
+.c-header{
+	&__top{
+		background-color: #002664;
+		p{
+			color: #fff;
+			padding: 10px 0;
+			margin-bottom: 0px;
+			font-size: 15px;
+    		text-align: center;
+    		font-weight: 500;
+		}
+	}
+	&__middle{
+		.container{
+			position: relative;
+			.main-logo{
+				text-align: center;
+				padding: 15px 0;
+			}
+			.quock-header-nav{
+				position: absolute;
+				right: 0;
+				top: 10px;
+				ul{
+					li{
+						display: inline-block;
+						margin: 0 10px;
+						a{
+							color: #000;
+						}
+					}
+				}
+			}
+		}
 	}
 }
