@@ -17,7 +17,7 @@ header{
 	}
 	&__middle{
 		background-color: #f9f9f9;
-    	padding: 20px 0;
+    	padding: 0 0;
 	}
 	&__bottom{
 		border-top: 1px solid #dedede;
@@ -66,6 +66,36 @@ header{
 	margin-bottom: 0px;
 	li{
 		display: inline-block;
-		margin: 0 10px;
+		position: relative;
+		a{
+			padding: 35px 20px;
+			&:hover{
+				background-color: #ddd;
+			}
+		}
+		ul.sub-menu{
+			display: none;
+			position: absolute;
+			width: 180px;
+			background-color: #f9f9f9;
+			right: 0px;
+			z-index: 1;
+			li{
+				display: block;
+				width: 100%;
+				border-bottom: 1px solid #e2e2e2;
+				a{
+					padding: 5px 15px;
+				    text-align: left;
+				    display: block;
+				    width: 100%;
+				    font-size: 14px;
+    				font-weight: 400;
+				}
+			}
+		}
+		&:hover ul.sub-menu{
+			display: block;
+		}
 	}
 }

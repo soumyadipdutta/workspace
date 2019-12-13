@@ -10443,7 +10443,7 @@ h2.section-title {
 /* line 18, ../sass/layout/_header.scss */
 .c-header__middle {
   background-color: #f9f9f9;
-  padding: 20px 0;
+  padding: 0 0;
 }
 /* line 22, ../sass/layout/_header.scss */
 .c-header__bottom {
@@ -10497,7 +10497,43 @@ h2.section-title {
 /* line 67, ../sass/layout/_header.scss */
 .cart-nav li {
   display: inline-block;
-  margin: 0 10px;
+  position: relative;
+}
+/* line 70, ../sass/layout/_header.scss */
+.cart-nav li a {
+  padding: 35px 20px;
+}
+/* line 72, ../sass/layout/_header.scss */
+.cart-nav li a:hover {
+  background-color: #ddd;
+}
+/* line 76, ../sass/layout/_header.scss */
+.cart-nav li ul.sub-menu {
+  display: none;
+  position: absolute;
+  width: 180px;
+  background-color: #f9f9f9;
+  right: 0px;
+  z-index: 1;
+}
+/* line 83, ../sass/layout/_header.scss */
+.cart-nav li ul.sub-menu li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+}
+/* line 87, ../sass/layout/_header.scss */
+.cart-nav li ul.sub-menu li a {
+  padding: 5px 15px;
+  text-align: left;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 97, ../sass/layout/_header.scss */
+.cart-nav li:hover ul.sub-menu {
+  display: block;
 }
 
 /* line 3, ../sass/layout/_footer.scss */
