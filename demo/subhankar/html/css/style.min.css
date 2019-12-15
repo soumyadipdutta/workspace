@@ -10370,9 +10370,39 @@ p.u-intro.mobile {
   font-size: 14px;
 }
 
-/* line 87, ../sass/components/_home.scss */
-h2.section-title {
-  border-bottom: 1px solid #ddd;
+/* line 86, ../sass/components/_home.scss */
+.section-area {
+  margin: 40px 0;
+}
+
+/* line 90, ../sass/components/_home.scss */
+.section-title {
+  border-bottom: 1px solid #f93234;
+  margin-bottom: 20px;
+}
+/* line 93, ../sass/components/_home.scss */
+.section-title h2 {
+  background-color: #f93234;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 5px 15px;
+  display: inline-block;
+  line-height: 35px;
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 103, ../sass/components/_home.scss */
+.section-title h2:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 46px solid #f93134;
+  position: absolute;
+  right: -18px;
+  top: 0;
 }
 
 /*
