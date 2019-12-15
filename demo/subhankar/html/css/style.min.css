@@ -10388,14 +10388,25 @@ p.u-intro.mobile {
   margin: 40px 0;
 }
 
-/* line 101, ../sass/components/_home.scss */
+/* line 103, ../sass/components/_home.scss */
+.publisher-single a {
+  width: 100%;
+}
+/* line 106, ../sass/components/_home.scss */
+.publisher-single a img {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* line 115, ../sass/components/_home.scss */
 .section-title {
   border-bottom: 1px solid #f93234;
   margin-bottom: 20px;
 }
-/* line 104, ../sass/components/_home.scss */
+/* line 118, ../sass/components/_home.scss */
 .section-title h2 {
-  background-color: #f93234;
+  background-color: #e53424;
   color: #fff;
   font-size: 22px;
   font-weight: 300;
@@ -10405,7 +10416,7 @@ p.u-intro.mobile {
   margin-bottom: 0;
   position: relative;
 }
-/* line 114, ../sass/components/_home.scss */
+/* line 128, ../sass/components/_home.scss */
 .section-title h2:after {
   content: " ";
   width: 0;
@@ -10418,27 +10429,27 @@ p.u-intro.mobile {
   top: 0;
 }
 
-/* line 130, ../sass/components/_home.scss */
+/* line 144, ../sass/components/_home.scss */
 .book-single__large {
   text-align: center;
 }
-/* line 132, ../sass/components/_home.scss */
+/* line 146, ../sass/components/_home.scss */
 .book-single__large h4 {
   margin-top: 20px;
 }
-/* line 136, ../sass/components/_home.scss */
+/* line 150, ../sass/components/_home.scss */
 .book-single__small {
   margin-bottom: 15px;
 }
-/* line 138, ../sass/components/_home.scss */
+/* line 152, ../sass/components/_home.scss */
 .book-single__small img {
   width: 100%;
 }
-/* line 141, ../sass/components/_home.scss */
+/* line 155, ../sass/components/_home.scss */
 .book-single__small-image {
   padding: 0 0;
 }
-/* line 145, ../sass/components/_home.scss */
+/* line 159, ../sass/components/_home.scss */
 .book-single__small-desc h4 {
   font-size: 14px;
   line-height: 20px;
@@ -10446,17 +10457,44 @@ p.u-intro.mobile {
   font-style: italic;
   margin-bottom: 0px;
 }
-/* line 152, ../sass/components/_home.scss */
+/* line 166, ../sass/components/_home.scss */
 .book-single__small-desc > span {
   font-size: 12px;
   margin-bottom: 0px;
   display: block;
 }
-/* line 157, ../sass/components/_home.scss */
+/* line 171, ../sass/components/_home.scss */
 .book-single__small-desc p {
   display: block;
   color: #000;
   margin-bottom: 5px;
+}
+
+/* line 184, ../sass/components/_home.scss */
+.services {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+/* line 187, ../sass/components/_home.scss */
+.services h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/* line 191, ../sass/components/_home.scss */
+.services .services-single {
+  text-align: center;
+}
+/* line 193, ../sass/components/_home.scss */
+.services .services-single i {
+  font-size: 30px;
+  background-color: #e53424;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 35px;
+  margin-bottom: 20px;
 }
 
 /*
@@ -10753,6 +10791,14 @@ p.u-intro.mobile {
 .social-icons ul li a {
   font-size: 28px;
   color: #fff;
+}
+
+/* line 132, ../sass/layout/_footer.scss */
+.instruction-text {
+  margin-top: 15px;
+  font-style: italic;
+  color: #fff;
+  font-size: 12px;
 }
 
 /* line 3, ../sass/layout/_sidebar.scss */
