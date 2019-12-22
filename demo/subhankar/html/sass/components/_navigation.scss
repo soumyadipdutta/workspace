@@ -48,4 +48,29 @@
 	}
 }
 
+.side-nav{
+	h4{
+	    font-size: 18px;
+	    color: #ef3b3c;
+	    font-weight: 500;
+	    border-bottom: 1px solid #ef3b3c;
+	    padding-bottom: 8px;
+	}
+	ul{
+		margin-bottom: 25px;
+		li{
+			a{
+				padding: 0px 0;
+				display: block;
+				font-size: 12px;
+				display: block;
+			}
+			&:hover{
+				a{
+					color: #e53423;
+				}
+			}
+		}
+	}
+}
 
