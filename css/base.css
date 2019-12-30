@@ -4,6 +4,6 @@ img,legend{border:0}body,h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility}art
 
 
 
-.header-logo.bongtraveller{
+.header-logo.bongtraveller a{
     background: url(../images/bong-taveller-logo.png) center no-repeat;
 }
