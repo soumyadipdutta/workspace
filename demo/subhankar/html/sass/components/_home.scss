@@ -12,6 +12,9 @@
     &.btn-small{
         padding: 2px 12px;
         font-size: 13px;
+        &:hover{
+            color: #fff;
+        }
     }
 }
 
@@ -88,9 +91,17 @@
         width: 100%;
     }
     .book-desc{
+        h5{
+            margin-bottom: 0px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        em{
+            font-size: 12px;
+            color: #000;
+        }
         p{
             margin-bottom: 0px;
-            font-style: italic;
             font-size: 14px;
         }
     }
@@ -171,17 +182,24 @@
 .book-single{
     &__large{
         text-align: center;
+        img{
+            width: 50%;
+        }
         h4{
             margin-top: 20px;
         }
     }
     &__small{
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         img{
             width: 100%;
         }
         &-image{
             padding: 0 0;
+            a{
+                max-height: 100px;
+                overflow: hidden;
+            }
         }
         &-desc{
             h4{
@@ -243,5 +261,33 @@
     }
     p{
         margin-bottom: 5px;
+    }
+}
+
+.custom-arrow{
+    .slick-arrow{
+        background-color: #e53324;
+        right: 0;
+        top: -42px;
+        width: 30px;
+        height: 30px;
+        &:before{
+            content: " ";
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            color: #fff;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        &.slick-prev{
+            right: 33px;
+            left: auto;
+            &:before{
+               transform: rotate(135deg);
+                -webkit-transform: rotate(135deg); 
+            }
+        }
     }
 }
