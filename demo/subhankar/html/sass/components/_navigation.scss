@@ -30,6 +30,45 @@
 			    font-size: 12px;
 			    text-transform: uppercase;
 			    font-weight: 600;
+			    padding: 7px 0;
+			}
+			&.dropdown{
+				a{
+					i{
+    					margin-left: 5px;
+    					font-size: 20px;
+    				}
+				}
+				ul.sub-menu{
+					display: none;
+					position: absolute;
+					width: 180px;
+					background-color: #be3240;
+					right: 0px;
+					z-index: 1;
+					top: 35px;
+					li{
+						display: block;
+						width: 100%;
+						border-bottom: 1px solid #a23540;
+						a{
+							padding: 4px 5px;
+						    text-align: left;
+						    display: block;
+						    width: 100%;
+						    font-size: 12px;
+		    				font-weight: 600;
+		    				color: #fff;
+						}
+						&:hover{
+							background-color: #a01e2b;
+							transition-duration: 500ms;
+						}
+					}
+				}
+				&:hover ul.sub-menu{
+					display: block;
+				}
 			}
 		}
 	}

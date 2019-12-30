@@ -622,3 +622,10 @@ input {
 .vertical-center{
   align-items: center;
 }
+
+
+.container {
+  @include media-breakpoint(large) {
+      max-width: 1280px;
+  }
+}
