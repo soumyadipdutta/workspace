@@ -10454,26 +10454,51 @@ p.u-intro.mobile {
   text-align: center;
 }
 /* line 90, ../sass/components/_home.scss */
+.featured-single .book-image {
+  position: relative;
+}
+/* line 92, ../sass/components/_home.scss */
+.featured-single .book-image .tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/offer-tag.png);
+  background-size: 100%;
+  border-radius: 50%;
+  padding: 19px 10px;
+  color: #fff;
+  height: 75px;
+  width: 75px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 18px;
+}
+/* line 106, ../sass/components/_home.scss */
+.featured-single .book-image .tag span {
+  display: block;
+  text-transform: uppercase;
+}
+/* line 112, ../sass/components/_home.scss */
 .featured-single img {
   width: 100%;
 }
-/* line 94, ../sass/components/_home.scss */
+/* line 116, ../sass/components/_home.scss */
 .featured-single .book-desc h5 {
   margin-bottom: 0px;
   font-weight: 400;
   font-size: 14px;
 }
-/* line 99, ../sass/components/_home.scss */
+/* line 121, ../sass/components/_home.scss */
 .featured-single .book-desc em {
   font-size: 12px;
   color: #000;
 }
-/* line 103, ../sass/components/_home.scss */
+/* line 125, ../sass/components/_home.scss */
 .featured-single .book-desc p {
   margin-bottom: 0px;
   font-size: 14px;
 }
-/* line 108, ../sass/components/_home.scss */
+/* line 130, ../sass/components/_home.scss */
 .featured-single button {
   background: #ef3b3c;
   color: #fff;
@@ -10484,48 +10509,48 @@ p.u-intro.mobile {
   text-transform: capitalize;
   font-weight: 500;
 }
-/* line 117, ../sass/components/_home.scss */
+/* line 139, ../sass/components/_home.scss */
 .featured-single button:hover {
   background: #d42223;
   transition-duration: 500ms;
 }
 
-/* line 126, ../sass/components/_home.scss */
+/* line 148, ../sass/components/_home.scss */
 .section-area {
   margin: 40px 0;
 }
 
-/* line 131, ../sass/components/_home.scss */
+/* line 153, ../sass/components/_home.scss */
 .publisher-slider .slick-slide {
   margin: 0 5px;
 }
-/* line 134, ../sass/components/_home.scss */
+/* line 156, ../sass/components/_home.scss */
 .publisher-slider .slick-list {
   margin: 0 -5px;
 }
-/* line 137, ../sass/components/_home.scss */
+/* line 159, ../sass/components/_home.scss */
 .publisher-slider .slick-slider {
   overflow: hidden;
 }
 
-/* line 143, ../sass/components/_home.scss */
+/* line 165, ../sass/components/_home.scss */
 .publisher-single a {
   width: 100%;
   background-color: #fff;
 }
-/* line 146, ../sass/components/_home.scss */
+/* line 168, ../sass/components/_home.scss */
 .publisher-single a img {
   width: 100%;
   padding: 10px;
   border: 1px solid #dedede;
 }
 
-/* line 154, ../sass/components/_home.scss */
+/* line 176, ../sass/components/_home.scss */
 .section-title {
   border-bottom: 1px solid #f93234;
   margin-bottom: 20px;
 }
-/* line 157, ../sass/components/_home.scss */
+/* line 179, ../sass/components/_home.scss */
 .section-title h2 {
   background-color: #e53424;
   color: #fff;
@@ -10537,7 +10562,7 @@ p.u-intro.mobile {
   margin-bottom: 0;
   position: relative;
 }
-/* line 167, ../sass/components/_home.scss */
+/* line 189, ../sass/components/_home.scss */
 .section-title h2:after {
   content: " ";
   width: 0;
@@ -10550,36 +10575,36 @@ p.u-intro.mobile {
   top: 0;
 }
 
-/* line 183, ../sass/components/_home.scss */
+/* line 205, ../sass/components/_home.scss */
 .book-single__large {
   text-align: center;
 }
-/* line 185, ../sass/components/_home.scss */
+/* line 207, ../sass/components/_home.scss */
 .book-single__large img {
   width: 50%;
 }
-/* line 188, ../sass/components/_home.scss */
+/* line 210, ../sass/components/_home.scss */
 .book-single__large h4 {
   margin-top: 20px;
 }
-/* line 192, ../sass/components/_home.scss */
+/* line 214, ../sass/components/_home.scss */
 .book-single__small {
   margin-bottom: 5px;
 }
-/* line 194, ../sass/components/_home.scss */
+/* line 216, ../sass/components/_home.scss */
 .book-single__small img {
   width: 100%;
 }
-/* line 197, ../sass/components/_home.scss */
+/* line 219, ../sass/components/_home.scss */
 .book-single__small-image {
   padding: 0 0;
 }
-/* line 199, ../sass/components/_home.scss */
+/* line 221, ../sass/components/_home.scss */
 .book-single__small-image a {
   max-height: 100px;
   overflow: hidden;
 }
-/* line 205, ../sass/components/_home.scss */
+/* line 227, ../sass/components/_home.scss */
 .book-single__small-desc h4 {
   font-size: 14px;
   line-height: 20px;
@@ -10587,34 +10612,34 @@ p.u-intro.mobile {
   font-style: italic;
   margin-bottom: 0px;
 }
-/* line 212, ../sass/components/_home.scss */
+/* line 234, ../sass/components/_home.scss */
 .book-single__small-desc > span {
   font-size: 12px;
   margin-bottom: 0px;
   display: block;
 }
-/* line 217, ../sass/components/_home.scss */
+/* line 239, ../sass/components/_home.scss */
 .book-single__small-desc p {
   display: block;
   color: #000;
   margin-bottom: 5px;
 }
 
-/* line 230, ../sass/components/_home.scss */
+/* line 252, ../sass/components/_home.scss */
 .services {
   padding: 50px 0;
   background-color: #f7f7f7;
 }
-/* line 233, ../sass/components/_home.scss */
+/* line 255, ../sass/components/_home.scss */
 .services h2 {
   font-size: 20px;
   text-transform: uppercase;
 }
-/* line 237, ../sass/components/_home.scss */
+/* line 259, ../sass/components/_home.scss */
 .services .services-single {
   text-align: center;
 }
-/* line 239, ../sass/components/_home.scss */
+/* line 261, ../sass/components/_home.scss */
 .services .services-single i {
   font-size: 30px;
   background-color: #e53424;
@@ -10627,7 +10652,7 @@ p.u-intro.mobile {
   margin-bottom: 20px;
 }
 
-/* line 255, ../sass/components/_home.scss */
+/* line 277, ../sass/components/_home.scss */
 .address-section h4 {
   font-size: 20px;
   line-height: 32px;
@@ -10635,12 +10660,12 @@ p.u-intro.mobile {
   color: #000;
   margin-bottom: 20px;
 }
-/* line 262, ../sass/components/_home.scss */
+/* line 284, ../sass/components/_home.scss */
 .address-section p {
   margin-bottom: 5px;
 }
 
-/* line 268, ../sass/components/_home.scss */
+/* line 290, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow {
   background-color: #e53324;
   right: 0;
@@ -10648,7 +10673,7 @@ p.u-intro.mobile {
   width: 30px;
   height: 30px;
 }
-/* line 274, ../sass/components/_home.scss */
+/* line 296, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow:before {
   content: " ";
   border: solid #fff;
@@ -10659,12 +10684,12 @@ p.u-intro.mobile {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-/* line 284, ../sass/components/_home.scss */
+/* line 306, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow.slick-prev {
   right: 33px;
   left: auto;
 }
-/* line 287, ../sass/components/_home.scss */
+/* line 309, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow.slick-prev:before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);

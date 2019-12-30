@@ -87,6 +87,28 @@
 
 .featured-single{
     text-align: center;
+    .book-image{
+        position: relative;
+        .tag{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../images/offer-tag.png);
+            background-size: 100%;
+            border-radius: 50%;
+            padding: 19px 10px;
+            color: #fff;
+            height: 75px;
+            width: 75px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 18px;
+            span{
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
     img{
         width: 100%;
     }
