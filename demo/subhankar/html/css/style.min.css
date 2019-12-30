@@ -10555,7 +10555,7 @@ p.u-intro.mobile {
   background-color: #e53424;
   color: #fff;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 5px 15px;
   display: inline-block;
   line-height: 35px;
@@ -10581,7 +10581,7 @@ p.u-intro.mobile {
 }
 /* line 207, ../sass/components/_home.scss */
 .book-single__large img {
-  width: 50%;
+  width: 60%;
 }
 /* line 210, ../sass/components/_home.scss */
 .book-single__large h4 {
