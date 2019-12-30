@@ -79,6 +79,10 @@ header{
 		position: relative;
 		a{
 			padding: 35px 20px;
+			font-size: 25px;
+			i{
+				color: #be3240;
+			}
 			&:hover{
 				background-color: #ddd;
 			}

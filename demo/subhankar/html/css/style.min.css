@@ -10267,7 +10267,7 @@ p.u-intro.mobile {
 /* line 37, ../sass/components/_navigation.scss */
 .c-topnav ul li.dropdown a i {
   margin-left: 5px;
-  font-size: 20px;
+  font-size: 12px;
 }
 /* line 42, ../sass/components/_navigation.scss */
 .c-topnav ul li.dropdown ul.sub-menu {
@@ -10757,8 +10757,13 @@ p.u-intro.mobile {
 /* line 80, ../sass/layout/_header.scss */
 .cart-nav li a {
   padding: 35px 20px;
+  font-size: 25px;
 }
-/* line 82, ../sass/layout/_header.scss */
+/* line 83, ../sass/layout/_header.scss */
+.cart-nav li a i {
+  color: #be3240;
+}
+/* line 86, ../sass/layout/_header.scss */
 .cart-nav li a:hover {
   background-color: #ddd;
 }
