@@ -5,6 +5,12 @@ header{
 }
 
 .site-logo{
+	width: 240px;
+    margin: 20px auto;
+	@include media-breakpoint(medium) {
+        width: auto;
+        margin: 0 auto;
+    }
 	img{
 		width: 100%;
 	}
@@ -14,6 +20,10 @@ header{
 	&__top{
 		background-color: #BE3240;
 		padding: 0 0;
+		text-align: center;
+		@include media-breakpoint(medium) {
+			text-align: right;
+		}
 		.row{
 			align-items: center;
 		}

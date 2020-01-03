@@ -87,6 +87,7 @@
 
 .featured-single{
     text-align: center;
+    background-color: #ff0000;
     .book-image{
         position: relative;
         .tag{
@@ -212,18 +213,37 @@
         }
     }
     &__small{
-        margin-bottom: 5px;
+        margin-bottom: 25px;
+         @include media-breakpoint(medium) {
+                margin-bottom: 5px;
+            }
         img{
-            width: 100%;
+            width: 60%;
+            margin: 0 auto;
+            @include media-breakpoint(medium) {
+                width: 100%;
+            }
+
         }
         &-image{
             padding: 0 0;
+            text-align: center;
+            @include media-breakpoint(medium) {
+                text-align: left;
+            }
             a{
-                max-height: 100px;
-                overflow: hidden;
+                max-height: auto;
+                @include media-breakpoint(medium) {
+                    max-height: 100px;
+                    overflow: hidden;
+                }
             }
         }
         &-desc{
+            text-align: center;
+            @include media-breakpoint(medium) {
+                text-align: left;
+            }
             h4{
                 font-size: 14px;
                 line-height: 20px;

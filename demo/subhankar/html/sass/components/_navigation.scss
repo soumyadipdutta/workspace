@@ -20,6 +20,10 @@
 }
 
 .c-topnav{
+	display: none;
+	@include media-breakpoint(medium) {
+		display: block;
+	}
 	ul{
 		margin-bottom: 0px;
 		li{
@@ -75,11 +79,14 @@
 }
 
 .mobile-menu{
+	position: absolute;
+    top: 35px;
+    left: 15px;
 	a{
 		color: #fff;
-		font-size: 20px;
 		i{
-			color: #fff;
+			color: #be3240;
+    		font-size: 35px;
 		}
 	}
 	@include media-breakpoint(medium) {
@@ -109,6 +116,17 @@
 					color: #e53423;
 				}
 			}
+		}
+	}
+}
+
+.mm-navbar_tabs{
+	a{
+		i{
+			margin-right: 8px;
+		}
+		&.mm-navbar__tab_selected{
+			color: #BE3240;
 		}
 	}
 }
