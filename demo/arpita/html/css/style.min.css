@@ -10757,6 +10757,28 @@ p.u-intro.mobile {
   -webkit-transform: rotate(135deg);
 }
 
+/* line 338, ../sass/components/_home.scss */
+.c-about {
+  padding: 80px 0;
+}
+/* line 340, ../sass/components/_home.scss */
+.c-about .row {
+  align-items: center;
+}
+/* line 342, ../sass/components/_home.scss */
+.c-about .row h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+/* line 346, ../sass/components/_home.scss */
+.c-about .row p {
+  padding-right: 20px;
+}
+/* line 351, ../sass/components/_home.scss */
+.c-about .row .about-image img {
+  width: 100%;
+}
+
 /*
 	components
 	--> buttons
