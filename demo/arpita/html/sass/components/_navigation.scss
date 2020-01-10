@@ -1,0 +1,133 @@
+.c-navigation{
+	text-align: center;
+	display: none;
+	ul{
+		margin-bottom: 0px;
+		li{
+			display: inline-block;
+			margin: 0 10px;
+			a{
+				color: #000;
+				padding: 15px 15px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+	}
+	@include media-breakpoint(medium) {
+		display: block;
+	}
+}
+
+.c-topnav{
+	display: none;
+	@include media-breakpoint(medium) {
+		display: block;
+	}
+	ul{
+		margin-bottom: 0px;
+		li{
+			display: inline-block;
+			padding: 0 10px;
+			a{
+				color: #fff;
+			    font-size: 12px;
+			    text-transform: uppercase;
+			    font-weight: 600;
+			    padding: 7px 0;
+			}
+			&.dropdown{
+				a{
+					i{
+    					margin-left: 5px;
+    					font-size: 12px;
+    				}
+				}
+				ul.sub-menu{
+					display: none;
+					position: absolute;
+					width: 180px;
+					background-color: #be3240;
+					right: 0px;
+					z-index: 1;
+					top: 35px;
+					li{
+						display: block;
+						width: 100%;
+						border-bottom: 1px solid #a23540;
+						a{
+							padding: 4px 5px;
+						    text-align: left;
+						    display: block;
+						    width: 100%;
+						    font-size: 12px;
+		    				font-weight: 600;
+		    				color: #fff;
+						}
+						&:hover{
+							background-color: #a01e2b;
+							transition-duration: 500ms;
+						}
+					}
+				}
+				&:hover ul.sub-menu{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.mobile-menu{
+	position: absolute;
+    top: 35px;
+    left: 15px;
+	a{
+		color: #fff;
+		i{
+			color: #be3240;
+    		font-size: 35px;
+		}
+	}
+	@include media-breakpoint(medium) {
+		display: none;
+	}
+}
+
+.side-nav{
+	h4{
+	    font-size: 18px;
+	    color: #ef3b3c;
+	    font-weight: 500;
+	    border-bottom: 1px solid #ef3b3c;
+	    padding-bottom: 8px;
+	}
+	ul{
+		margin-bottom: 25px;
+		li{
+			a{
+				padding: 0px 0;
+				display: block;
+				font-size: 12px;
+				display: block;
+			}
+			&:hover{
+				a{
+					color: #e53423;
+				}
+			}
+		}
+	}
+}
+
+.mm-navbar_tabs{
+	a{
+		i{
+			margin-right: 8px;
+		}
+		&.mm-navbar__tab_selected{
+			color: #BE3240;
+		}
+	}
+}
+

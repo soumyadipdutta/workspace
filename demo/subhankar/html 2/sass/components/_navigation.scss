@@ -1,0 +1,51 @@
+.c-navigation{
+	text-align: center;
+	display: none;
+	ul{
+		margin-bottom: 0px;
+		li{
+			display: inline-block;
+			margin: 0 10px;
+			a{
+				color: #000;
+				padding: 15px 15px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+	}
+	@include media-breakpoint(medium) {
+		display: block;
+	}
+}
+
+.c-topnav{
+	ul{
+		margin-bottom: 0px;
+		li{
+			display: inline-block;
+			padding: 0 10px;
+			a{
+				color: #fff;
+			    font-size: 12px;
+			    text-transform: uppercase;
+			    font-weight: 600;
+			}
+		}
+	}
+}
+
+.mobile-menu{
+	a{
+		color: #fff;
+		font-size: 20px;
+		i{
+			color: #fff;
+		}
+	}
+	@include media-breakpoint(medium) {
+		display: none;
+	}
+}
+
+

@@ -676,8 +676,13 @@
         </div>
         <!-- The page -->
 
-        
-
+        <div id="top-menu" class="hidden">
+            <ul>
+                <li><a href="javascript:void(0);">Home</a></li>
+                <li><a href="javascript:void(0);">Leagues</a></li>
+                <li><a href="javascript:void(0);">Events</a></li>
+            </ul>
+        </div>
 
         <nav id="menu">
             <ul id="panel-menu">
@@ -743,12 +748,12 @@
                         }
                     ]                       
                 });
+                $('.mm-navbar:eq(1)').html($("#top-menu").html());
             });
 
 
-
-
             jQuery(document).ready(function(){
+
                 $('.single-item').slick({
                   dots: true,
                   arrows: true,

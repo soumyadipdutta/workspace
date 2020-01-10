@@ -1,0 +1,335 @@
+/*Welcome*/
+
+.inner-page{
+    padding: 50px 0;
+}
+
+.btn{
+    background: #ef3b3c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    &.btn-small{
+        padding: 2px 12px;
+        font-size: 13px;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+.slider{
+    position: relative;
+}
+
+.event-list{
+    h3{
+        margin-bottom: 30px;
+        text-align: center;
+        @include media-breakpoint(medium) {
+            text-align: left;
+        }
+    }
+    .read-more{
+        background-color: #ff0000;
+        color: #fff;
+        padding: 5px 15px;
+    }
+}
+
+.book-list{
+    .featured-single{
+        margin-bottom: 25px;
+    }
+}
+
+.c-main__bottom{
+    padding: 40px 0 80px;
+}
+
+.official-rules{
+    text-align: center;
+    margin-bottom: 80px;
+    @include media-breakpoint(medium) {
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    h3{
+        margin-bottom: 30px;
+    }
+    img{
+        width: 150px;
+    }
+}
+
+.single-event{
+    margin-bottom: 35px;
+    text-align: center;
+    @include media-breakpoint(medium) {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+}
+
+.add-block{
+    margin-bottom: 25px;
+    img{
+        width: 100%;
+    }
+}
+
+
+.main-banner-slider{
+    img{
+        width: 100%;
+    }
+}
+
+.featured-single{
+    text-align: center;
+    background-color: #ff0000;
+    .book-image{
+        position: relative;
+        .tag{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../images/offer-tag.png);
+            background-size: 100%;
+            border-radius: 50%;
+            padding: 19px 10px;
+            color: #fff;
+            height: 75px;
+            width: 75px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 18px;
+            span{
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .book-desc{
+        h5{
+            margin-bottom: 0px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        em{
+            font-size: 12px;
+            color: #000;
+        }
+        p{
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+    }
+    button{
+        background: #ef3b3c;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 14px;
+        border: none;
+        margin-top: 10px;
+        text-transform: capitalize;
+        font-weight: 500;
+        &:hover{
+            background: #d42223;
+            transition-duration: 500ms;
+        }
+    }
+}
+
+
+
+.section-area{
+    margin: 40px 0;
+}
+
+.publisher-slider{
+    .slick-slide {
+      margin: 0 5px;
+    }
+    .slick-list {
+      margin: 0 -5px;
+    }
+    .slick-slider {
+      overflow: hidden;
+    }
+}
+
+.publisher-single{
+    a{
+        width: 100%;
+        background-color: #fff;
+        img{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dedede;
+        }
+    }
+}
+
+.section-title{
+    border-bottom: 1px solid #f93234;
+    margin-bottom: 20px;
+    h2{
+        background-color: #e53424;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 5px 15px;
+        display: inline-block;
+        line-height: 35px;
+        margin-bottom: 0;
+        position: relative;
+        &:after{
+            content: " ";
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 18px solid transparent;
+            border-bottom: 46px solid #e53324;
+            position: absolute;
+            right: -18px;
+            top: 0;
+        }
+    }
+}
+
+
+.book-single{
+    &__large{
+        text-align: center;
+        img{
+            width: 60%;
+        }
+        h4{
+            margin-top: 20px;
+        }
+    }
+    &__small{
+        margin-bottom: 25px;
+         @include media-breakpoint(medium) {
+                margin-bottom: 5px;
+            }
+        img{
+            width: 60%;
+            margin: 0 auto;
+            @include media-breakpoint(medium) {
+                width: 100%;
+            }
+
+        }
+        &-image{
+            padding: 0 0;
+            text-align: center;
+            @include media-breakpoint(medium) {
+                text-align: left;
+            }
+            a{
+                max-height: auto;
+                @include media-breakpoint(medium) {
+                    max-height: 100px;
+                    overflow: hidden;
+                }
+            }
+        }
+        &-desc{
+            text-align: center;
+            @include media-breakpoint(medium) {
+                text-align: left;
+            }
+            h4{
+                font-size: 14px;
+                line-height: 20px;
+                color: #ef3b3c;
+                font-style: italic;
+                margin-bottom: 0px;
+            }
+            > span {
+                font-size: 12px;
+                margin-bottom: 0px;
+                display: block;
+            }
+            p{
+                display: block;
+                color: #000;
+                margin-bottom: 5px;
+                span{
+
+                }
+            }
+        }
+    }
+}
+
+
+.services{
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    h2{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .services-single{
+        text-align: center;
+        i{
+            font-size: 30px;
+            background-color: #e53424;
+            padding: 10px;
+            border-radius: 50%;
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.address-section{
+    h4{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+.custom-arrow{
+    .slick-arrow{
+        background-color: #e53324;
+        right: 0;
+        top: -42px;
+        width: 30px;
+        height: 30px;
+        &:before{
+            content: " ";
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            color: #fff;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        &.slick-prev{
+            right: 33px;
+            left: auto;
+            &:before{
+               transform: rotate(135deg);
+                -webkit-transform: rotate(135deg); 
+            }
+        }
+    }
+}

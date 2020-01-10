@@ -1,0 +1,101 @@
+/*Vendors*/ 
+@import "vendors/vendor";
+
+/*
+	helpers
+	--> variables
+	--> functions
+	--> mixins
+*/
+@import "helpers/color";
+@import "helpers/variables";
+@import "helpers/mixin";
+
+
+
+
+
+/*
+	base
+	--> reset
+	--> typography
+	--> color
+*/
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+@import "components/navigation";
+@import "components/home";
+
+/*
+	components
+	--> buttons
+	--> navigation
+
+*/
+
+/*@import "components/main";
+
+@import "components/search";
+@import "components/pagination";
+@import "components/featured";
+@import "components/buttons";
+@import "components/ui-guide";
+@import "components/input";
+@import "components/form";
+
+@import "components/sidebar";
+@import "components/patient";
+
+@import "components/patient-notes";
+@import "components/rx";
+@import "components/dependent";
+@import "components/tooltip";
+@import "components/inventory-list";*/
+
+
+
+
+/************************************************/
+/****************   PATIENT TABS   **************/
+/************************************************/
+/*@import "components/patient-tabs/vcp-information";
+@import "components/patient-tabs/vcp-plan-details";
+@import "components/patient-tabs/copay-calculator";
+@import "components/patient-tabs/patient_history";*/
+
+
+/************************************************/
+/****************   INVENTORY   **************/
+/************************************************/
+/*@import "components/inventory/inbox";
+@import "components/inventory/frame";
+
+
+@import "components/user";
+*/
+
+/************************************************/
+/****************   Print View   **************/
+/************************************************/
+/*@import "components/print";
+
+@import "components/login";
+@import "components/registration";
+@import "components/sign-up";
+
+@import "components/home";*/
+
+
+/*
+	layout
+	--> header
+	--> sidebar
+*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/*
+  Additional
+*/

@@ -1,0 +1,114 @@
+// ----------------------------------------------------------------------
+
+  // Box Shadow
+
+// ----------------------------------------------------------------------
+
+////////////////////////////////////////
+//////////// Box Shadow ////////////////
+////////////////////////////////////////
+$box-shadow-color: rgba(0, 0, 0, 0.08);
+
+$shadow-color-medium: rgba(0, 0, 0, 0.16);
+$shadow-color-dark: rgba(0, 0, 0, 0.24);
+
+
+$default-value: 8px;
+
+$box-shadow-1: $default-value;
+$box-shadow-2: $default-value * 2;
+$box-shadow-3: $default-value * 3;
+$box-shadow-4: $default-value * 4;
+$box-shadow-5: $default-value * 5;
+$box-shadow-6: $default-value * 6;
+
+////////////////////////////////////////
+
+
+// example: @include box-shadow(1px, 2px, 2px, 2px, #000);
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
+
+
+//Size Sample
+.shadow-small{
+  @include box-shadow(0, 6px, 12px, $box-shadow-color);
+}
+.shadow-medium{
+  @include box-shadow(0, 12px, 24px, $box-shadow-color);
+}
+.shadow-large{
+  @include box-shadow(0, 24px, 48px, $box-shadow-color);
+}
+
+
+//Opacity Sample
+.shadow-light{
+  @include box-shadow(0, 12px, 24px, $box-shadow-color);
+}
+.shadow-natural{
+  @include box-shadow(0, 12px, 24px, $shadow-color-medium);
+}
+.shadow-dark{
+  @include box-shadow(0, 12px, 24px, $shadow-color-dark);
+}
+
+
+
+@mixin text-field {
+ display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  @include rounded();
+  @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+}
+
+@mixin button($color: $red, $text_color: $white) {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  @include rounded();
+  @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+
+  color: $text_color !important;
+  font-weight: bold;
+  border: solid 1px darken($color, 18%);
+  background: $color;
+  @include gradient(saturate($color, 15%), darken($color, 15%));
+
+  &:hover {
+    text-decoration: none;
+    background: saturate($color, 10%);
+    @include gradient(saturate($color, 5%), darken($color, 5%));
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+    color: saturate($color, 15%);
+    @include gradient(saturate($color, 15%), lighten($color, 15%));
+  }
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: .5em; 
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+}
+
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}

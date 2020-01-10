@@ -1,0 +1,219 @@
+//Global Button Style
+
+.u-form{
+	background-color: $off-white;
+	padding-bottom: 40px;
+	@include media-breakpoint(small){
+		padding-bottom: 0px;
+	}
+	&__section{
+		margin-bottom: 50px;
+	}
+	&__title{
+		position: relative;
+		margin-bottom: 15px;
+		&:before{
+			content: " ";
+			background-color: $brand;
+			height: 2px;
+		    min-width: 100%;
+		    display: block;
+		    position: absolute;
+		    top: 13px;
+		}
+		h4{
+			background: $off-white;
+		    display: inline-block;
+		    padding: 0 15px 0 0px;
+		    position: relative;
+		    font-weight: $font-bold;
+		}
+	}
+	&__body{
+		> .row{
+			margin-bottom: 0px;
+			@include media-breakpoint(small){
+				margin-bottom: 15px;
+			}
+		}
+
+		h4{
+			margin-top: 35px;
+			margin-bottom: 15px;
+			font-weight: $font-bold;
+		}
+
+		.dropdown-toggle{
+			background-color: $white;
+		    border-radius: 3px;
+		    width: 100%;
+		    @include box-shadow(0, 0, $box-shadow-2, $box-shadow-color);
+		    font-size: $base-font-size;
+		    border: none;
+		    font-weight: $font-bold;
+		    padding: 8px 14px;
+		    color: $placeholder;
+		    text-align: left;
+		    @include media-breakpoint(small){
+				font-size: $base-font-size + 4;
+			}
+			&:after{
+				content: " "; 
+				float: right;
+				margin-top: 10px;
+				@include media-breakpoint(small){
+					margin-top: 12px;
+				}
+			}
+		}
+	}
+	label{
+		font-size: $base-font-size - 4;
+		text-transform: uppercase;
+		color: $brand;
+		font-weight: $font-bold - 200;
+		margin-bottom: 8px;
+		@include media-breakpoint(small){
+			margin-bottom: 3px;
+		}
+	}
+
+}
+
+
+.form-group{
+  label{
+    display: block;
+    font-family: $font-familly-regular;
+    font-style: normal;
+    line-height: normal;
+    font-size: 10px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #A5B3C1;
+    i{
+      font-size: 9px;
+      margin-left: 5px;
+    }
+  }
+  .label-text{
+    width: 100%;
+      font-family: $font-familly-regular;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+        font-size: 14px ;
+    color: #2E3333 ;
+  }
+  .form-control{
+    background: #F6F7FB;
+    border-radius: 3px;
+    border: 0;
+      padding: 10px 15px;
+    height: 36px;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 14px;
+      color: #2E3333;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      font-size: 14px;
+      color: #2E3333;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      font-size: 14px;
+      color: #2E3333;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px;
+      color: #2E3333;
+    }
+  }
+}
+
+.cs-check {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: $font-familly-regular;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px !important;
+  color: #2E3333 !important;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+
+/* Hide the browser's default checkbox */
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #DFE5E9;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.cs-check {
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+    &:after {
+      border-color: #00B30F;
+    }
+  }
+  input:checked ~ .checkmark {
+    background-color: #CBF5CF;
+    &:after {
+      border-color: #00B30F;
+    }
+  }
+}
+
+/* When the checkbox is checked, add a blue background */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+}
+
+/* Show the checkmark when checked */
+
+.cs-check {
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 5px;
+    height: 7px;
+    border: solid #A5B3C1;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+/* Style the checkmark/indicator */
