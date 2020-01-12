@@ -8,7 +8,7 @@ header{
 	width: 240px;
     margin: 20px auto;
 	@include media-breakpoint(medium) {
-        width: auto;
+        max-width: 250px;
         margin: 0 auto;
     }
 	img{
@@ -21,6 +21,8 @@ header{
 		background-color: #BE3240;
 		padding: 0 0;
 		text-align: center;
+		display: block;
+		transition-duration: 1s;
 		@include media-breakpoint(medium) {
 			text-align: right;
 		}
@@ -35,6 +37,8 @@ header{
 	&__bottom{
 		border-top: 1px solid #dedede;
 		background-color: #fff;
+		display: block;
+		transition-duration: 1s;
 	}
 }
 
@@ -85,17 +89,83 @@ header{
 	text-align: right;
 	margin-bottom: 0px;
 	li{
-		display: inline-block;
-		position: relative;
+	    display: inline-block;
+	    position: relative;
+	    width: 23%;
+	    text-align: center;
+	    font-size: 0;
+		> i{
+		    display: block;
+		    text-align: center;
+		    font-size: 22px;
+		    color: #be3240;
+		}
 		a{
-			padding: 35px 20px;
-			font-size: 25px;
+		    padding: 20px 5px;
+		    font-size: 25px;
+		    text-align: center;
+		    display: block;
 			i{
 				color: #be3240;
+			}
+			span{
+				font-size: 13px;
+				display: block;
+				text-align: center;
 			}
 			&:hover{
 				background-color: #ddd;
 			}
+		}
+		&:after{
+			content: "";
+		    height: 30px;
+		    width: 1px;
+		    position: absolute;
+		    right: -1px;
+		    background-color: #d4d4d4;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+
+
+@keyframes stickeyheader{
+	0%{ top: -80px; }
+	100%{ top: 0px; }
+}
+
+.c-header-main{
+	&.stickey{
+		position: fixed;
+		z-index: 9;
+		min-width: 100%;
+		animation: 1s stickeyheader forwards;
+		.c-header__top{
+			display: none;
+			transition-duration: 1s;
+		}
+		.c-header__middle{
+			box-shadow: 0 0 15px 0 #b1b1b1;
+		}
+		.c-header__bottom{
+			display: none;
+			transition-duration: 1s;
+		}
+		.site-logo{
+			@include media-breakpoint(medium) {
+		        max-width: 180px;
+		    }
+		}
+		.cart-nav li a{
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 	}
 }
