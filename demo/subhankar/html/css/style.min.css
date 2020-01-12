@@ -10824,6 +10824,15 @@ p.u-intro.mobile {
   width: 100%;
 }
 
+/* line 395, ../sass/components/_home.scss */
+.c-section {
+  margin: 25px 0;
+}
+/* line 397, ../sass/components/_home.scss */
+.c-section p {
+  margin-bottom: 2px;
+}
+
 /*
 	components
 	--> buttons
