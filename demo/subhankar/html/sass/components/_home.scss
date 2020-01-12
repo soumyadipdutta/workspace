@@ -117,7 +117,7 @@
         h5{
             margin-bottom: 0px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 26px;
         }
         em{
@@ -378,6 +378,12 @@
     }
 }
 
+
+.c-bbokdetails_img{
+    img{
+        width: 100%;
+    }
+}
 .feature-book{
     margin-top: 30px;
     border: 1px solid #ddd;

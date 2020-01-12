@@ -10512,7 +10512,7 @@ p.u-intro.mobile {
 .featured-single .book-desc h5 {
   margin-bottom: 0px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 }
 /* line 123, ../sass/components/_home.scss */
@@ -10809,12 +10809,17 @@ p.u-intro.mobile {
   padding-left: 0px;
 }
 
-/* line 381, ../sass/components/_home.scss */
+/* line 383, ../sass/components/_home.scss */
+.c-bbokdetails_img img {
+  width: 100%;
+}
+
+/* line 387, ../sass/components/_home.scss */
 .feature-book {
   margin-top: 30px;
   border: 1px solid #ddd;
 }
-/* line 384, ../sass/components/_home.scss */
+/* line 390, ../sass/components/_home.scss */
 .feature-book img {
   width: 100%;
 }
