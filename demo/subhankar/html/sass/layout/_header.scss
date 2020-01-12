@@ -99,7 +99,7 @@ header{
 	li{
 	    display: inline-block;
 	    position: relative;
-	    width: 23%;
+	    width: 24%;
 	    text-align: center;
 	    font-size: 0;
 		> i{
@@ -120,6 +120,7 @@ header{
 				font-size: 13px;
 				display: block;
 				text-align: center;
+				color: #de7781;
 			}
 			&:hover{
 				background-color: #ddd;
@@ -174,6 +175,23 @@ header{
 		.cart-nav li a{
 			padding-top: 10px;
 			padding-bottom: 10px;
+		}
+	}
+}
+.additinal-navigatiob{
+	display: none;
+}
+#menu{
+	.additinal-navigatiob{
+		display: block;
+		margin: 15px 0;
+		li{
+			display: block;
+			text-align: left;
+			a{
+				padding: 4px 10px;
+	    		display: block;
+			}
 		}
 	}
 }
