@@ -5,10 +5,9 @@ header{
 }
 
 .site-logo{
-	width: 240px;
+	width: 140px;
     margin: 20px auto;
 	@include media-breakpoint(medium) {
-        width: auto;
         margin: 0 auto;
     }
 	img{
@@ -29,7 +28,7 @@ header{
 		}
 	}
 	&__middle{
-		background-color: #f9f9f9;
+		background-color: #fff;
     	padding: 10px 0;
 	}
 	&__bottom{
