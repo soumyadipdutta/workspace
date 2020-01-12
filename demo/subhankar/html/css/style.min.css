@@ -10833,6 +10833,34 @@ p.u-intro.mobile {
   margin-bottom: 2px;
 }
 
+/* line 403, ../sass/components/_home.scss */
+.c-form {
+  background: #f3ce76;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+/* line 409, ../sass/components/_home.scss */
+.c-form h2 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+/* line 417, ../sass/components/_home.scss */
+.c-form .form-group {
+  margin-bottom: 15px;
+}
+/* line 419, ../sass/components/_home.scss */
+.c-form .form-group label {
+  font-size: 16px;
+}
+/* line 422, ../sass/components/_home.scss */
+.c-form .form-group .c-input {
+  border-radius: 3px;
+}
+
 /*
 	components
 	--> buttons
