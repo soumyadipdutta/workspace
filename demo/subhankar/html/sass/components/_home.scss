@@ -96,13 +96,14 @@
             background-image: url(../images/offer-tag.png);
             background-size: 100%;
             border-radius: 50%;
-            padding: 19px 10px;
+            padding: 14px 10px;
             color: #fff;
-            height: 75px;
-            width: 75px;
+            height: 65px;
+            width: 65px;
             font-weight: 600;
             text-align: center;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 17px;
             span{
                 display: block;
                 text-transform: uppercase;
@@ -115,16 +116,17 @@
     .book-desc{
         h5{
             margin-bottom: 0px;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
         }
         em{
-            font-size: 12px;
+            font-size: 14px;
             color: #000;
         }
         p{
             margin-bottom: 0px;
-            font-size: 14px;
+            font-size: 18px;
         }
     }
     button{
@@ -339,5 +341,47 @@
                 -webkit-transform: rotate(135deg); 
             }
         }
+    }
+}
+
+.book-price{
+    font-size: 15px;
+    color: #e82300;
+    span{
+        text-decoration: line-through;
+        color: #464646;
+    }
+}
+
+.side-booklist{
+    border: 1px solid #ddd;
+    &__single{
+        padding: 15px 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        h4{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        &-cont{
+            padding-right: 0px;
+        }
+        &-img{
+           padding-right: 0px;
+           padding-left: 0px; 
+        }
+    }
+}
+
+.feature-book{
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    img{
+        width: 100%;
     }
 }
