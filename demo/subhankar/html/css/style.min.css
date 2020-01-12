@@ -10835,18 +10835,18 @@ p.u-intro.mobile {
 
 /* line 403, ../sass/components/_home.scss */
 .c-form {
-  background: #f3ce76;
+  background: #f9f9f9;
   padding: 40px;
-  border-radius: 20px;
   margin: 20px 0;
 }
-/* line 409, ../sass/components/_home.scss */
+/* line 408, ../sass/components/_home.scss */
 .c-form h2 {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
   padding-bottom: 15px;
   margin-bottom: 25px;
   text-align: left;
+  text-transform: uppercase;
 }
 /* line 417, ../sass/components/_home.scss */
 .c-form .form-group {
