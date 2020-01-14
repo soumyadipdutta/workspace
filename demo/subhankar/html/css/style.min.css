@@ -10236,7 +10236,7 @@ p.u-intro.mobile {
 /* line 9, ../sass/components/_navigation.scss */
 .c-navigation ul li a {
   color: #000;
-  padding: 15px 15px;
+  padding: 10px 15px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -10924,7 +10924,7 @@ p.u-intro.mobile {
 @media (min-width: 1025px) {
   /* line 7, ../sass/layout/_header.scss */
   .site-logo {
-    max-width: 250px;
+    max-width: 210px;
     margin: 0 auto;
   }
 }
@@ -11042,7 +11042,7 @@ p.u-intro.mobile {
 }
 /* line 111, ../sass/layout/_header.scss */
 .cart-nav li a {
-  padding: 20px 5px;
+  padding: 10px 5px;
   font-size: 25px;
   text-align: center;
   display: block;
@@ -11101,45 +11101,59 @@ p.u-intro.mobile {
 /* line 163, ../sass/layout/_header.scss */
 .c-header-main.stickey .c-header__middle {
   box-shadow: 0 0 15px 0 #b1b1b1;
+  background-color: #c13623;
 }
-/* line 166, ../sass/layout/_header.scss */
+/* line 167, ../sass/layout/_header.scss */
 .c-header-main.stickey .c-header__bottom {
   display: none;
   transition-duration: 1s;
 }
 @media (min-width: 1025px) {
-  /* line 170, ../sass/layout/_header.scss */
+  /* line 171, ../sass/layout/_header.scss */
   .c-header-main.stickey .site-logo {
     max-width: 180px;
   }
 }
-/* line 175, ../sass/layout/_header.scss */
+/* line 176, ../sass/layout/_header.scss */
 .c-header-main.stickey .cart-nav li a {
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #fff;
+}
+/* line 180, ../sass/layout/_header.scss */
+.c-header-main.stickey .cart-nav li a i {
+  color: #fff;
+}
+/* line 183, ../sass/layout/_header.scss */
+.c-header-main.stickey .cart-nav li a span {
+  color: #fff;
+}
+/* line 186, ../sass/layout/_header.scss */
+.c-header-main.stickey .cart-nav li a:hover {
+  background-color: #4a4a4a;
 }
 
-/* line 182, ../sass/layout/_header.scss */
+/* line 193, ../sass/layout/_header.scss */
 .mm-searchfield__input {
   background-color: #f4bc11;
 }
 
-/* line 185, ../sass/layout/_header.scss */
+/* line 196, ../sass/layout/_header.scss */
 .additinal-navigatiob {
   display: none;
 }
 
-/* line 189, ../sass/layout/_header.scss */
+/* line 200, ../sass/layout/_header.scss */
 #menu .additinal-navigatiob {
   display: block;
   margin: 15px 0;
 }
-/* line 192, ../sass/layout/_header.scss */
+/* line 203, ../sass/layout/_header.scss */
 #menu .additinal-navigatiob li {
   display: block;
   text-align: left;
 }
-/* line 195, ../sass/layout/_header.scss */
+/* line 206, ../sass/layout/_header.scss */
 #menu .additinal-navigatiob li a {
   padding: 4px 10px;
   display: block;
