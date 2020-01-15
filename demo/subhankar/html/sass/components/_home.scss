@@ -87,12 +87,13 @@
 
 .featured-single{
     text-align: center;
+    position: relative;
     .book-image{
         position: relative;
         .tag{
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -14px;
+            right: -14px;
             background-image: url(../images/offer-tag.png);
             background-size: 100%;
             border-radius: 50%;
@@ -138,9 +139,16 @@
         margin-top: 10px;
         text-transform: capitalize;
         font-weight: 500;
+        position: absolute;
+        min-width: auto;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         &:hover{
             background: #d42223;
             transition-duration: 500ms;
+            outline: none;
         }
     }
 }
@@ -160,6 +168,24 @@
     }
     .slick-slider {
       overflow: hidden;
+    }
+}
+
+.featured-slider{
+    .slick-slide {
+      margin: 0 8px;
+    }
+    .slick-list {
+      margin: 0 -8px;
+    }
+    .slick-slider {
+      overflow: hidden;
+    }
+    .featured-single{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        min-height: 450px;
     }
 }
 
