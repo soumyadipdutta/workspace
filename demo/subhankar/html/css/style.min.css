@@ -10737,7 +10737,7 @@ body .btn.btn-small:hover {
 .services .services-single {
   text-align: left;
 }
-/* line 318, ../sass/components/_home.scss */
+/* line 317, ../sass/components/_home.scss */
 .services .services-single i {
   font-size: 30px;
   background-color: #e53424;
@@ -10749,16 +10749,16 @@ body .btn.btn-small:hover {
   line-height: 35px;
   margin-bottom: 20px;
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 8px;
   text-align: center;
 }
-/* line 333, ../sass/components/_home.scss */
+/* line 332, ../sass/components/_home.scss */
 .services .services-single__main {
-  padding-left: 55px;
+  padding-left: 68px;
 }
 
-/* line 341, ../sass/components/_home.scss */
+/* line 340, ../sass/components/_home.scss */
 .address-section h4 {
   font-size: 20px;
   line-height: 32px;
@@ -10766,12 +10766,12 @@ body .btn.btn-small:hover {
   color: #000;
   margin-bottom: 20px;
 }
-/* line 348, ../sass/components/_home.scss */
+/* line 347, ../sass/components/_home.scss */
 .address-section p {
   margin-bottom: 5px;
 }
 
-/* line 354, ../sass/components/_home.scss */
+/* line 353, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow {
   background-color: #e53324;
   right: 0;
@@ -10779,7 +10779,7 @@ body .btn.btn-small:hover {
   width: 30px;
   height: 30px;
 }
-/* line 360, ../sass/components/_home.scss */
+/* line 359, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow:before {
   content: " ";
   border: solid #fff;
@@ -10790,33 +10790,33 @@ body .btn.btn-small:hover {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-/* line 370, ../sass/components/_home.scss */
+/* line 369, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow.slick-prev {
   right: 33px;
   left: auto;
 }
-/* line 373, ../sass/components/_home.scss */
+/* line 372, ../sass/components/_home.scss */
 .custom-arrow .slick-arrow.slick-prev:before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
 
-/* line 381, ../sass/components/_home.scss */
+/* line 380, ../sass/components/_home.scss */
 .book-price {
   font-size: 15px;
   color: #e82300;
 }
-/* line 384, ../sass/components/_home.scss */
+/* line 383, ../sass/components/_home.scss */
 .book-price span {
   text-decoration: line-through;
   color: #464646;
 }
 
-/* line 390, ../sass/components/_home.scss */
+/* line 389, ../sass/components/_home.scss */
 .side-booklist {
   border: 1px solid #ddd;
 }
-/* line 392, ../sass/components/_home.scss */
+/* line 391, ../sass/components/_home.scss */
 .side-booklist__single {
   padding: 15px 0;
   margin-left: 0px;
@@ -10824,56 +10824,56 @@ body .btn.btn-small:hover {
   border-bottom: 1px solid #ddd;
   align-items: center;
 }
-/* line 398, ../sass/components/_home.scss */
+/* line 397, ../sass/components/_home.scss */
 .side-booklist__single h4 {
   font-size: 15px;
   line-height: 20px;
 }
-/* line 402, ../sass/components/_home.scss */
+/* line 401, ../sass/components/_home.scss */
 .side-booklist__single img {
   width: 100%;
 }
-/* line 405, ../sass/components/_home.scss */
+/* line 404, ../sass/components/_home.scss */
 .side-booklist__single-cont {
   padding-right: 0px;
 }
-/* line 408, ../sass/components/_home.scss */
+/* line 407, ../sass/components/_home.scss */
 .side-booklist__single-img {
   padding-right: 0px;
   padding-left: 0px;
 }
 
-/* line 417, ../sass/components/_home.scss */
+/* line 416, ../sass/components/_home.scss */
 .c-bbokdetails_img img {
   width: 100%;
 }
 
-/* line 421, ../sass/components/_home.scss */
+/* line 420, ../sass/components/_home.scss */
 .feature-book {
   margin-top: 30px;
   border: 1px solid #ddd;
 }
-/* line 424, ../sass/components/_home.scss */
+/* line 423, ../sass/components/_home.scss */
 .feature-book img {
   width: 100%;
 }
 
-/* line 429, ../sass/components/_home.scss */
+/* line 428, ../sass/components/_home.scss */
 .c-section {
   margin: 25px 0;
 }
-/* line 431, ../sass/components/_home.scss */
+/* line 430, ../sass/components/_home.scss */
 .c-section p {
   margin-bottom: 2px;
 }
 
-/* line 437, ../sass/components/_home.scss */
+/* line 436, ../sass/components/_home.scss */
 .c-form {
   background: #f9f9f9;
   padding: 40px;
   margin: 20px 0;
 }
-/* line 442, ../sass/components/_home.scss */
+/* line 441, ../sass/components/_home.scss */
 .c-form h2 {
   color: #4a4a4a;
   border-bottom: 1px solid #4a4a4a;
@@ -10882,15 +10882,15 @@ body .btn.btn-small:hover {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 451, ../sass/components/_home.scss */
+/* line 450, ../sass/components/_home.scss */
 .c-form .form-group {
   margin-bottom: 15px;
 }
-/* line 453, ../sass/components/_home.scss */
+/* line 452, ../sass/components/_home.scss */
 .c-form .form-group label {
   font-size: 16px;
 }
-/* line 456, ../sass/components/_home.scss */
+/* line 455, ../sass/components/_home.scss */
 .c-form .form-group .c-input {
   border-radius: 3px;
 }

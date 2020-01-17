@@ -314,7 +314,6 @@ body{
     }
     .services-single{
         text-align: left;
-
         i{
             font-size: 30px;
             background-color: #e53424;
@@ -326,12 +325,12 @@ body{
             line-height: 35px;
             margin-bottom: 20px;
             position: absolute;
-            left: 0;
+            left: 15px;
             top: 8px;
             text-align: center;
         }
         &__main{
-            padding-left: 55px;
+            padding-left: 68px;
         }
     }
 }
