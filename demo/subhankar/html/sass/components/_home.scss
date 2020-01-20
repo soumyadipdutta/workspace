@@ -265,6 +265,30 @@ body{
         h4{
             margin-top: 20px;
         }
+        .btn-small{
+            background: #ef3b3c;
+            color: #fff;
+            padding: 0px 16px;
+            font-size: 14px;
+            border: none;
+            margin-top: 10px;
+            text-transform: capitalize;
+            font-weight: 500;
+            min-width: auto;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border: 2px solid #d42223;
+            border-radius: 0px;
+            &:hover{
+                background: #ffffff;
+                border: 2px solid #d42223;
+                color: #d42223;
+                transition-duration: 500ms;
+                outline: none;
+            }
+        }
     }
     &__small{
         margin-bottom: 25px;
@@ -316,6 +340,31 @@ body{
                 margin-bottom: 5px;
                 span{
 
+                }
+            }
+
+            .btn-small{
+                background: #ef3b3c;
+                color: #fff;
+                padding: 0px 16px;
+                font-size: 14px;
+                border: none;
+                margin-top: 10px;
+                text-transform: capitalize;
+                font-weight: 500;
+                min-width: auto;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                border: 2px solid #d42223;
+                border-radius: 0px;
+                &:hover{
+                    background: #ffffff;
+                    border: 2px solid #d42223;
+                    color: #d42223;
+                    transition-duration: 500ms;
+                    outline: none;
                 }
             }
         }
@@ -606,6 +655,116 @@ body{
         line-height: 18px;
         span{
             display: block;
+        }
+    }
+}
+
+
+.shopping-cart{
+    position: relative;
+    &:hover{
+        .mini-cart{
+            background-color: #fff;
+            border-top: 3px solid #be3240;
+            display: block !important;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            z-index: 9;
+            min-width: 280px;
+            box-shadow: 0 0 20px 0 #ddd;
+            &_single{
+                align-items: center;
+                background-color: #fff;
+                padding: 20px 15px;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                .cross{
+                    background-color: #ff0000;
+                    line-height: 20px;
+                    color: #fff;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    right: 4px;
+                    top: 3px;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+
+            .btn-row{
+                padding: 8px 10px;
+                &:before{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .btn{
+                    background: #ef3b3c;
+                    color: #fff;
+                    padding: 0px 16px;
+                    font-size: 14px;
+                    border: none;
+                    margin-top: 10px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    min-width: auto;
+                    bottom: 10px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    border: 2px solid #d42223;
+                    border-radius: 0px;
+                     &:hover{
+                        background: #ffffff;
+                        border: 2px solid #d42223;
+                        color: #d42223;
+                        transition-duration: 500ms;
+                        outline: none;
+                    }
+                }
+            }
+
+            .book-img{
+                width: 100%;
+            }
+            .book-desc{
+                text-align: left;
+                h5{
+                    margin-bottom: 0px;
+                }
+                em{
+                    font-size: 12px;
+                    text-align: left;
+                }
+                .book-price span{
+                    display: inline-block !important;
+                }
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+
+            &:before{
+                content: " ";
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid #be3240;
+                z-index: 9;
+                position: absolute;
+                top: -10px;
+                right: 26px;
+            }
         }
     }
 }
