@@ -533,3 +533,77 @@ body{
         border: 2px solid #dad6d6;
     }
 }
+
+.remove-margin{
+    padding: 0 0;
+}
+.card-option{
+    margin-bottom: 20px;
+}
+
+.book-description-full{
+    margin-bottom: 20px;
+    p{
+        margin-bottom: 2px;
+    }
+}
+
+.c-bbokdetails{
+    margin: 60px 0;
+}
+
+.cod-checker{
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 85%;
+    .row{
+        margin: 0 0;
+    }
+    p{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .c-input{
+        border: 1px solid #ddd;
+        border-radius: 0px;
+    }
+    .btn{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+.category{
+   margin-top: 20px;
+   font-size: 12px;
+}
+
+.quantity{
+    width: 80px;
+    display: inline-block;
+    input{
+        width: 100%;
+        padding: 6px;
+    }
+}
+
+.c-bbokdetails_img{
+    .tag{
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        background-image: url(../images/offer-tag.png);
+        background-size: 100%;
+        border-radius: 50%;
+        padding: 21px 10px;
+        color: #fff;
+        height: 80px;
+        width: 80px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        span{
+            display: block;
+        }
+    }
+}

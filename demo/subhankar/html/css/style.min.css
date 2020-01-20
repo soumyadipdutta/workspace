@@ -10989,6 +10989,95 @@ body .btn.btn-small:hover {
   border: 2px solid #dad6d6;
 }
 
+/* line 537, ../sass/components/_home.scss */
+.remove-margin {
+  padding: 0 0;
+}
+
+/* line 540, ../sass/components/_home.scss */
+.card-option {
+  margin-bottom: 20px;
+}
+
+/* line 544, ../sass/components/_home.scss */
+.book-description-full {
+  margin-bottom: 20px;
+}
+/* line 546, ../sass/components/_home.scss */
+.book-description-full p {
+  margin-bottom: 2px;
+}
+
+/* line 551, ../sass/components/_home.scss */
+.c-bbokdetails {
+  margin: 60px 0;
+}
+
+/* line 555, ../sass/components/_home.scss */
+.cod-checker {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 85%;
+}
+/* line 559, ../sass/components/_home.scss */
+.cod-checker .row {
+  margin: 0 0;
+}
+/* line 562, ../sass/components/_home.scss */
+.cod-checker p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+/* line 566, ../sass/components/_home.scss */
+.cod-checker .c-input {
+  border: 1px solid #ddd;
+  border-radius: 0px;
+}
+/* line 570, ../sass/components/_home.scss */
+.cod-checker .btn {
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* line 575, ../sass/components/_home.scss */
+.category {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* line 580, ../sass/components/_home.scss */
+.quantity {
+  width: 80px;
+  display: inline-block;
+}
+/* line 583, ../sass/components/_home.scss */
+.quantity input {
+  width: 100%;
+  padding: 6px;
+}
+
+/* line 590, ../sass/components/_home.scss */
+.c-bbokdetails_img .tag {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  background-image: url(../images/offer-tag.png);
+  background-size: 100%;
+  border-radius: 50%;
+  padding: 21px 10px;
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* line 605, ../sass/components/_home.scss */
+.c-bbokdetails_img .tag span {
+  display: block;
+}
+
 /*
 	components
 	--> buttons
