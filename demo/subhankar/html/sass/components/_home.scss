@@ -4,6 +4,15 @@
     padding: 50px 0;
 }
 
+.main-banner-slider{
+    .slick-dots{
+        bottom: 20px;
+        li button:before{
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
 
 body{
     .btn{
@@ -183,7 +192,7 @@ body{
 }
 
 .section-area{
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .publisher-slider{
@@ -233,9 +242,9 @@ body{
     h2{
         background-color: #e53424;
         color: #fff;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 400;
-        padding: 5px 15px;
+        padding: 0px 15px;
         display: inline-block;
         line-height: 35px;
         margin-bottom: 0;
@@ -245,10 +254,10 @@ body{
             width: 0;
             height: 0;
             border-left: 0px solid transparent;
-            border-right: 18px solid transparent;
-            border-bottom: 46px solid #e53324;
+            border-right: 14px solid transparent;
+            border-bottom: 36px solid #e53324;
             position: absolute;
-            right: -18px;
+            right: -14px;
             top: 0;
         }
     }
@@ -375,21 +384,21 @@ body{
     padding: 50px 0;
     background-color: #f7f7f7;
     h2{
-        font-size: 20px;
+        font-size: 24px;
         text-transform: uppercase;
         margin-bottom: 0px;
     }
     .services-single{
         text-align: left;
         i{
-            font-size: 30px;
+            font-size: 16px;
             background-color: #e53424;
             padding: 10px;
             border-radius: 50%;
             color: #fff;
-            width: 55px;
-            height: 55px;
-            line-height: 35px;
+            width: 40px;
+            height: 40px;
+            line-height: 21px;
             margin-bottom: 20px;
             position: absolute;
             left: 15px;
@@ -397,7 +406,11 @@ body{
             text-align: center;
         }
         &__main{
-            padding-left: 68px;
+            padding-left: 54px;
+            p{
+                font-size: 12px;
+                line-height: 17px;
+            }
         }
     }
 }
