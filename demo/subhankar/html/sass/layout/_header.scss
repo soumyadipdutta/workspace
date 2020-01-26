@@ -73,7 +73,7 @@ header{
 	position: relative;
 	display: none;
 	@include media-breakpoint(medium) {
-        max-width: block;
+        display: block;
     }
 	input[type="text"]{
 		border: 1px solid #dedede;
@@ -106,7 +106,7 @@ header{
 	margin-bottom: 0px;
 	display: none;
 	@include media-breakpoint(medium) {
-        max-width: block;
+        display: block;
     }
 
 	li{
@@ -122,7 +122,7 @@ header{
 		    color: #be3240;
 		}
 		a{
-		    padding: 10px 5px;
+		    padding: 7px 5px;
 		    font-size: 25px;
 		    text-align: center;
 		    display: block;
@@ -130,10 +130,12 @@ header{
 				color: #be3240;
 			}
 			span{
-				font-size: 13px;
+				font-size: 12px;
+				line-height: 15px;
 				display: block;
 				text-align: center;
 				color: #de7781;
+				margin-top: 3px;
 			}
 			&:hover{
 				background-color: #ddd;

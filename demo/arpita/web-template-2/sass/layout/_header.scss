@@ -1,0 +1,66 @@
+//HEARER SECTION
+
+header{
+	
+}
+.overpay-panel{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1a1829b8;
+    z-index: 1;
+}
+.c-logo{
+	width: 150px;
+	img{
+		width: 100%;
+	}
+}
+
+.c-header{
+	position: fixed;
+    min-width: 100%;
+    background-color: rgba(26, 24, 41, 0.5);
+    z-index: 9;
+    min-height: 80px;
+    .row{
+    	align-items: center;
+    }
+}
+
+.c-banner{
+	height: 100vh;
+	position: relative;
+	.main-banner-slider{
+		background-color: #000;
+		img {
+			height: 100vh;
+		    object-fit: cover;
+		}
+	}
+	svg{
+    	position: absolute;
+	    z-index: 3;
+	    bottom: -140px;
+	    height: auto;
+	    min-width: 100%;
+    }
+    &__content{
+    	position: absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	min-width: 100%;
+    	text-align: center;
+    	z-index: 3;
+    	em{
+    		font-size: 30px;
+    		line-height: 80px;
+    	}
+    	h1{
+    		font-weight: 600;
+    		color: #fff;
+    		text-transform: uppercase;
+    		font-size: 60px;
+    	}
+    }
+}

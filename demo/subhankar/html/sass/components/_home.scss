@@ -103,7 +103,6 @@ body{
     text-align: center;
     position: relative;
     padding-bottom: 60px;
-    min-height: 430px;
     .book-image{
         position: relative;
         .tag{
@@ -155,12 +154,11 @@ body{
         margin-top: 10px;
         text-transform: capitalize;
         font-weight: 500;
-        position: absolute;
         min-width: auto;
         bottom: 10px;
         left: 0;
         right: 0;
-        margin: 0 auto;
+        margin: 10px auto;
         border: 2px solid #d42223;
         &:hover{
             background: #ffffff;
@@ -221,6 +219,7 @@ body{
         background-color: #fff;
         padding: 10px;
         min-height: 450px;
+
     }
 }
 
@@ -268,7 +267,7 @@ body{
     &__large{
         text-align: center;
         img{
-            width: 60%;
+            width: 50%;
         }
         h4{
             margin-top: 20px;
@@ -778,5 +777,19 @@ body{
                 right: 26px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 767px)  {
+    .featured-slider .featured-single {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .site-logo{
+        margin: 10px auto !important;
+    }
+    .mobile-menu {
+        top: 22px;
     }
 }

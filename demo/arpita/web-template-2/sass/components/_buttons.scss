@@ -1,0 +1,386 @@
+//Global Button Style
+
+.btn{
+    text-transform: uppercase;
+    padding: 6px 25px;
+    cursor: pointer;
+    font-family: $base-font-family;
+    background-color: $blue-medium;
+    color: $white;
+    font-weight: 500;
+    font-size: $base-font-size - 2;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 43px;
+    @include transition-duration(200ms);
+    &:hover{
+        @include transition-duration(200ms);
+        background-color: #3786e6 !important;
+        color: $white;
+    }
+    &:active{
+        @include transition-duration(200ms);
+    }
+    &.disable{
+        background-color: $btn-disable;
+        color: #657A8F;
+    }
+    &:focus{
+        outline: none;
+    }
+
+    &.border-blue{
+        border: 2px solid $blue-medium;
+        background-color: $white;
+        color: $blue-medium;
+        &:hover{
+            border: 2px solid $blue-medium;
+            background-color: $blue-medium;
+            color: $white;
+
+        }
+    }
+
+    /*print icon*/
+    &.icon-print{
+        position: relative;
+        padding: 11px 25px 11px 40px;
+        &:before{
+            content: "\f02f";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 12px;
+            top: 14px;
+            border-radius: 50%;
+            left: 22px;
+        }
+    }
+    &.arrow-left{
+        position: relative;
+        padding: 11px 25px 11px 40px;
+        &:before{
+            content: "\f104";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            left: 22px;
+        }
+    }
+    &.arrow-right{
+        position: relative;
+        padding: 11px 40px 11px 25px;
+        &:before{
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            right: 22px;
+        }
+    }
+
+    &.btn-eligibility{
+        background-color: #5B9CEC;
+        border-radius: 30px;
+        min-width: 200px;
+        padding: 7px 15px 7px 28px;
+        color: $white;
+        font-size: 14px;
+        position: relative;
+        &:before{
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 12px;
+            top: 5px;
+            left: 7px;
+            background-color: #73AFF7;
+            padding: 2px 8px;
+            border-radius: 50%;
+            color: $white;
+            transition: all 500ms;
+        }
+
+        &.active{
+            background-color: #40A8FC;
+            &:before{
+                background-color: $green !important;
+            }
+        }
+        &:hover{
+            background-color: #4e94ea !important;
+            transition: all 500ms;
+            &:before{
+                background-color: #5aa0f5;
+            }
+        }
+
+        &.btn-success{
+            background-color: #46E24C !important;
+            box-shadow: none;
+            &:before{
+                background-color: #7DEB82 !important;
+            }
+        }
+    }
+    
+    /*Medium button*/
+    &.btn-medium{
+        padding: 11px 25px;
+    }
+    /*Small button*/
+    &.btn-small{
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    &.btn-normal{
+        background-color: #DBE1E6;
+        border-radius: 3px !important;
+        font-size: 10px;
+        color: #657A8E;
+        line-height: 20px;
+        &:hover{
+            background-color: #A1ABBE !important;
+            color: #EEEEF2;
+        }
+    }
+
+    &.grey{
+        background-color: #C4C4C4;
+        &:hover{
+            background-color: #969696 !important;
+        }
+    }
+}
+
+.btn-borderoly{
+    border: 1px solid $blue-medium;
+    background-color: $white;
+    color: $blue-medium;
+    &.red{
+        border: 1px solid #FF463A;
+        color: #FF463A;
+        &:hover{
+            background-color: #FF463A !important;
+            color: #fff !important;
+        }
+        &:focus{
+            border: 1px solid #FF463A;
+            border-color: #FF463A !important;
+        }
+        &:active{
+            border: 1px solid #FF463A;
+            border-color: #FF463A !important;
+        }
+        &:not(.btn-social):not(.btn-social-icon):active, 
+        &:not(.btn-social):not(.btn-social-icon):focus, 
+        &:not(.btn-social):not(.btn-social-icon):hover{
+            border-color: #ff0000 !important;
+            background-color: #de2d22 !important;
+            color: #fff !important;
+        }
+    }
+}
+
+.redfill{
+    background-color: #FF463A;
+    border: 1px solid #FF463A;
+    color: #fff;
+    &:hover{
+        background-color: #FF463A !important;
+        color: #fff !important;
+    }
+    &:focus{
+        border: 1px solid #FF463A;
+        border-color: #FF463A !important;
+    }
+    &:active{
+        border: 1px solid #FF463A;
+        border-color: #FF463A !important;
+    }
+    &:not(.btn-social):not(.btn-social-icon):active, 
+    &:not(.btn-social):not(.btn-social-icon):focus, 
+    &:not(.btn-social):not(.btn-social-icon):hover{
+        border-color: #ff0000 !important;
+        background-color: #de2d22 !important;
+        color: #fff !important;
+    }
+}
+.print_calculator{
+    font-size: 12px;
+}
+
+/*Tag*/
+.c-tag{
+    background-color: rgba(165, 179, 193, 0.3);
+    border-radius: 45px;
+    padding: 6px 12px 7px;
+    font-size: 12px;
+    color: #657A8F;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    &.tick{
+        padding: 5px 13px 5px 30px;
+        &:before{
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 8px;
+            top: 4px;
+            left: 6px;
+            background-color: rgba(96, 229, 84, 0.3);
+            padding: 4px 6px;
+            border-radius: 50%;
+            color: #00B30F;
+        }
+    }
+
+    &.green{
+        background-color: #CBF5CF;
+        color: #00B30F;
+        i{
+            background-color: rgba(96, 229, 84, 0.3);
+        }
+    }
+    &.red{
+      background-color: #F9CDCC;
+      color: #FA463B;
+      &.info{
+        &:after{
+          content: "\f12a";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 11px;
+          top: 5px;
+          left: 7px;
+        }
+      }
+    }
+}
+
+.search-progress{
+    background-color: #5698E6;
+    &:before {
+        content: " " !important;
+        background-image: url(/images/loading-big.gif);
+        width: 27px;
+        height: 27px;
+        background-size: 100%;
+    }
+}
+
+
+
+
+
+/*Action Buttons*/
+.btn-action{
+    background-color: #EEEEF2;
+    border: none;
+    border-radius: 3px;
+    margin: 0 1px;
+    cursor: pointer;
+    outline: none;
+    transition: all 500ms;
+    &:hover{
+        background-color: #A1ABBE;
+        &.icon{
+            &:before{
+                color: #EEEEF2;
+            }
+        }   
+    }
+    &.icon{
+        &:before{
+            content: "\f302";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 14px;
+            color: #A1ABBE;
+        }
+    }
+    
+    /*Photo Icon*/
+    &.photos{
+        &:before{
+            content: "\f302";
+        }
+    }
+
+    /*Email Icon*/
+    &.mail{
+        &:before{
+            content: "\f0e0";
+        }
+    }
+    /*Call Icon*/
+    &.call{
+        &:before{
+            content: "\f095";
+        }
+    }
+
+    /*Call Icon*/
+    &.expand{
+        &:before{
+            content: "\f35d";
+        }
+    }
+}
+
+.print_calculator{
+    font-size: 9px;
+}
+
+
+
+
+
+input[type="checkbox"].switch_1 {
+  font-size: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 36px;
+  height: 21px;
+  background: #ddd;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:checked {
+    background: #B9D8FE;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  &:checked:after {
+    left: calc(100% - 21px);
+  }
+}
