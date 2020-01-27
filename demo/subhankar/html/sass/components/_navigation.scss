@@ -12,6 +12,33 @@
 				font-weight: 400;
 				text-transform: uppercase;
 			}
+			ul.sub-menu{
+				display: none;
+				position: absolute;
+				z-index: 9;
+			    background-color: #fff;
+			    text-align: left;
+				li{
+					display: block;
+					border-top: 1px solid #ddd;
+				    margin: 0 0;
+				    transition-duration: 500ms;
+				    a{
+					   	display: block;
+					    padding: 6px 15px;
+					    font-size: 15px;
+				    }
+				    &:hover{
+				    	background-color: #ddd;
+				    	transition-duration: 500ms;
+				    }
+				}
+			}
+			&:hover{
+				ul.sub-menu{
+					display: block;
+				}
+			}
 		}
 	}
 	@include media-breakpoint(medium) {

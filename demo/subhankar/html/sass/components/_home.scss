@@ -917,5 +917,12 @@ body{
     .featured-slider .featured-single{
         min-height: 400px;
     }
+    .mm-navbar_tabs a.mm-navbar__tab_selected {
+        color: #ffffff;
+        background-color: #be3240;
+    }
+    .mm-navbar_sticky{
+        display: none;
+    }
 
 }
