@@ -11420,6 +11420,23 @@ body .btn.btn-small:hover {
   .main-banner-slider .desktop-only {
     display: none;
   }
+
+  /* line 909, ../sass/components/_home.scss */
+  .book-single__small {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 914, ../sass/components/_home.scss */
+  .book-single__large {
+    margin-bottom: 30px;
+  }
+
+  /* line 917, ../sass/components/_home.scss */
+  .featured-slider .featured-single {
+    min-height: 400px;
+  }
 }
 /*
 	components

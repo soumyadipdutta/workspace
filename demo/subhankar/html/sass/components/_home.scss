@@ -906,4 +906,16 @@ body{
     .main-banner-slider .desktop-only{
         display: none;
     }
+    .book-single__small{
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .book-single__large{
+        margin-bottom: 30px;
+    }
+    .featured-slider .featured-single{
+        min-height: 400px;
+    }
+
 }
