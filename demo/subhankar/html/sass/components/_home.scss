@@ -60,10 +60,10 @@ body{
     }
     .cart-icon{
         position: absolute;
-        top: -58px;
+        top: -45px;
         right: 16px;
         color: #be3240;
-        font-size: 30px;
+        font-size: 24px;
         .cart-cout {
             position: absolute;
             background-color: #2cbd93;
@@ -74,9 +74,15 @@ body{
             color: #fff;
             font-weight: bold;
             line-height: 16px;
-            right: -6px;
+            right: -8px;
             top: -3px;
             padding: 0 5px;
+        }
+        &.wishlist{
+           right: 56px; 
+           .cart-cout {
+                right: -8px;
+           }
         }
     }
     .search-form{
@@ -868,6 +874,9 @@ body{
     }
 }
 
+.main-banner-slider .mobile-only{
+    display: none;
+}
 @media only screen and (max-width: 767px)  {
     .featured-slider .featured-single {
         width: 50%;
@@ -878,9 +887,23 @@ body{
         margin: 10px auto !important;
     }
     .mobile-menu {
-        top: 22px;
+        top: 20px;
+        a{
+            i{
+                font-size: 30px;
+            }
+        }
     }
     .remove-margin{
         padding: 0 0;
+    }
+
+    .main-banner-slider .mobile-only{
+        display: block;
+        height: 300px;
+        width: auto;
+    }
+    .main-banner-slider .desktop-only{
+        display: none;
     }
 }
