@@ -6961,12 +6961,12 @@ body.boxed {
 .btn-maincolor2,
 .btn-maincolor3,
 .btn-darkgrey {
-	color: #fff;
+	color: #000;
 }
 
 .btn-maincolor {
-	background-color: #ff497c;
-	border: 4px solid #ff497c;
+	background-color: #ecfb04;
+    border: 4px solid #b2bd05;
 }
 
 .btn-maincolor2 {
@@ -22437,7 +22437,7 @@ h4.margin {
 }
 
 .process-part .right .step-center-part:after {
-	background-image: url("../img/left_arrow.png");
+	background-image: url("../images/left_arrow.png");
 	left: 55px;
 	right: auto;
 }
@@ -22473,7 +22473,7 @@ h4.margin {
 }
 
 .process-part .step-center-part:after {
-	background-image: url("../img/right_arrow.png");
+	background-image: url("../images/right_arrow.png");
 	background-repeat: no-repeat;
 	bottom: -97px;
 	content: "";
