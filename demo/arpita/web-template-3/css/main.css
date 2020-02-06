@@ -2079,7 +2079,7 @@ html[xmlns] .slides {
 }
 
 .flex-direction-nav .flex-prev:hover {
-	background-color: #ff497c;
+	background-color: #9fcb50;
 	color: #fff;
 	left: 0;
 }
@@ -2090,7 +2090,7 @@ html[xmlns] .slides {
 }
 
 .flex-direction-nav .flex-next:hover {
-	background-color: #ff497c;
+	background-color: #9fcb50;
 	color: #fff;
 	right: 0;
 }
@@ -3177,7 +3177,7 @@ a.pswp__share--download:hover {
 ** toTop
 */
 #toTop {
-	background-color: #ff497c;
+	background-color: #6ba209;
 	border-radius: 50%;
 	bottom: 10px;
 	color: transparent;
@@ -6965,8 +6965,8 @@ body.boxed {
 }
 
 .btn-maincolor {
-	background-color: #ecfb04;
-    border: 4px solid #b2bd05;
+	background-color: #9ecb4d;
+    border: 4px solid #9fcd4e;
 }
 
 .btn-maincolor2 {
@@ -6993,7 +6993,7 @@ body.boxed {
 }
 
 .btn-outline-maincolor {
-	border-color: #ff497c;
+	border-color: #9fcc50;
 	color: #1f2732;
 }
 
@@ -7271,7 +7271,7 @@ body.boxed {
 }
 
 .ls .btn-outline-maincolor:hover {
-	background-color: #ff497c;
+	background-color: #9fcc50;
 }
 
 .ls .btn-maincolor:hover {
@@ -8046,7 +8046,7 @@ body.boxed {
 }
 
 .cs {
-	background-color: #ff497c;
+	background-color: #9fcb51;
 	color: #fff;
 }
 
@@ -9807,7 +9807,7 @@ filters
 }
 
 .filters .active {
-	color: #ff497c;
+	color: #9fcb50;
 }
 
 @media (min-width: 992px) {
@@ -13282,7 +13282,7 @@ a img.aligncenter {
 
 	.ds .sf-menu > li > a:hover,
 	.ds .sf-menu > li.active > a {
-		color: #ff497c;
+		color: #a0ce4e;
 	}
 
 	.ls .sf-menu > li > a {
@@ -13310,7 +13310,7 @@ a img.aligncenter {
 		/* allow long menu items to determine submenu width */
 		*width: 10em;
 		background-color: #fff;
-		border-top: 4px solid #ff497c;
+		border-top: 4px solid #9fcb50;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		list-style: none;
 		margin-top: 5px;
@@ -19099,7 +19099,7 @@ a.btn {
 }
 
 .testimonials-sliders .small-text.author-job {
-	color: #ff497c;
+	color: #9fcb50;
 	font-weight: 700;
 	letter-spacing: 0.2em;
 	margin: 35px 0 12px;
@@ -19134,7 +19134,7 @@ a.btn {
 }
 
 .header_phone span {
-	color: #ff497c;
+	color: #9fcb50;
 }
 
 @media (min-width: 1600px) {
@@ -19177,8 +19177,8 @@ a.btn {
 }
 
 .testimonials-btn a {
-	background-color: #ff497c;
-	border: 3px solid #ff497c;
+	background-color: #9fcb50;
+	border: 3px solid #9fcb50;
 	border-radius: 50%;
 	padding: 25px;
 	position: relative;
@@ -20059,7 +20059,7 @@ a.btn {
 }
 
 .white-button .white-btn:hover {
-	background-color: #ff497c;
+	background-color: #9fcb50;
 	color: #fff;
 }
 
@@ -20623,7 +20623,7 @@ h4.margin {
 }
 
 .shortcode-team-slider .menu_item span {
-	color: #ff497c;
+	color: #9fcb51;
 }
 
 .shortcode-team-slider .menu_item span.position:after {
@@ -20639,7 +20639,7 @@ h4.margin {
 }
 
 .shortcode-team-slider .slider-title {
-	color: #ff497c;
+	color: #9fcb50;
 	display: block;
 	font-size: 300px;
 	font-weight: 600;
