@@ -27,7 +27,7 @@ header{
 		display: none;
 		@include media-breakpoint(medium) {
 			text-align: right;
-			display: inline-block;
+			display: block;
 		}
 		.row{
 			align-items: center;

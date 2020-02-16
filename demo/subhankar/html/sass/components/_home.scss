@@ -586,14 +586,14 @@ body{
 }
 
 .c-form{
-    background: #f4bc11;
+    background: #ffffff;
     padding: 60px;
     margin: 20px auto;
     width: 80%;
-    box-shadow: 0 0 20px 0 #989898;
+    border: 1px solid #ddd;
     h2{
-        color: #fff;
-        border-bottom: 1px solid #fff;
+        color: #000;
+        border-bottom: 1px solid #ddd;
         padding-bottom: 15px;
         margin-bottom: 25px;
         text-align: left;
@@ -608,6 +608,7 @@ body{
         }
         .c-input{
             border-radius: 3px;
+            border: 1px solid #ddd;
         }
     }
 
@@ -617,7 +618,7 @@ body{
         display: block;
         margin-top: 10px;
         a{
-            color: #fff;
+            color: #000;
         }
     }
 }
@@ -964,4 +965,10 @@ body{
         display: none;
     }
 
+}
+
+.filter-listing-full{
+    @include media-breakpoint(medium) {
+        order: 2;
+    }
 }

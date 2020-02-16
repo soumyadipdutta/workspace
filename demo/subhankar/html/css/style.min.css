@@ -11089,16 +11089,16 @@ body .btn.btn-small:hover {
 
 /* line 588, ../sass/components/_home.scss */
 .c-form {
-  background: #f4bc11;
+  background: #ffffff;
   padding: 60px;
   margin: 20px auto;
   width: 80%;
-  box-shadow: 0 0 20px 0 #989898;
+  border: 1px solid #ddd;
 }
 /* line 594, ../sass/components/_home.scss */
 .c-form h2 {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: #000;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
   margin-bottom: 25px;
   text-align: left;
@@ -11116,32 +11116,33 @@ body .btn.btn-small:hover {
 /* line 609, ../sass/components/_home.scss */
 .c-form .form-group .c-input {
   border-radius: 3px;
+  border: 1px solid #ddd;
 }
-/* line 614, ../sass/components/_home.scss */
+/* line 615, ../sass/components/_home.scss */
 .c-form .lost-pass {
   text-align: center;
   color: #fff;
   display: block;
   margin-top: 10px;
 }
-/* line 619, ../sass/components/_home.scss */
+/* line 620, ../sass/components/_home.scss */
 .c-form .lost-pass a {
-  color: #fff;
+  color: #000;
 }
 
-/* line 626, ../sass/components/_home.scss */
+/* line 627, ../sass/components/_home.scss */
 .login-page-wrap {
   position: relative;
 }
 
-/* line 631, ../sass/components/_home.scss */
+/* line 632, ../sass/components/_home.scss */
 .login-seperator {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 636, ../sass/components/_home.scss */
+/* line 637, ../sass/components/_home.scss */
 .login-seperator:before {
   content: " ";
   width: 1px;
@@ -11154,7 +11155,7 @@ body .btn.btn-small:hover {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 648, ../sass/components/_home.scss */
+/* line 649, ../sass/components/_home.scss */
 .login-seperator span {
   background-color: #fff;
   height: 50px;
@@ -11174,100 +11175,100 @@ body .btn.btn-small:hover {
   border: 2px solid #dad6d6;
 }
 
-/* line 668, ../sass/components/_home.scss */
+/* line 669, ../sass/components/_home.scss */
 .remove-margin {
   padding: 0 0;
 }
 
-/* line 671, ../sass/components/_home.scss */
+/* line 672, ../sass/components/_home.scss */
 .card-option {
   margin-bottom: 20px;
 }
-/* line 673, ../sass/components/_home.scss */
+/* line 674, ../sass/components/_home.scss */
 .card-option .btn {
   padding: 5px 14px;
 }
 @media (min-width: 1025px) {
-  /* line 673, ../sass/components/_home.scss */
+  /* line 674, ../sass/components/_home.scss */
   .card-option .btn {
     padding: 8px 16px;
   }
 }
-/* line 679, ../sass/components/_home.scss */
+/* line 680, ../sass/components/_home.scss */
 .card-option .row {
   margin-left: 0px;
   margin-right: 0px;
 }
 @media (min-width: 1025px) {
-  /* line 679, ../sass/components/_home.scss */
+  /* line 680, ../sass/components/_home.scss */
   .card-option .row {
     margin-right: -15px;
     margin-left: -15px;
   }
 }
-/* line 688, ../sass/components/_home.scss */
+/* line 689, ../sass/components/_home.scss */
 .card-option .quantity input {
   border: 1px solid #ddd;
 }
 
-/* line 694, ../sass/components/_home.scss */
+/* line 695, ../sass/components/_home.scss */
 .book-description-full {
   margin-bottom: 20px;
 }
-/* line 696, ../sass/components/_home.scss */
+/* line 697, ../sass/components/_home.scss */
 .book-description-full p {
   margin-bottom: 2px;
 }
 
-/* line 701, ../sass/components/_home.scss */
+/* line 702, ../sass/components/_home.scss */
 .c-bbokdetails {
   margin: 60px 0;
 }
 
-/* line 705, ../sass/components/_home.scss */
+/* line 706, ../sass/components/_home.scss */
 .cod-checker {
   border: 1px solid #ddd;
   padding: 15px;
   width: 85%;
 }
-/* line 709, ../sass/components/_home.scss */
+/* line 710, ../sass/components/_home.scss */
 .cod-checker .row {
   margin: 0 0;
 }
-/* line 712, ../sass/components/_home.scss */
+/* line 713, ../sass/components/_home.scss */
 .cod-checker p {
   font-size: 12px;
   margin-bottom: 0px;
 }
-/* line 716, ../sass/components/_home.scss */
+/* line 717, ../sass/components/_home.scss */
 .cod-checker .c-input {
   border: 1px solid #ddd;
   border-radius: 0px;
 }
-/* line 720, ../sass/components/_home.scss */
+/* line 721, ../sass/components/_home.scss */
 .cod-checker .btn {
   width: 100%;
   border-radius: 0px;
 }
 
-/* line 725, ../sass/components/_home.scss */
+/* line 726, ../sass/components/_home.scss */
 .category {
   margin-top: 20px;
   font-size: 12px;
 }
 
-/* line 730, ../sass/components/_home.scss */
+/* line 731, ../sass/components/_home.scss */
 .quantity {
   width: 80px;
   display: inline-block;
 }
-/* line 733, ../sass/components/_home.scss */
+/* line 734, ../sass/components/_home.scss */
 .quantity input {
   width: 100%;
   padding: 6px;
 }
 
-/* line 740, ../sass/components/_home.scss */
+/* line 741, ../sass/components/_home.scss */
 .c-bbokdetails_img .tag {
   position: absolute;
   top: 50px;
@@ -11284,16 +11285,16 @@ body .btn.btn-small:hover {
   font-size: 16px;
   line-height: 18px;
 }
-/* line 755, ../sass/components/_home.scss */
+/* line 756, ../sass/components/_home.scss */
 .c-bbokdetails_img .tag span {
   display: block;
 }
 
-/* line 762, ../sass/components/_home.scss */
+/* line 763, ../sass/components/_home.scss */
 .shopping-cart {
   position: relative;
 }
-/* line 765, ../sass/components/_home.scss */
+/* line 766, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart {
   background-color: #fff;
   border-top: 3px solid #be3240;
@@ -11305,7 +11306,7 @@ body .btn.btn-small:hover {
   min-width: 280px;
   box-shadow: 0 0 20px 0 #ddd;
 }
-/* line 775, ../sass/components/_home.scss */
+/* line 776, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart_single {
   align-items: center;
   background-color: #fff;
@@ -11313,7 +11314,7 @@ body .btn.btn-small:hover {
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-/* line 781, ../sass/components/_home.scss */
+/* line 782, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart_single .cross {
   background-color: #ff0000;
   line-height: 20px;
@@ -11325,27 +11326,27 @@ body .btn.btn-small:hover {
   right: 4px;
   top: 3px;
 }
-/* line 791, ../sass/components/_home.scss */
+/* line 792, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart_single .cross i {
   color: #fff;
 }
-/* line 797, ../sass/components/_home.scss */
+/* line 798, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .btn-row {
   padding: 8px 10px;
 }
-/* line 799, ../sass/components/_home.scss */
+/* line 800, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .btn-row:before {
   content: "";
   display: block;
   clear: both;
 }
-/* line 804, ../sass/components/_home.scss */
+/* line 805, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .btn-row:after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 809, ../sass/components/_home.scss */
+/* line 810, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .btn-row .btn {
   background: #ef3b3c;
   color: #fff;
@@ -11363,7 +11364,7 @@ body .btn.btn-small:hover {
   border: 2px solid #d42223;
   border-radius: 0px;
 }
-/* line 825, ../sass/components/_home.scss */
+/* line 826, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .btn-row .btn:hover {
   background: #ffffff;
   border: 2px solid #d42223;
@@ -11371,32 +11372,32 @@ body .btn.btn-small:hover {
   transition-duration: 500ms;
   outline: none;
 }
-/* line 835, ../sass/components/_home.scss */
+/* line 836, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-img {
   width: 100%;
 }
-/* line 838, ../sass/components/_home.scss */
+/* line 839, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-desc {
   text-align: left;
 }
-/* line 840, ../sass/components/_home.scss */
+/* line 841, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-desc h5 {
   margin-bottom: 0px;
 }
-/* line 843, ../sass/components/_home.scss */
+/* line 844, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-desc em {
   font-size: 12px;
   text-align: left;
 }
-/* line 847, ../sass/components/_home.scss */
+/* line 848, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-desc .book-price span {
   display: inline-block !important;
 }
-/* line 850, ../sass/components/_home.scss */
+/* line 851, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart .book-desc p {
   margin-bottom: 0px;
 }
-/* line 855, ../sass/components/_home.scss */
+/* line 856, ../sass/components/_home.scss */
 .shopping-cart:hover .mini-cart:before {
   content: " ";
   width: 0;
@@ -11409,7 +11410,7 @@ body .btn.btn-small:hover {
   top: -10px;
   right: 26px;
 }
-/* line 869, ../sass/components/_home.scss */
+/* line 870, ../sass/components/_home.scss */
 .shopping-cart .cart-cout {
   position: absolute;
   background-color: #2cbd93;
@@ -11425,7 +11426,7 @@ body .btn.btn-small:hover {
   padding: 0 5px;
 }
 
-/* line 886, ../sass/components/_home.scss */
+/* line 887, ../sass/components/_home.scss */
 .mobile-cart-head .cart-cout {
   position: absolute;
   background-color: #2cbd93;
@@ -11441,101 +11442,108 @@ body .btn.btn-small:hover {
   padding: 0 5px;
 }
 
-/* line 901, ../sass/components/_home.scss */
+/* line 902, ../sass/components/_home.scss */
 .search-form-mobile {
   padding: 5px;
   background: #be3240;
   display: block;
 }
 @media (min-width: 1025px) {
-  /* line 901, ../sass/components/_home.scss */
+  /* line 902, ../sass/components/_home.scss */
   .search-form-mobile {
     display: none;
   }
 }
-/* line 908, ../sass/components/_home.scss */
+/* line 909, ../sass/components/_home.scss */
 .search-form-mobile .search-section {
   display: block;
 }
 @media (min-width: 1025px) {
-  /* line 908, ../sass/components/_home.scss */
+  /* line 909, ../sass/components/_home.scss */
   .search-form-mobile .search-section {
     display: none;
   }
 }
 
-/* line 916, ../sass/components/_home.scss */
+/* line 917, ../sass/components/_home.scss */
 .main-banner-slider .mobile-only {
   display: none;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 920, ../sass/components/_home.scss */
+  /* line 921, ../sass/components/_home.scss */
   .featured-slider .featured-single {
     width: 50%;
     display: inline-block;
     vertical-align: top;
   }
 
-  /* line 925, ../sass/components/_home.scss */
+  /* line 926, ../sass/components/_home.scss */
   .site-logo {
     margin: 10px auto !important;
   }
 
-  /* line 928, ../sass/components/_home.scss */
+  /* line 929, ../sass/components/_home.scss */
   .mobile-menu {
     top: 20px;
   }
-  /* line 931, ../sass/components/_home.scss */
+  /* line 932, ../sass/components/_home.scss */
   .mobile-menu a i {
     font-size: 30px;
   }
 
-  /* line 936, ../sass/components/_home.scss */
+  /* line 937, ../sass/components/_home.scss */
   .remove-margin {
     padding: 0 0;
   }
 
-  /* line 940, ../sass/components/_home.scss */
+  /* line 941, ../sass/components/_home.scss */
   .main-banner-slider .mobile-only {
     display: block;
     height: 300px;
     width: auto;
   }
 
-  /* line 945, ../sass/components/_home.scss */
+  /* line 946, ../sass/components/_home.scss */
   .main-banner-slider .desktop-only {
     display: none;
   }
 
-  /* line 948, ../sass/components/_home.scss */
+  /* line 949, ../sass/components/_home.scss */
   .book-single__small {
     width: 48%;
     display: inline-block;
     vertical-align: top;
   }
 
-  /* line 953, ../sass/components/_home.scss */
+  /* line 954, ../sass/components/_home.scss */
   .book-single__large {
     margin-bottom: 30px;
   }
 
-  /* line 956, ../sass/components/_home.scss */
+  /* line 957, ../sass/components/_home.scss */
   .featured-slider .featured-single {
     min-height: 400px;
   }
 
-  /* line 959, ../sass/components/_home.scss */
+  /* line 960, ../sass/components/_home.scss */
   .mm-navbar_tabs a.mm-navbar__tab_selected {
     color: #ffffff;
     background-color: #be3240;
   }
 
-  /* line 963, ../sass/components/_home.scss */
+  /* line 964, ../sass/components/_home.scss */
   .mm-navbar_sticky {
     display: none;
   }
 }
+@media (min-width: 1025px) {
+  /* line 970, ../sass/components/_home.scss */
+  .filter-listing-full {
+    order: 2;
+  }
+}
+
 /*
 	components
 	--> buttons
@@ -11622,7 +11630,7 @@ body .btn.btn-small:hover {
   /* line 21, ../sass/layout/_header.scss */
   .c-header__top {
     text-align: right;
-    display: inline-block;
+    display: block;
   }
 }
 /* line 32, ../sass/layout/_header.scss */
