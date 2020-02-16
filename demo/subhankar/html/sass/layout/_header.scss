@@ -24,8 +24,10 @@ header{
 		text-align: center;
 		display: block;
 		transition-duration: 1s;
+		display: none;
 		@include media-breakpoint(medium) {
 			text-align: right;
+			display: inline-block;
 		}
 		.row{
 			align-items: center;

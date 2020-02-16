@@ -1,0 +1,11 @@
+.v_line{
+	position: relative;
+}
+.v_line:before{
+	content: " ";
+    height: 100px;
+    width: 0px;
+    border-left: 5px dashed #9dc851;
+    margin-left: 0px;
+    display: inline-block;
+}

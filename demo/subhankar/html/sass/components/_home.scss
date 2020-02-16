@@ -89,7 +89,6 @@ body{
         z-index: 9;
         min-width: 100%;
         left: 0;
-        background-color: #be3240;
         padding: 7px;
     }
     .search-section .btn{
@@ -541,10 +540,31 @@ body{
 
 
 .c-bbokdetails_img{
+    position: relative;
+    margin-bottom: 20px;
     img{
         width: 100%;
     }
+    i.fa{
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #be3240;
+        padding: 8px;
+        border-radius: 50%;
+    }
 }
+.c-bbokdetails_desc{
+    h4{
+        margin-bottom: 10px;
+    }
+    .book-price {
+        font-size: 25px;
+    }
+}
+
 .feature-book{
     margin-top: 30px;
     border: 1px solid #ddd;
@@ -650,6 +670,25 @@ body{
 }
 .card-option{
     margin-bottom: 20px;
+    .btn{
+        padding: 5px 14px;
+        @include media-breakpoint(medium) {
+            padding: 8px 16px;
+        }
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+        @include media-breakpoint(medium) {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    }
+    .quantity{
+        input{
+            border: 1px solid #ddd;
+        }
+    }
 }
 
 .book-description-full{
