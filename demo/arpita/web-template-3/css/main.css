@@ -15206,7 +15206,7 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 .page_slider .slide3 .intro_featured_word {
-	font-size: 100px;
+	font-size: 200px;
 	font-weight: 700;
 	margin-bottom: 13px;
 }
@@ -18613,11 +18613,6 @@ a.btn {
 	text-transform: uppercase;
 }
 
-.page_copyright.cover-background,
-.page_copyright.s-parallax {
-	background-image: url("../img/parallax/copyright_bg.jpg");
-}
-
 .item-hover-content {
 	overflow: hidden;
 	position: relative;
@@ -18625,6 +18620,11 @@ a.btn {
 
 .item-hover-content .item-media {
 	z-index: 2;
+}
+
+.footer-logo{
+	width: 250px;
+    margin-top: -40px !important;
 }
 
 .item-hover-content .item-content {
@@ -23184,4 +23184,13 @@ h5 {
 
 .checkbox-slider--b-flat input + span:before {
 	box-shadow: none;
+}
+.owl-carousel-filter-cloned{
+	display: none !important;
+}
+
+.inner-page .page_header_wrapper,
+.inner-page header{
+	position: relative !important;
+	background-color: #1f2732 !important;
 }

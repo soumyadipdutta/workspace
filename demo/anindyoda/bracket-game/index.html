@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+	<body>
+    <div class="bracket" id="bracket">
+		<div class="mainspace">
+            <div class="round1">
+            	<div></div>
+	            <div>
+		            <div class="bracketbox">
+		                <span class="toprow">Team A</span>
+		                <span class="bottomrow">Team B</span>
+		            </div>
+	            </div>
+	            <div>
+	                <div class="bracketbox">
+	                    <span class="toprow">Team C</span>
+	                    <span class="bottomrow">Team D</span>
+	                </div>
+	            </div>
+            	<div>
+                    <div class="bracketbox">
+                        <span class="toprow">Team E</span>
+                        <span class="bottomrow">Team F</span>
+                    </div>
+                </div>
+            </div>
+            <div class="round2">
+                <div>
+                    <div class="bracketbox">
+                        <span class="toprow">Team G</span>
+                        <span class="bottomrow">Team B</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="bracketbox">
+                        <span class="toprow">Team D</span>
+                        <span class="bottomrow">Team E</span>
+                    </div>
+                </div>
+            </div>
+            <div class="round3">
+                <div>
+                    <div class="bracketbox">
+                        <span class="toprow">Team G</span>
+                        <span class="bottomrow">Team D</span>
+                    </div>
+                </div>
+            </div>
+            <div class="round4">
+                <div class="final">
+                    <div class="bracketbox">
+                        <span class="finaltext">Winner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+		<div class="mainspace"> 
+            <div class="lostround1">
+             	<div>
+	                <div class="bracketbox">
+	                    <span class="toprow">Team A</span>
+	                    <span class="bottomrow">Team C</span>
+	                </div>
+            	</div>
+            </div>
+            <div class="lostround2">
+             	<div>
+	                <div class="bracketbox">
+	                    <span class="toprow">Team A</span>
+	                    <span class="bottomrow">Team C</span>
+	                </div>
+            	</div>
+            </div>
+            <div class="lostround3">
+             	<div>
+                    <div class="bracketbox">
+                        <span class="toprow">Team G</span>
+                        <span class="bottomrow">Team D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <style type="text/css">
+			html, body, .bracket {
+				width: 100%;
+				min-height: 100%;
+				font-family: "Arial", sans-serif;
+			}
+			
+			.bracket > div {
+				vertical-align: top;
+				clear: both;
+			}
+			.bracket > div > div {
+				float: left;
+				min-height: 500px;
+			}
+			.bracket > div > div > div {
+				margin: 50px 0;
+			}
+			.bracket div.bracketbox {
+				position: relative;
+				width: 100%; height: 100%;
+				border-top: 1px solid #555;
+				border-right: 1px solid #555;
+				border-bottom: 1px solid #555;
+			}
+			.bracket div.bracketbox > span.info {
+				position: absolute;
+				top: 25%;
+				left: 25%;
+				font-size: 0.8em;
+				color: #BBB;
+			}
+			.bracket div.bracketbox > span {
+				position: absolute;
+				left: 5px;
+				font-size: 0.85em;
+			}
+			.bracket div.bracketbox > span.toprow {
+				top: -20px;
+			}
+			.bracket div.bracketbox > span.bottomrow {
+				bottom: -20px;
+			}
+			.bracket div.bracketbox > span.finaltext {
+				bottom: 1px;
+			}
+			
+			.bracket > .mainspace > div {
+				width: 14.5%;
+			}
+			
+			.bracket > div > .round1 > div {
+				height: 60px;
+			}
+            .bracket > div > .lostround1 > div {
+				height: 60px;
+                margin-top: -100px;
+			}
+            
+			.bracket > div > .round2 > div {
+				margin: 80px 0 110px 0;
+				height: 110px;
+			}
+            .bracket > div > .lostround2 > div {
+				height: 60px;
+           }
+			.bracket > div > .round3 > div {
+				margin: 135px 0 220px 0;
+				height: 220px;
+			}
+			.bracket > div > .round4 > div {
+				margin: 250px 0 445px 0;
+				height: 445px;
+			}
+
+			.bracket > div > .lostround3 > div {
+				margin: 80px 0 110px 0;
+				height: 110px;
+			}
+			
+			.bracket div.final > div.bracketbox {
+				border-top: 0px;
+				border-right: 0px;
+				height: 0px;
+			}
+			.bracket > div > .r4 > div.drop {
+				height: 180px;
+				margin-bottom: 0px;
+			}
+			.bracket > div > .r5 > div.final.drop {
+				margin-top: 345px;
+				margin-bottom: 0px;
+				height: 1px;
+			}
+			.bracket > div > div > div:last-of-type {
+				margin-bottom: 0px;
+			}
+
+			.mainspace:before,
+			.mainspace:after{
+				content: " ";
+				clear: both;
+				width: 100%;
+				display: block;
+			}
+		</style>
+    </body>
+	
+</html>

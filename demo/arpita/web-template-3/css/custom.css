@@ -3,9 +3,98 @@
 }
 .v_line:before{
 	content: " ";
-    height: 100px;
+    height: 150px;
     width: 0px;
     border-left: 5px dashed #9dc851;
     margin-left: 0px;
     display: inline-block;
 }
+
+.fixed_side_btn {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: #79a924;
+    color: #fff;
+    height: 220px;
+    width: 50px;
+    z-index: 9999;
+    writing-mode: tb-rl;
+    text-align: center;
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid #9ecb4d;
+}
+.hvr-curl-bottom-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    background: linear-gradient(315deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+}
+.fixed_side_btn a {
+    font-size: 19px;
+    padding: 40px 8px 0px 8px;
+    color: #fff !important;
+}
+
+.modal-dialog {
+    max-width: 580px;
+}
+.quote-form {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 9;
+    top: 50px;
+    width: 100%;
+}
+.quote-form input, 
+.quote-form select {
+    border-radius: 0px;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 18px 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: #fff;
+}
+.quote-form .form-group {
+    margin-bottom: 1rem;
+}
+
+#getcodeform h5{
+	font-size: 18px;
+}
+p.privacy_form{
+	font-size: 11px;
+    line-height: 18px;
+    padding-bottom: 18px;
+}
+.seo-btn {
+    background-color: #79a924;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
