@@ -1,0 +1,22 @@
+body{
+	background-color: #fff;
+	p{
+		color: #ff0000;
+	}
+	a{
+		text-decoration: none;
+	}
+	span{
+		color: #fff;
+	}
+}
+
+
+p{
+	&.small{
+		font-size: 10px;
+	}
+	&.medium{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0; 
+}
+
+h1 {
+  color: #dddddd;
+}
+h2{
+  color: #000000;
+}
+
+
+
+
+/*Header*/
+.c-header{
+  &__notification{
+    background-color: #81B8E6;
+    p{
+    text-align: right;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  color: #dddddd; }
+
+h2 {
+  color: #000000; }
+
+/*Header*/
+.c-header__notification {
+  background-color: #81B8E6; }
+  .c-header__notification p {
+    text-align: right; }

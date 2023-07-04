@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "simplehtml",
+  "version": "1.0.0",
+  "description": "this is a simgle html project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
